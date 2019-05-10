@@ -1,0 +1,415 @@
+/*=========================
+    Table Style
+==========================*/
+
+
+/*----------------------
+    Table Style 01
+------------------------*/ 
+
+.ht-mega-table-style {
+    border-radius: 10px 10px 0 0;
+    & .table {
+        margin: 0;
+        // Head
+        & thead {
+            background-color: #612d91;
+            & tr {
+                & th {
+                    text-align: center;
+                    border: none;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: #ffffff;
+                    padding: 12px 20px;
+                    border-right: 1px solid #fff;
+                }
+            }
+        }
+
+        // Body
+        & tbody {
+            & tr {
+                background: #824f9e;
+                & td {
+                    text-align: center;
+                    border: none;
+                    padding: 12px 20px;
+                    vertical-align: middle;
+                    border-bottom: 1px solid #ffffff; 
+                    color: #ffffff;
+                    font-size: 16px;
+                    border-right: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+.ht-mega-table-style {
+    & th.tb-no ,
+    td.tb-no{
+        max-width: 86px;
+        min-width: 86px;
+        width: 86px;
+    }
+
+
+    & th.tb-name,
+    td.tb-name {
+        min-width: 252px;
+    }
+
+
+
+    & td.tb-name {
+        & a {
+            font-size: 16px;
+            font-weight: 600;
+            color: $body-color;
+        }
+    }
+
+}
+
+
+
+
+
+/*----------------------
+    Table Style 02
+------------------------*/ 
+
+.ht-mega-table-style-2 {
+    & .table {
+        margin: 0;
+        // Head
+        & thead {
+            background-color: #5ac5ff;
+            & tr {
+                & th {
+                    text-align: left;
+                    border: none;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: #ffffff;
+                    padding: 12px 20px;
+                    border-right: 1px solid #c5c5c5;
+                    border-left: 1px solid #c5c5c5;
+                    padding-left: 30px;
+                    position: relative;
+                    outline: none;
+                    &::before{
+                        position: absolute;
+                        content: "\f0d7";
+                        right: 20px;
+                        font-family: FontAwesome;
+                        top: 30%;
+                    }
+                    
+                    &::after{
+                        position: absolute;
+                        right: 20px;
+                        top: 7px;
+                        font-family: FontAwesome;
+                        content: "\f0d8";
+                    }
+                }
+            }
+        }
+
+        // Body
+        & tbody {
+            & tr {
+                background: #ffffff;
+                &:nth-child(even){
+                    background: #f4f4f4;
+                }
+                & td {
+                    text-align: left;
+                    border: none;
+                    padding: 12px 20px;
+                    vertical-align: middle;
+                    color: #000000;
+                    font-size: 16px;
+                    border-right: 1px solid #c5c5c5;
+                    padding-left: 30px;
+                    border-left: 1px solid #c5c5c5;
+
+                }
+            }
+        }
+    }
+}
+
+.ht-mega-table-style-2 {
+    & th.tb-no ,
+    td.tb-no{
+        max-width: 106px;
+        min-width: 106px;
+        width: 106px;
+    }
+
+
+    & th.tb-name,
+    td.tb-name {
+        min-width: 252px;
+    }
+
+
+
+    & td.tb-name {
+        & a {
+            font-size: 16px;
+            font-weight: 600;
+            color: $body-color;
+        }
+    }
+
+}
+
+
+
+div#example_length {
+    display: none;
+}
+
+div#example_filter {
+    display: none;
+}
+
+div#example_info {
+    display: none;
+}
+
+div#example_paginate {
+    display: none;
+}
+
+
+
+
+/*----------------------
+    Table Style 03
+------------------------*/ 
+
+.ht-mega-table-style-3 {
+    & .table {
+        margin: 0;
+        // Head
+        & thead {
+            background-color: #727272;
+            & tr {
+                & th {
+                    text-align: left;
+                    border: none;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: #ffffff;
+                    padding: 12px 20px;
+                    border-right: 1px solid #c5c5c5;
+                    border-left: 1px solid #c5c5c5;
+                    padding-left: 30px;
+                }
+            }
+        }
+
+        // Body
+        & tbody {
+            & tr {
+                background: #ffffff;
+                & td {
+                    text-align: left;
+                    border: none;
+                    padding: 12px 20px;
+                    vertical-align: middle;
+                    color: #000000;
+                    font-size: 16px;
+                    border-right: 1px solid #c5c5c5;
+                    border-left: 1px solid #c5c5c5;
+                    border-bottom: 1px solid #c5c5c5;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+.ht-mega-table-style-3 {
+    & th.tb-no ,
+    td.tb-no{
+        max-width: 106px;
+        min-width: 106px;
+        width: 106px;
+    }
+
+
+    & th.tb-name,
+    td.tb-name {
+        min-width: 252px;
+    }
+
+
+
+    & td.tb-name {
+        & a {
+            font-size: 16px;
+            font-weight: 600;
+            color: $body-color;
+        }
+    }
+
+}
+
+
+
+
+
+
+/*----------------------
+    Event Table Style 04
+------------------------*/
+
+
+
+
+.ht-event-table-style.tab-pane:not(.active) {
+    display: none;
+}
+
+
+
+
+.event-form{
+    border: 1px solid #dbdbdb;
+    padding: 0 30px;
+    padding-bottom: 30px;
+
+    .event-tab-content{
+        margin: 0 -30px;
+
+        @media #{$sm-layout} {
+            margin-bottom: 30px;
+            justify-content: flex-start !important;
+        }
+        a{
+            vertical-align: bottom;
+            border-bottom: 1px solid #dee2e6;
+            border-right: 1px solid #dbdbdb;
+            padding: 34px 68px;
+            margin-bottom: 30px;
+
+            @media #{$lg-layout} {
+                padding: 34px 44px;
+            }
+
+            @media #{$md-layout} {
+                padding: 26px 20px;
+            }
+
+            @media #{$sm-layout} {
+                padding: 26px 0;
+                margin-bottom: 0;
+                flex-basis: 33.33%;
+            }
+            @media #{$small-mobile} {
+                flex-basis: 50%;
+            }
+
+            
+
+            span{
+                display: block;
+                text-align: center;
+                color: #484848;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                font-family: $heading-font;
+                &.day {
+                    color: #484848;
+                    font-size: 24px;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                    font-weight: 700;
+                }
+            }
+            &.active{
+                background: $event-theme-color;
+                span{
+                    color: #ffffff;
+                    &.day{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ht-event-table-style{
+    table {
+       
+        thead{
+            th{
+                background: #c77ba6 !important;
+                color: #fff;
+                font-size: 18px;
+                border-right: 1px solid #dbdbdb;
+                text-align: center;
+            }
+        }
+
+
+        tbody{
+            tr{
+                th{
+                    border-right: 1px solid #dbdbdb;
+                }
+                td{
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: center;
+                    border-right: 1px solid #fff;
+                }
+                &:nth-child(even){
+                    background: #eeeeee;
+                }
+                &:nth-child(odd){
+                    background: #e3e3e3;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.event-form .event-tab-content.bd-tab a.active {
+    background: #fb5b21;
+}
+
+
+.body-table .ht-event-table-style table thead th{
+    background: #fd8255 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

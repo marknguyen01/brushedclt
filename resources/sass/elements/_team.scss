@@ -1,0 +1,1106 @@
+/*----------------------------
+    Team Style
+----------------------------*/
+
+.team {
+    margin-top: 30px;
+    ul {
+        &.social-network {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .thumb {
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+/*----------------------------
+    Team Style 01
+----------------------------*/
+
+.team-1 {
+    position: relative;
+    .content {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 7px;
+        border: 1px solid #dcd9d9;
+        padding: 30px 20px;
+        h4 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            a {
+                color: #343434;
+                transition: 0.5s;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        p {
+            margin: 0;
+            color: #343434;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    } // Team Hover Action
+    .team-hover-action {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        top: -100px;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out 0.5s;
+        -moz-transition: all 0.3s ease-out 0.5s;
+        -o-transition: all 0.3s ease-out 0.5s;
+        -ms-transition: all 0.3s ease-out 0.5s;
+        transition: all 0.3s ease-out 0.5s;
+        .team-hover {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            p {
+                color: #ffffff;
+                font-size: 14px;
+                line-height: 28px;
+                padding: 0 23px;
+                -webkit-transform: translateY(50px);
+                -moz-transform: translateY(50px);
+                -o-transform: translateY(50px);
+                -ms-transform: translateY(50px);
+                transform: translateY(50px);
+                -webkit-transition: all 0.2s ease-in-out 0.1s;
+                -moz-transition: all 0.2s ease-in-out 0.1s;
+                -o-transition: all 0.2s ease-in-out 0.1s;
+                -ms-transition: all 0.2s ease-in-out 0.1s;
+                transition: all 0.2s ease-in-out 0.1s;
+                opacity: 0;
+            }
+            .social-network {
+                margin-bottom: 7px;
+                -webkit-transform: translateY(20px);
+                -moz-transform: translateY(20px);
+                -o-transform: translateY(20px);
+                -ms-transform: translateY(20px);
+                transform: translateY(20px);
+                -webkit-transition: all 0.2s ease-in-out 0.1s;
+                -moz-transition: all 0.2s ease-in-out 0.1s;
+                -o-transition: all 0.2s ease-in-out 0.1s;
+                -ms-transition: all 0.2s ease-in-out 0.1s;
+                transition: all 0.2s ease-in-out 0.1s;
+                opacity: 0;
+                
+            }
+        }
+    }
+    &:hover .team-hover-action {
+        opacity: 1;
+        top: 0px;
+        -webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        -ms-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-animation: bounceY 0.9s linear;
+        -moz-animation: bounceY 0.9s linear;
+        -ms-animation: bounceY 0.9s linear;
+        animation: bounceY 0.9s linear;
+        background: rgba(24, 1, 44, 0.6);
+    }
+    &:hover .team-hover-action .team-hover p ,
+    &:hover .team-hover-action .team-hover .social-network{
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        /* transform: translateY(0px); */
+        -webkit-transition-delay: 0.4s;
+        -moz-transition-delay: 0.4s;
+        -o-transition-delay: 0.4s;
+        -ms-transition-delay: 0.4s;
+        transition-delay: 0.4s;
+        opacity: 1;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 1px;
+        background: #18012c;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+    &:hover::before{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*----------------------------
+    Team Style 02
+----------------------------*/
+
+
+
+.team-2{
+    .thumb{
+        a{
+            img{
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                transition: 0.5s;
+            }
+        }
+    }
+    &:hover .thumb a img{
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+    .team-hover-action {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        padding: 0 30px;
+        .hover-action {
+            text-align: center;
+            padding: 25px 0;
+            background-color: rgba(115, 146, 184, 0.7);
+            width: 100%;
+            opacity: 0;
+            -webkit-transform: translate(265px, 145px) rotate(45deg);
+            -moz-transform: translate(265px, 145px) rotate(45deg);
+            -o-transform: translate(265px, 145px) rotate(45deg);
+            -ms-transform: translate(265px, 145px) rotate(45deg);
+            transform: translate(265px, 145px) rotate(45deg);
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            h4{
+                font-size:  18px;
+                font-weight: 500;
+                margin-bottom: 9px;
+                a{
+                    color:  #ffffff;
+                }
+            }
+        }
+    }
+    &:hover .team-hover-action .hover-action{
+        opacity: 1;
+        -webkit-transform: translate(0px, -10px) rotate(45deg);
+        -moz-transform: translate(0px, -10px) rotate(45deg);
+        -o-transform: translate(0px, -10px) rotate(45deg);
+        -ms-transform: translate(0px, -10px) rotate(45deg);
+        transform: translate(0px, -10px) rotate(0deg);
+        background: #18012c;
+    }
+}
+
+
+
+
+
+/*----------------------------
+    Team Style 03
+----------------------------*/
+
+
+
+.team-3{
+    .thumb{
+        padding-bottom: 80px;
+        position: relative;
+        a{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .plus_click{
+        position: absolute;
+        left: 50%;
+        top: -14px;
+        transform: translateX(-50%);
+        &::before{
+            content:  "\f067";
+            font-family: Fontawesome;
+            display: block;
+            width:  25px;
+            height:  25px;
+            border:  1px solid #fff;
+            color:  #fff;
+            background:  #555555;
+            border-radius:  100%;
+            text-align:  center;
+            font-size: 12px;
+            z-index: 2;
+            cursor: pointer;
+            transition: 0.5s;
+            line-height: 27px;
+        }
+        &.team-minus{
+            &::before{
+                content: "\f068";
+                background:  #18012c;
+            }
+        }
+    }
+    .team-click-action {
+        background:  #343434;
+        text-align:  center;
+        border-radius: 50px 50px 0 0;
+        padding-top:  28px;
+        padding-bottom: 20px;
+        transition: 0.5s;
+        width: 100%;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        margin-bottom: -58px;
+        &.visible{
+            margin-bottom: 0px;
+            background:  $theme-color;
+        }
+
+        h4 {
+            font-size:  16px;
+            font-weight:  600;
+            margin-bottom: 2px;
+            a{
+                color: #ffffff;
+            }
+        }
+        span{
+            display:  block;
+            color:  #ffffff;
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+
+        .social-network{
+            margin-bottom: 9px;
+        }
+        &.visible{
+            
+        }
+    }
+
+
+    &.medical-team{
+        .plus_click{
+            &.team-minus{
+                &::before{
+                    background:  $medical-theme-color;
+                }
+            }
+        }
+        .team-click-action {
+            &.visible{
+                background: $medical-theme-color;
+            }
+        }
+    }
+
+    &.by-team{
+        .plus_click{
+            &.team-minus{
+                &::before{
+                    background:  #fb5b21;
+                }
+            }
+        }
+        .team-click-action {
+            &.visible{
+                background: #fb5b21;
+            }
+        }
+    }
+
+}
+
+
+
+
+/*----------------------------
+    Team Style 04
+----------------------------*/
+
+
+.team-4{
+    text-align: center;
+    .thumb{
+        overflow: visible;
+        display: inline-block;
+
+        &.right-to-left{
+            a{
+                img{
+                    z-index: 11;
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
+                    position: relative;
+                    -webkit-transform-origin: 0% 50%;
+                    -moz-transform-origin: 0% 50%;
+                    -ms-transform-origin: 0% 50%;
+                    -o-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%;
+                }
+            }
+        }
+
+        &.left-to-right{
+            a{
+                img{
+                    z-index: 11;
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
+                    position: relative;
+                    -webkit-transform-origin: 100% 50%;
+                    -moz-transform-origin: 100% 50%;
+                    -ms-transform-origin: 100% 50%;
+                    -o-transform-origin: 100% 50%;
+                    transform-origin: 100% 50%;
+                }
+            }
+        }
+
+        &.bottom-to-top{
+            a{
+                img{
+                    z-index: 11;
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
+                    position: relative;
+                    -webkit-transform-origin: 50% 0;
+                    -moz-transform-origin: 50% 0;
+                    -ms-transform-origin: 50% 0;
+                    -o-transform-origin: 50% 0;
+                    transform-origin: 50% 0;
+                }
+            }
+        }
+    }
+    .team-hover-action {
+        position:  absolute;
+        top:  0;
+        left:  0;
+        width:  100%;
+        height:  100%;
+        border-radius: 100%;
+        text-align:  center;
+       
+        &::before {
+            position:  absolute;
+            content:  "";
+            background:  #18012c;
+            opacity: 1;
+            width: auto;
+            height: auto;
+            border-radius: 100%;
+            left: 0px;
+            top: 0px;
+            bottom:  0px;
+            right: 0px;
+        }
+        .hover-action {
+            position:  absolute;
+            top:  50%;
+            transform: translateY(-50%);
+            width:  100%;
+            text-align:  center;
+            h4 {
+                font-size:  16px;
+                margin-bottom: 13px;
+                font-weight:  500;
+                a {
+                    color:  #ffffff;
+                }
+            }
+        }
+    }
+    
+
+
+
+
+    &:hover .thumb.right-to-left a img{
+        -webkit-transform: rotate3d(0, 1, 0, -180deg);
+        -moz-transform: rotate3d(0, 1, 0, -180deg);
+        -ms-transform: rotate3d(0, 1, 0, -180deg);
+        -o-transform: rotate3d(0, 1, 0, -180deg);
+        transform: rotate3d(0, 1, 0, -180deg);
+    }
+
+
+    &:hover .thumb.left-to-right a img{
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+        -ms-transform: rotate3d(0, 1, 0, 180deg);
+        -o-transform: rotate3d(0, 1, 0, 180deg);
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+    
+    &:hover .thumb.bottom-to-top a img{
+        -webkit-transform: rotate3d(1, 0, 0, 180deg);
+        -moz-transform: rotate3d(1, 0, 0, 180deg);
+        -ms-transform: rotate3d(1, 0, 0, 180deg);
+        -o-transform: rotate3d(1, 0, 0, 180deg);
+        transform: rotate3d(1, 0, 0, 180deg);
+    }
+
+
+
+
+
+}
+
+
+
+/*----------------------------
+    Team Style 05
+----------------------------*/
+
+.team-5{
+    text-align: center;
+    .thumb{
+        display: inline-block;
+    }
+    .team-hover-action {
+        position:  absolute;
+        top:  0;
+        left:  0;
+        width:  100%;
+        height:  100%;
+        border-radius: 100%;
+        text-align:  center;
+        &::before {
+            position:  absolute;
+            content:  "";
+            background:  rgba(24, 1, 44,0.5);
+            width: auto;
+            height: auto;
+            border-radius: 100%;
+            left: 10px;
+            top: 10px;
+            bottom:  10px;
+            right: 10px;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .hover-action {
+            position:  absolute;
+            top:  50%;
+            transform: translateY(-50%);
+            width:  100%;
+            text-align:  center;
+            h4 {
+                font-size:  16px;
+                margin-bottom: 13px;
+                font-weight:  500;
+                -webkit-transform: translateX(100%);
+                -moz-transform: translateX(100%);
+                -ms-transform: translateX(100%);
+                -o-transform: translateX(100%);
+                transform: translateX(100%);
+                -webkit-transition: all 0.35s ease-in-out;
+                -moz-transition: all 0.35s ease-in-out;
+                transition: all 0.35s ease-in-out;
+                a {
+                    color:  #ffffff;
+                }
+            }
+
+            ul{
+                &.social-network{
+                    -webkit-transform: translateX(-100%);
+                    -moz-transform: translateX(-100%);
+                    -ms-transform: translateX(-100%);
+                    -o-transform: translateX(-100%);
+                    transform: translateX(-100%);
+                    -webkit-transition: all 0.35s ease-in-out;
+                    -moz-transition: all 0.35s ease-in-out;
+                    transition: all 0.35s ease-in-out;
+                }
+            }
+        }
+    }
+    &.event-team{
+        .team-hover-action{
+            &::before{
+                background:  rgba(182, 22, 112,0.7);
+            }
+        }
+    }
+
+    &:hover .team-hover-action::before{
+        opacity: 1;
+    }
+
+    &:hover .team-hover-action .hover-action h4{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    &:hover .team-hover-action .hover-action ul.social-network{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+/*----------------------------
+    Team Style 06
+----------------------------*/
+
+.team-6{
+    .thumb{
+        a{
+            img{
+                -webkit-transform: scaleY(1);
+                -moz-transform: scaleY(1);
+                -o-transform: scaleY(1);
+                -ms-transform: scaleY(1);
+                transform: scaleY(1);
+                -webkit-transition: all 0.7s ease-in-out;
+                -moz-transition: all 0.7s ease-in-out;
+                -o-transition: all 0.7s ease-in-out;
+                -ms-transition: all 0.7s ease-in-out;
+                transition: all 0.7s ease-in-out;
+                width: 100%;
+            }
+        }
+    }
+
+    .team-hover-action{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 1);
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        opacity: 0;
+        .hover-action{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 20px;
+            h4{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 9px;
+                a{
+                    color: #343434;
+                }
+
+            }
+            
+            span{
+                font-size: 16px;
+                display: block;
+                color: #343434;
+                margin-bottom: 12px;
+            }
+            p{
+                line-height: 26px;
+                color: #494849;
+                font-size: 14px;
+                margin-bottom: 16px;
+            }
+            .social-network {
+                justify-content: flex-start;
+                li{
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+            h4 ,
+            span ,
+            .social-network ,
+            p{
+                -webkit-transform: scale(0);
+                -moz-transform: scale(0);
+                -o-transform: scale(0);
+                -ms-transform: scale(0);
+                transform: scale(0);
+                -webkit-transition: all 0.5s linear;
+                -moz-transition: all 0.5s linear;
+                -o-transition: all 0.5s linear;
+                -ms-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+                opacity: 0;
+            }
+        }
+    }
+
+    &:hover .team-hover-action{
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    &:hover .team-hover-action .hover-action h4 ,
+    &:hover .team-hover-action .hover-action .social-network ,
+    &:hover .team-hover-action .hover-action p ,
+    &:hover .team-hover-action .hover-action span{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    &:hover .thumb a img{
+        -webkit-transform: scale(10);
+        -moz-transform: scale(10);
+        -o-transform: scale(10);
+        -ms-transform: scale(10);
+        transform: scale(10);
+        opacity: 0;
+    }
+
+    &.beauty-team{
+        &:hover .team-hover-action{
+            background-color: rgba(238, 108, 157, 0.8);
+        }
+        .team-hover-action{
+            .hover-action{
+                h4{
+                    a{
+                        color: #ffffff;
+                    }
+    
+                }
+                span{
+                    color: #ffffff;
+                }
+                p{
+                    color: #ffffff;
+                }
+                .social-network{
+                    li{
+                        a{
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+/*----------------------------
+    Team Style 07
+----------------------------*/
+
+.team-7{
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    .thumb{
+        a{
+            img{
+                transition: 0.5s;
+                width: 100%;
+            }
+        }
+    }
+    .team-hover-action {
+        position:  absolute;
+        bottom:  30px;
+        width:  100%;
+        text-align:  center;
+        .hover-action {
+            padding: 0 45px;
+            .social-network{
+                -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                li{
+                    a{
+                        -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        -webkit-transform: scale(0.1);
+                        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        transform: scale(0.1);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover .team-hover-action .hover-action .social-network li a{
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transition-delay: .1s;
+        transition-delay: .1s;
+    }
+    &:hover .team-hover-action .hover-action .social-network li a.facebook{
+        -webkit-transition-delay: .1s;
+        transition-delay: .1s;
+    }
+    &:hover .team-hover-action .hover-action .social-network li a.twitter{
+        -webkit-transition-delay: .2s;
+        transition-delay: .2s;
+    }
+
+    &:hover .team-hover-action .hover-action .social-network li a.google-plus{
+        -webkit-transition-delay: .3s;
+        transition-delay: .3s;
+    }
+
+    &:hover .team-hover-action .hover-action .social-network li a.vimeo{
+        -webkit-transition-delay: .4s;
+        transition-delay: .4s;
+    }
+
+    .content {
+        background: #fff;
+        text-align:  center;
+        padding: 20px 10px;
+        h4{
+            font-size:  16px;
+            font-weight: 600;
+            margin-bottom: 3px;
+            a{
+                color: #343434;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        span{
+            color:  #343434;
+            font-size:  14px;
+            margin:  0;
+            font-weight: 400;
+        }
+    }
+    &:hover .thumb a img{
+        transform: scale(1.2) rotate(10deg);
+    }
+}
+
+
+/*----------------------------
+    Team Style 08
+----------------------------*/
+
+.team-8{
+    overflow: hidden;
+    .thumb{
+        a{
+            img{
+                transition: 0.5s;
+            }
+        }
+    }
+    &:hover .thumb a img{
+        transform: scale(1.2) rotate(10deg);
+    }
+    .team-info {
+        background: #f4f4f4;
+        text-align:  center;
+        .content {
+            padding: 26px 18px;
+            p{
+                font-size:  14px;
+                line-height:  28px;
+                color: #494849;
+                margin: 0;
+            }
+            h4 {
+                font-size:  16px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                a {
+                    color: #343434;
+                }
+            }
+            span {
+                color:  #343434;
+                font-size:  14px;
+                font-weight:  400;
+            }
+        }
+        .social-network{
+            padding: 14px 0;
+            border-top: 2px solid #ffffff;
+        }
+    }
+
+}
+
+
+/*--------------------------
+    Social Service Style One
+-----------------------------*/
+
+.social-net-1 {
+    margin-bottom: 8px;
+    li {
+        margin: 0 10px;
+        a {
+            color: #fff;
+            font-size: 14px;
+            display: block;
+            background: transparent;
+            &.facebook:hover {
+                color: $facebook;
+                background: transparent;
+            }
+            &.twitter:hover {
+                color: $twitter;
+                background: transparent;
+            }
+            &.google-plus:hover {
+                color: $google-plus;
+                background: transparent;
+            }
+            &.vimeo:hover {
+                color: $vimeo;
+                background: transparent;
+            }
+            &.dribbble:hover {
+                color: $dribbble;
+                background: transparent;
+            }
+        }
+    }
+}
+
+.social-net-2 {
+    margin-bottom: 8px;
+    li {
+        margin: 0 10px;
+        a {
+            color: #18012c;
+            font-size: 14px;
+            display: block;
+            background: transparent;
+            &.facebook:hover {
+                color: $facebook;
+                background: transparent;
+            }
+            &.twitter:hover {
+                color: $twitter;
+                background: transparent;
+            }
+            &.google-plus:hover {
+                color: $google-plus;
+                background: transparent;
+            }
+            &.vimeo:hover {
+                color: $vimeo;
+                background: transparent;
+            }
+            &.dribbble:hover {
+                color: $dribbble;
+                background: transparent;
+            }
+        }
+    }
+}
+
+.social-net-3 {
+    margin-bottom: 8px;
+    li {
+        margin: 0 10px;
+        a {
+            color: #404040;
+            font-size: 14px;
+            display: block;
+            background: #fff;
+            height: 28px;
+            width: 28px;
+            text-align: center;
+            line-height: 28px;
+            border-radius: 100%;
+            &.facebook:hover {
+                color: #fff;
+                background: $facebook;
+            }
+            &.twitter:hover {
+                color: #fff;
+                background: $twitter;
+            }
+            &.google-plus:hover {
+                color: #fff;
+                background: $google-plus;
+            }
+            &.vimeo:hover {
+                color: #fff;
+                background: $vimeo;
+            }
+            &.dribbble:hover {
+                color: #ffffff;
+                background: $dribbble;
+            }
+        }
+    }
+}
+
+.social-net-4 {
+    margin-bottom: 8px;
+    li {
+        margin: 0 10px;
+        a {
+            color: #fff;
+            font-size: 14px;
+            display: block;
+            background: transparent;
+            height: 28px;
+            width: 28px;
+            text-align: center;
+            line-height: 26px;
+            border-radius: 100%;
+            border: 1px solid #ffffff;
+
+            &.facebook:hover {
+                color: #fff;
+                background: $facebook;
+                border: 1px solid $facebook;
+            }
+
+            &.twitter:hover {
+                color: #fff;
+                background: $twitter;
+                border: 1px solid $twitter;
+            }
+            &.google-plus:hover {
+                color: #fff;
+                background: $google-plus;
+                border: 1px solid $google-plus;
+            }
+            &.vimeo:hover {
+                color: #fff;
+                background: $vimeo;
+                border: 1px solid $vimeo;
+            }
+            &.dribbble:hover {
+                color: #ffffff;
+                background: $dribbble;
+                border: 1px solid $dribbble;
+            }
+        }
+    }
+}
+
+
+/*----------------------------
+    Team keyframes
+----------------------------*/
+
+/*----------------------------
+keyframes bounceY
+----------------------------*/
+
+@keyframes bounceY {
+    0% {
+        transform: translateY(-205px);
+    }
+    40% {
+        transform: translateY(-100px);
+    }
+    65% {
+        transform: translateY(-52px);
+    }
+    82% {
+        transform: translateY(-25px);
+    }
+    92% {
+        transform: translateY(-12px);
+    }
+    55%,
+    75%,
+    87%,
+    97%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+@-moz-keyframes bounceY {
+    0% {
+        -moz-transform: translateY(-205px);
+    }
+    40% {
+        -moz-transform: translateY(-100px);
+    }
+    65% {
+        -moz-transform: translateY(-52px);
+    }
+    82% {
+        -moz-transform: translateY(-25px);
+    }
+    92% {
+        -moz-transform: translateY(-12px);
+    }
+    55%,
+    75%,
+    87%,
+    97%,
+    100% {
+        -moz-transform: translateY(0px);
+    }
+}
+@-webkit-keyframes bounceY {
+    0% {
+        -webkit-transform: translateY(-205px);
+    }
+    40% {
+        -webkit-transform: translateY(-100px);
+    }
+    65% {
+        -webkit-transform: translateY(-52px);
+    }
+    82% {
+        -webkit-transform: translateY(-25px);
+    }
+    92% {
+        -webkit-transform: translateY(-12px);
+    }
+    55%,
+    75%,
+    87%,
+    97%,
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}

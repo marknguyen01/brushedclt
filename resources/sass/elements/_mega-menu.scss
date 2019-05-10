@@ -1,0 +1,473 @@
+
+/*===========================
+    Mega Menu Style
+=============================*/
+
+
+/*===========================
+    Dropdown Menu Style
+=============================*/
+
+.with-mega-menu{
+    .mainmenu{
+        li{
+            &.drop{
+                position: relative;
+                padding-bottom: 8px;
+                > a{
+                    position: relative;
+                    padding-right: 19px;
+                    &::after{
+                        content: "\f107 ";
+                        font-family: FontAwesome;
+                        font-size: 15px;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+
+                .dropdown-inner{
+                    background: #fff none repeat scroll 0 0;
+                    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    text-align: left;
+                    top: 120%;
+                    transition: all 0.5s ease 0s;
+                    visibility: hidden;
+                    width: 240px;
+                    z-index: 3000;
+                    padding: 30px 0;
+                    &.drop-left{
+                        left: 0;
+                        right: auto;
+                    }
+                    ul{
+                        &.dropdown{
+                            padding: 0;
+                            margin: 0;
+                            flex-basis: 100%;
+                            li{
+                                padding-left: 30px;
+                                padding-right: 20px;
+                                margin: 0;
+                                &.drop-lable2{
+                                    display: block;
+                                    position: relative;
+                                    > a{
+                                        position: relative;
+                                        &::after{
+                                            content: "\f105";
+                                            font-family: FontAwesome;
+                                            font-size: 15px;
+                                            position: absolute;
+                                            right: 0;
+                                        }
+                                    }
+                                    > ul{
+                                        background: #fff none repeat scroll 0 0;
+                                        box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+                                        left: 87%;
+                                        opacity: 0;
+                                        padding: 6px 22px;
+                                        position: absolute;
+                                        top: 0;
+                                        transition: all 0.5s ease 0s;
+                                        visibility: hidden;
+                                        width: 206px;
+                                        li{
+                                            a{
+                                                
+                                            }
+                                        }
+                                    }
+                                    &:hover > ul{
+                                        left: 100%;
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+                                }
+                                a{
+                                    color: #797979;
+                                    font-size: 12px;
+                                    line-height: 30px;
+                                    text-transform: capitalize;
+                                    display: block;
+                                    padding: 0;
+                                    transition: 0.3s;
+                                    font-weight: 600;
+
+                                    &:hover{
+                                        color: #d94f5c;
+                                        padding-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover .dropdown-inner{
+                    opacity: 1;
+                    top: 100%;
+                    visibility: visible;
+                } 
+
+            }
+        }
+    }
+}
+
+
+/*===========================
+    Mega Menu Style
+=============================*/
+
+.with-mega-menu{
+    li{
+        &.drop{
+            .mega-menu{
+                background: #fff none repeat scroll 0 0;
+                box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+                display: flex;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                text-align: left;
+                top: 120%;
+                transition: all 0.5s ease 0s;
+                visibility: hidden;
+                width: 720px;
+                z-index: 3000;
+                padding: 30px 0;
+                right: 0;
+                margin: auto;
+                z-index: -99;
+                &.mega-menu-3{
+                    width: 720px;
+                    .item{
+                        flex-basis: 33.33%;
+                    }
+                }
+                .item{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        &.title{
+                            border-bottom: 1px solid rgba(112, 112, 112, 0.1);
+                            color: #323334;
+                            font-weight: 700;
+                            line-height: 20px;
+                            margin-bottom: 19px;
+                            margin-left: 30px;
+                            margin-right: 20px;
+                            padding-bottom: 10px;
+                            padding-left: 0;
+                            text-transform: uppercase;
+                        }
+                        padding-left: 30px;
+                        padding-right: 20px;
+                        margin: 0;
+                        a{
+                            color: #797979;
+                            font-size: 13px;
+                            line-height: 30px;
+                            text-transform: capitalize;
+                            display: block;
+                            padding: 0;
+                            transition: 0.3s;
+                            i{
+                                padding-right: 5px;
+                            }
+                            &:hover{
+                                color: #d94f5c;
+                            }
+                        }
+                    }
+                }
+
+            }
+            &:hover .mega-menu{
+                opacity: 1;
+                top: 100%;
+                visibility: visible;
+                z-index: 99;
+            }
+        }
+    }
+}
+
+
+// Only Mega menu
+
+.mega-menu{
+    display: flex;
+    padding: 30px 40px 30px;
+    flex-wrap: wrap;
+    &.mega-menu-3{
+        width: 720px;
+        .item{
+            flex-basis: 33.33%;
+        }
+    }
+
+    &.mega-menu-2{
+        width: 550px;
+        .item{
+            flex-basis: 50%;
+        }
+    }
+
+    &.mega-menu-4{
+        width: 950px;
+        .item{
+            flex-basis: 25%;
+        }
+    }
+
+
+    .item{
+        margin: 0;
+        padding: 0;
+        li{
+            &.title{
+                border-bottom: 1px solid rgba(112, 112, 112, 0.1);
+                color: #323334;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 19px;
+                margin-left: 30px;
+                margin-right: 20px;
+                padding-bottom: 10px;
+                padding-left: 0;
+                text-transform: uppercase;
+            }
+            padding-left: 30px;
+            padding-right: 20px;
+            margin: 0;
+            a{
+                color: #797979;
+                font-size: 12px;
+                line-height: 30px;
+                text-transform: capitalize;
+                display: block;
+                padding: 0;
+                transition: 0.3s;
+                &:hover{
+                    color: #d94f5c;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*=========================
+    Mega MEnu Style 02
+===========================*/
+
+/*====================
+    DropDown Menu
+======================*/ 
+
+
+.mainmenu{
+    &.mega-menu-style-2{
+        > li{
+            > a{
+                color: #fff;
+                display: block;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 38px 15px;
+                position: relative;
+                text-transform: uppercase;
+                font-weight: 600;
+                &::after{
+                    background: #0000ff none repeat scroll 0 0;
+                    bottom: 0;
+                    content: "";
+                    height: 0px;
+                    left: 50%;
+                    position: absolute;
+                    transform: translateX(-50%);
+                    width: 5px;
+                    transition: all 0.3s ease-in-out;
+                    z-index: 3;
+                }
+            }
+
+            &:hover > a::after{
+                height: 15px;
+            }
+            &:hover > a{
+                color: #0000ff;
+            }
+            &.drop{
+                position: relative;
+                .dropdown-inner{
+                    background: #232323 none repeat scroll 0 0;
+                    border-top: 2px solid transparent;
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                    left: 0;
+                    padding: 16px 0;
+                    position: absolute;
+                    text-align: left;
+                    top: 100%;
+                    -webkit-transform: scaleY(0);
+                    transform: scaleY(0);
+                    -webkit-transform-origin: 0 0 0;
+                    transform-origin: 0 0 0;
+                    -webkit-transition: all 0.3s ease 0s;
+                    transition: all 0.3s ease 0s;
+                    visibility: hidden;
+                    width: 208px;
+                    z-index: 9999;
+                    .dropdown{
+                        padding: 0;
+                        margin: 0;
+                        li{
+                            display: block;
+                            margin: 0;
+                            a{
+                                color: #ccc;
+                                display: block;
+                                padding: 5px 22px;
+                                font-size: 13px;
+                                line-height: 22px;
+
+                                &:hover{
+                                    padding-left: 27px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover .dropdown-inner{
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+/*====================
+    Mega Menu
+======================*/ 
+
+
+.mainmenu{
+    &.mega-menu-style-2{
+        li{
+            &.drop{
+                &.mega-parent{
+                    position: static;
+                    .mega-menu{
+                        .item{
+                            li{
+                                &.title{
+                                    color: #fff;
+                                    font-size: 15px;
+                                    position: relative;
+                                    text-transform: uppercase;
+                                    margin-top: 30px;
+                                    font-family: $heading-font;
+                                    margin-bottom: 15px;
+                                    border-bottom: 1px solid #fff;
+
+                                }
+                                margin: 0;
+                                padding-left: 0;
+                                margin-right: 30px;
+                                a{
+                                    color: #ccc;
+                                    padding: 7px 0;
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    &:hover{
+                                        padding-left: 27px;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            &.drop{
+                .mega-menu{
+                    background: #232323 none repeat scroll 0 0;
+                    border-top: 2px solid transparent;
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                    left: 0;
+                    position: absolute;
+                    text-align: left;
+                    top: 100%;
+                    -webkit-transform: scaleY(0);
+                    transform: scaleY(0);
+                    -webkit-transform-origin: 0 0 0;
+                    transform-origin: 0 0 0;
+                    -webkit-transition: all 0.3s ease 0s;
+                    transition: all 0.3s ease 0s;
+                    visibility: hidden;
+                    z-index: 9999;
+                    margin: 0 auto;
+                    background: #232323;
+                    right: 0;
+                    .dropdown{
+                        padding: 0;
+                        margin: 0;
+                        li{
+                            display: block;
+                            margin: 0;
+                            a{
+                                color: #ccc;
+                                display: block;
+                                padding: 5px 22px;
+                                font-size: 13px;
+                                line-height: 22px;
+                                transition: all 0.3s ease 0s;
+
+                                &:hover{
+                                    padding-left: 27px;
+                                }
+                            }
+                        }
+                    }
+
+
+
+                }
+
+                &:hover .mega-menu{
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                    visibility: visible;
+                }
+                
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+

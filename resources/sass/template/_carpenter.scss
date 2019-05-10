@@ -1,0 +1,195 @@
+/* ======================
+    Carpenter Css 
+=========================*/
+
+
+
+/* ==========================
+    Carpen Welcome Area 
+============================*/
+.cr-welcome-wrapper{
+    > .content{
+        > h2{
+            color: #424242;
+            font-size: 36px;
+            font-weight: 900;
+            font-family: 'Frank Ruhl Libre', serif;
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 23px;
+            &::before{
+                position: absolute;
+                left: 0;
+                content: "";
+                top: 50%;
+                transform: translateY(-50%);
+                background: #e1c265;
+                height: 25px;
+                width: 4px;
+            }
+            span{
+                color: $carpen-theme-color
+            }
+        }
+        p {
+            color: #4c4c4c;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+    .funfact {
+        margin-right: 40px;
+        .content {
+            span {
+                font-size: 60px;
+                font-family: 'Frank Ruhl Libre', serif;
+                font-weight: 400;
+                color: $carpen-theme-color;
+                &::after{
+                    color: $carpen-theme-color;
+                }
+            }
+            h2 {
+                font-size: 16px;
+                color: #565656;
+                font-family: 'Open Sans', sans-serif;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+/* Corpentor Choose */
+
+.cr-choose-list {
+    display: flex;
+    margin-top: 10px;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+            margin-top: 13px;
+            color: #565656;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            i{
+                color: #e1c265;
+                font-size: 18px;
+                padding-right: 5px;
+            }
+        }
+        & + ul {
+            margin-left: 130px;
+        }
+    }
+}
+
+
+
+
+/* ========================
+    Carpenter Blog Css 
+============================*/
+
+.corporate-skill-inner .thumb {
+    text-align: right;
+}
+
+.post-carousel-active-5.carpenter-post-wrapper button{
+    color: $carpen-theme-color;
+}
+
+.post-carousel-active-5.carpenter-post-wrapper button:hover {
+    background: $carpen-theme-color;
+    color: #ffffff;
+}
+
+.post-carousel-5.carpenter-post .ptc-content .content h2 a:hover {
+    color: $carpen-theme-color;
+}
+
+.post-carousel-5.carpenter-post .ptc-content .content .post-btn a.readmore-btn:hover {
+    border-bottom: 1px solid $carpen-theme-color;
+    color: $carpen-theme-color;
+}
+
+/* ========================
+    Testimonial Css 
+============================*/
+
+
+.testimonial-style-2.carpenter-testimonial .slick-center .testimonal img {
+    border: 2px solid $carpen-theme-color;
+}
+
+.testimonial-style-2.carpenter-testimonial .slick-dots li.slick-active button {
+    background: $carpen-theme-color;
+}
+
+
+
+
+
+@media #{$md-layout}{
+    .cr-welcome-wrapper > .content > h2{
+        font-size: 31px;
+    }
+    .cr-choose-wrapper .thumb {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media #{$sm-layout}{
+    .cr-welcome-wrapper {
+        margin-bottom: 40px;
+    }
+    .service-2.carpenter-service .content {
+        padding: 30px 20px;
+    }
+    .section-title--12 p{
+        padding: 0 0;
+    }
+    .section-title--12.text-left p {
+        padding: 0;
+    }
+    .cr-choose-list ul + ul {
+        margin-left: 16px;
+    }
+
+    .cr-welcome-wrapper .funfact .content span{
+        font-size: 44px;
+    }
+    .cr-welcome-wrapper .funfact {
+        margin-right: 19px;
+    }
+    .section-title--12 h2{
+        font-size: 32px;
+    }
+    .cr-welcome-wrapper > .content > h2{
+        font-size: 26px;
+    }
+    .cr-choose-wrapper .thumb {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media #{$large-mobile}{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+/*********************************************************************************
+
+	Template Name: Reyes Bootstrap4 Template
+	Version: 1.0
+
+**********************************************************************************/
+
+/**************************************************************
+
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Default Styles
+	|	|
+	|	|___ variables
+	|	|___ mixins
+	|	|___ reset
+	|	|___ typography
+	|	|___ animations
+	|	|___ shortcode
+	|
+	|
+	|___Elements Styles
+	|	|___ button Style
+	|	|___ section title Style
+	|	|___ accordion Style
+	|	|___ heading Style
+	|	|___ progress bar Style
+	|	|___ countdown Style
+	|	|___ team Style
+	|	|___ pricing table Style
+	|	|___ brand Style
+	|	|___ newsletter Style
+	|	|___ testimonial Style
+	|	|___ contact Style
+	|	|___ register Style
+	|	|___ login Style
+	|	|___ news ticker Style
+	|	|___ service Style
+	|	|___ tooltips Style
+	|	|___ notification Style
+	|	|___ modal Style
+	|	|___ lightbox Style
+	|	|___ social share Style
+	|	|___ blockquote Style
+	|	|___ search Style
+	|	|___ video Style
+	|	|___ instagram Style
+	|	|___ 404 Style
+	|	|___ tab Style
+	|	|___ process Style
+	|	|___ pagination Style
+	|	|___ toggle Style
+	|	|___ switcher Style
+	|	|___ flipbox Style
+	|	|___ slider navigation Style
+	|	|___ google map Style
+	|	|___ dropcaps Style
+	|	|___ line menu Style
+	|	|___ mega menu Style
+	|	|___ marker Style
+	|	|___ blog post Style
+	|	|___ counterup Style
+	|	|___ single post Style
+	|	|___ post slider Style
+	|	|___ post grid tab Style
+	|	|___ popup Style
+	|	|___ image grid layout Style
+	|	|___ banner Style
+	|	|___ page scroll Style
+	|	|___ thumb gallery Style
+	|	|___ image compare Style
+	|	|___ animated heading Style
+	|	|___ callto action Style
+	|	|___ twitter Style
+	|	|___ custom carousel Style
+	|	|___ dual button Style
+	|	|___ faq Style
+	|	|___ panel slider Style
+	|	|___ post carousel Style
+	|	|___ business hours Style
+	|	|___ table Style
+	|	|___ pricing list view Style
+	|	|___ vertical timeline Style
+	|	|___ image magnifier Style
+	|	|___ offcanvas Style
+	|	|___ scroll image Style
+	|	|___ weather Style
+	|
+	|
+	|___Template Styles
+	|	|___ Header
+	|	|___ Navigation
+	|	|___ Banner
+	|	|___ Footer Style
+	|	|___ Slide Style
+	|	|___ agency Style
+	|	|___ event Style
+	|	|___ register Style
+	|	|___ gallery Style
+	|	|___ welcome Style
+	|
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+
+
+
+
+
+/**************************************
+    Default Styles
+***************************************/
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/animations';
+@import 'default/shortcode';
+
+
+
+/**************************************
+	Elements Styles
+***************************************/
+@import 'elements/button';
+@import 'elements/section-title';
+@import 'elements/accordion';
+@import 'elements/heading';
+@import 'elements/progress-bar';
+@import 'elements/countdown';
+@import 'elements/team';
+@import 'elements/pricing-table';
+@import 'elements/brand';
+@import 'elements/newsletter';
+@import 'elements/testimonial';
+@import 'elements/contact';
+@import 'elements/register';
+@import 'elements/login';
+@import 'elements/service';
+@import 'elements/modal';
+@import 'elements/lightbox';
+@import 'elements/social-share';
+@import 'elements/search';
+@import 'elements/video';
+@import 'elements/instagram';
+@import 'elements/tab';
+@import 'elements/process';
+@import 'elements/toggle';
+@import 'elements/switcher';
+@import 'elements/flipbox';
+@import 'elements/slider-navigation';
+@import 'elements/google-map';
+@import 'elements/line-menu';
+@import 'elements/mega-menu';
+@import 'elements/marker';
+@import 'elements/blog-post';
+@import 'elements/counterup';
+@import 'elements/single-post';
+@import 'elements/post-slider';
+@import 'elements/post-grid-tab';
+@import 'elements/image-grid-layout';
+@import 'elements/banner';
+@import 'elements/thumb-gallery';
+@import 'elements/callto-action';
+@import 'elements/twitter';
+@import 'elements/custom-carousel';
+@import 'elements/faq';
+@import 'elements/post-carousel';
+@import 'elements/business-hours';
+@import 'elements/table';
+@import 'elements/pricing-list-view';
+@import 'elements/vertical-timeline';
+@import 'elements/image-magnifier';
+@import 'elements/scroll-image';
+
+
+
+/**************************************
+	Template Styles
+***************************************/
+@import 'template/header';
+@import 'template/navigation';
+@import 'template/banner';
+@import 'template/footer';
+@import 'template/slider';
+@import 'template/agency';
+@import 'template/event';
+@import 'template/register';
+@import 'template/gallery';
+@import 'template/welcome';
+
+@import 'template/beauty';
+@import 'template/beauty-salon';
+@import 'template/responsive';

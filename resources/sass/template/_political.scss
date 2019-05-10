@@ -1,0 +1,185 @@
+/* ========================
+    Political Css 
+=============================*/
+
+
+
+.campaingn-view{
+    .thumb {
+        position: relative;
+        .hover-action {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 30px;
+            .content {
+                background: rgba(239,51,69,0.7);
+                padding: 27px 24px;
+                span {
+                    color: #ffffff;
+                    font-size: 14px;
+                    i{
+                        padding-right: 7px;
+                    }
+                }
+                h2{
+                    color: #ffffff;
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-top: 7px;
+                    margin-bottom: 9px;
+                }
+                p {
+                    color: #ffffff;
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.campainlist-wrapper{
+    ul{
+        &.campaingn-list{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                &:first-child {
+                    margin-top: 0;
+                }
+                .content{
+                    padding-left: 21px;
+                    span{
+                        color: #424242;
+                        font-size: 14px;
+                        i{
+                            color: #ef3345;
+                            padding-right: 5px;
+                        }
+                    }
+                    h2 {
+                        color: #4b4b4b;
+                        font-size: 22px;
+                        font-weight: 500;
+                        margin-bottom: 7px;
+                        margin-top: 3px;
+                    }
+                    p {
+                        color: #343434;
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin: 0;
+                        padding-right: 17%;
+                    }
+                }
+                .thumb{
+                    img{
+                        width: 189px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.political-countdown{
+    margin-top: 50px;
+    .election-btn{
+        margin-top: 23px;
+        a{
+            padding: 0 58px;
+            background: #e83243;
+            color: #fff;
+            height: 52px;
+            font-weight: 600;
+            line-height: 55px;
+            text-transform: uppercase;
+            transition: 0.5s;
+            margin-top: 10px;
+            display: inline-block;
+            &:hover{
+                background: #043174;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
+
+.post-carousel-active-5.political-post-wrapper button:hover {
+    background: #e83243;
+}
+.post-carousel-5.political-post .ptc-content .content h2 a:hover {
+    color: #e83243;
+}
+.post-carousel-5.political-post .ptc-content .content .post-btn a.readmore-btn:hover {
+    border-bottom: 1px solid #e83243;
+    color: #e83243;
+}
+.post-carousel-active-5.political-post-wrapper button {
+    color: #e83243;
+}
+
+
+/* Footer Style */
+
+
+
+.footer-widget.footer-style-2.political-footer h4.ft-title{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+.footer-widget.footer-style-2.political-footer h4.ft-title::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 14px;
+    background: #ef3345;
+    left: 0;
+    top: 50%;
+    transform: translateY(-54%);
+}
+.footer-widget.footer-style-2.political-footer .content p{
+    color: #9a9a9a;
+}
+
+.footer-widget.footer-style-2.political-footer .content ul.ft-menu li a{
+    color: #cccccc;
+}
+
+.copyright.copyright-4.political-ft .copyright-left {
+    border-top: 1px solid #343434;
+    padding: 30px;
+}
+
+
+.copyright.copyright-4.political-ft .content p{
+    color: #878787;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1067 @@
+/*---------------------------------
+    Pricing Table Style
+-----------------------------------*/
+
+
+.space-between {
+    padding: 0 60px;
+
+    @media #{$sm-layout} {
+        padding: 0;
+    }
+}
+
+.pricing-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pricing-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------
+    Pricing Table 01
+-----------------------------------*/
+
+
+.pricing-panel-1 {
+    background: #365a73;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+
+    .pricing-heading {
+        background: url('/img/pricing/header-bg1.png');
+        padding-top: 65px;
+        padding-bottom: 69px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        background-size: cover;
+        margin-bottom: 37px;
+        border-radius: 10px 10px 0 0;
+
+        @media #{$sm-layout} {
+            padding-bottom: 92px;
+        }
+
+        .title {
+            position: absolute;
+            left: -7px;
+            transform: rotate(-90deg);
+            top: 39px;
+
+            h2 {
+                margin: 0;
+                height: 50px;
+                line-height: 50px;
+                color: #ffffff;
+                font-size: 16px;
+                background-image: -webkit-linear-gradient(left, #446c83, #4eb8bf);
+                background-image: linear-gradient(left, #446c83, #4eb8bf);
+                border-radius: 10px;
+                font-family: 'Raleway', sans-serif;
+                width: 125px;
+                text-align: center;
+            }
+        }
+
+        .price {
+            display: inline-block;
+            padding-left: 35px;
+
+            h4 {
+                color: #ffffff;
+                display: inline-block;
+                margin: 0;
+                position: relative;
+                padding-left: 16px;
+                font-size: 40px;
+                font-weight: 600;
+                font-family: 'Raleway', sans-serif;
+
+                sub {
+                    position: absolute;
+                    left: 0;
+                    top: 23px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-family: 'Raleway', sans-serif;
+                }
+
+                span {
+                    font-size: 20px;
+                    font-family: $heading-font;
+
+                    &.separator {
+                        margin-right: -10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pricing-body {
+        margin-bottom: 37px;
+
+        ul {
+            li {
+                color: #f1f1f1;
+                font-weight: 300;
+                font-size: 16px;
+                padding: 5px 0;
+            }
+        }
+    }
+
+    a {
+        &.price_btn {
+            border: 1px solid #4fbfc5;
+            display: inline-block;
+            padding: 0 40px;
+            border-radius: 10px;
+            height: 36px;
+            line-height: 35px;
+            color: #ffffff;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: 0.5s;
+
+            &:hover {
+                background: #4ebec4;
+                color: #ffffff;
+                border: 1px solid #4ebec4;
+            }
+        }
+    }
+
+}
+
+
+
+/*---------------------------------
+    Pricing Table 02
+-----------------------------------*/
+
+
+.pricing-panel-2 {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 55px 0;
+
+    &.price-standard {
+        padding: 70px 0;
+        box-shadow: 0 0 30px rgba(82, 182, 188, 0.25);
+        position: relative;
+        z-index: 2;
+    }
+
+    .pricing-heading {
+        margin-bottom: 10px;
+
+        .icon {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            h2 {
+                color: #4e4e4e;
+                margin-bottom: 14px;
+                margin-bottom: 28px;
+                font-weight: 400;
+                font-family: 'Courgette', cursive;
+            }
+        }
+
+        .price {
+            h4 {
+                color: #52b6bc;
+                font-weight: 400;
+                position: relative;
+                font-size: 30px;
+                margin: 0;
+                font-family: 'Lora', serif;
+                display: inline-block;
+                padding-left: 16px;
+
+                sub {
+                    position: absolute;
+                    left: 0;
+                    top: 16px;
+                }
+            }
+        }
+    }
+
+    .pricing-body {
+        margin-bottom: 27px;
+
+        ul {
+            li {
+                color: #7b7b7b;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 3px 0;
+            }
+        }
+    }
+
+    .pricing-footer {
+        a {
+            &.price_btn {
+                border: 2px solid #52b6bc;
+                height: 42px;
+                display: inline-block;
+                line-height: 40px;
+                padding: 0 32px;
+                color: #52b6bc;
+                border-radius: 21px;
+                font-weight: 500;
+                font-size: 15px;
+                transition: 0.5s;
+
+                &:hover {
+                    background: #52b6bc;
+                    color: #ffffff;
+                    border: 2px solid #52b6bc;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/*---------------------------------
+    Pricing Table 03
+-----------------------------------*/
+
+
+.pricing-panel-3 {
+    background: #ef476f;
+    padding-bottom: 60px;
+    margin-top: 88px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &.panel-color-2 {
+        background: #06ca75;
+
+        .pricing-heading {
+            .price {
+                background: #06ca75;
+            }
+        }
+    }
+
+    &.panel-color-3 {
+        background: #26547c;
+
+        .pricing-heading {
+            .price {
+                background: #26547c;
+            }
+        }
+    }
+
+    &.event-active-price {
+        background: $event-theme-color;
+
+        .pricing-heading {
+            .price {
+                background: $event-theme-color;
+            }
+        }
+    }
+
+    &.grey-bg {
+        background: #f6f6f6;
+        .pricing-heading {
+            .price {
+                background: #f6f6f6;
+            }
+        }
+        .pricing-heading {
+            .price {
+                h4 {
+                    color: #343434;
+                }
+            }
+            .title {
+                h2 {
+                    color: #343434;
+                }
+            }
+        }
+        .pricing-body {
+            ul {
+                li {
+                    color: #343434;
+                }
+            }
+        }
+        .pricing-footer {
+            a {
+                &.price_btn {
+                    background: #f6f6f6;
+                    color: #343434;
+                }
+            }
+        }
+    }
+    
+    .pricing-heading {
+        .price {
+            width: 125px;
+            height: 127px;
+            background: #ef476f;
+            border: 4px solid #fff;
+            border-radius: 100%;
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: -63px;
+            margin-bottom: 37px;
+
+            h4 {
+                font-size: 40px;
+                margin: 0;
+                color: #fff;
+                font-weight: 600;
+                position: relative;
+                font-family: $body-font;
+
+                sub {
+                    font-size: 20px;
+                    position: relative;
+                    top: -17px;
+                    left: 9px;
+                }
+
+                span {
+                    font-size: 15px;
+                    font-weight: 500;
+
+                    &.separator {
+                        margin-left: -9PX;
+                        margin-right: -10px;
+                    }
+                }
+            }
+        }
+
+        .title {
+            margin-bottom: 41px;
+
+            h2 {
+                font-size: 26px;
+                color: #ffffff;
+                font-weight: 600;
+                margin: 0;
+                font-family: $heading-font;
+            }
+        }
+    }
+
+    .pricing-body {
+        ul {
+            li {
+                color: #ffffff;
+                font-size: 17px;
+                padding: 5px 0;
+                font-family: $body-font;
+            }
+        }
+    }
+
+    .pricing-footer {
+        margin-top: 48px;
+
+        a {
+            &.price_btn {
+                height: 40px;
+                padding: 0 43px;
+                display: inline-block;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+                color: #fff;
+                font-weight: 600;
+                line-height: 40px;
+                font-size: 15px;
+                transition: 0.5s;
+                font-family: $heading-font;
+
+                &:hover {
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
+
+
+/*---------------------------------
+    Pricing Table 04
+-----------------------------------*/
+
+
+.pricing-panel-4 {
+    background: #ffffff;
+    padding: 90px 0;
+
+    &.active {
+        position: relative;
+        background-color: #0056ff;
+
+        &::before {
+            content: url('/img/pricing/pricing-ribon.png');
+            left: 30px;
+            position: absolute;
+            top: -15px;
+        }
+
+    }
+
+    .pricing-heading {
+        .price {
+            h4 {
+                font-weight: 600;
+                color: #4d4d4d;
+                font-size: 48px;
+                padding-left: 23px;
+                position: relative;
+                display: inline-block;
+                margin: 0;
+
+                sub {
+                    position: absolute;
+                    left: 0;
+                    top: 25px;
+                    font-size: 31px;
+                }
+            }
+        }
+
+        .title {
+            h2 {
+                font-size: 18px;
+                font-weight: 500;
+                color: #000101;
+                padding-bottom: 27px;
+                position: relative;
+                margin-bottom: 28px;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 60px;
+                    height: 2px;
+                    background: #e1e1e1;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    .pricing-body {
+        position: relative;
+        padding-bottom: 23px;
+        margin-top: 36px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: #e1e1e1;
+            width: 60px;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        ul {
+            padding: 0 53px;
+
+            li {
+                display: inline-block;
+                font-size: 15px;
+                color: #000000;
+                line-height: 35px;
+                font-family: $heading-font;
+            }
+        }
+    }
+
+    .pricing-footer {
+        margin-top: 32px;
+        height: 0px;
+        overflow: hidden;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+
+        a {
+
+            &.price_btn {
+                height: 46px;
+                border: 1px solid #ededed;
+                display: inline-block;
+                line-height: 44px;
+                padding: 0 40px;
+                color: #000000;
+                font-size: 14px;
+                border-radius: 30px;
+                font-family: $heading-font;
+                transition: 0.5s;
+
+                &:hover {
+                    background: #0056ff;
+                    color: #ffffff;
+                    border: 1px solid #0056ff;
+                }
+            }
+        }
+    }
+
+    &:hover .pricing-footer {
+        height: 46px;
+    }
+}
+
+
+
+.pricing-panel-4.active .pricing-footer {
+    height: 46px !important;
+}
+
+.pricing-panel-4.active .pricing-heading .title h2,
+.pricing-panel-4.active .pricing-heading .price h4,
+.pricing-panel-4.active .pricing-body ul li,
+.pricing-panel-4.active .pricing-footer a.price_btn {
+    color: #ffffff;
+}
+
+.pricing-panel-4.active .pricing-footer a.price_btn:hover {
+    background: #fff;
+    border: 1px solid #ffffff;
+    color: #000000;
+}
+
+
+
+
+
+
+
+/*---------------------------------
+    Pricing Table 05
+-----------------------------------*/
+
+
+.pricing-panel-5 {
+    background: #f6f6f6;
+    padding: 40px 0;
+    text-align: left;
+    padding-bottom: 50px;
+    margin-left: 30px;
+
+    .pricing-heading {
+        padding-left: 46px;
+        margin-bottom: 8px;
+
+        .price {
+            h4 {
+                color: #0056ff;
+                font-weight: 600;
+                font-size: 40px;
+
+                sub {}
+            }
+        }
+
+        .title {
+            h2 {
+                color: #000000;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 3px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    .pricing-body {
+        background: #e3ecff;
+        margin-right: 30px;
+        margin-left: -30px;
+        border-radius: 6px;
+        padding: 40px 56px 60px;
+        position: relative;
+
+        @media #{$lg-layout} {
+            padding: 40px 14px 58px;
+        }
+
+        @media #{$sm-layout} {
+            padding: 40px 20px 60px;
+        }
+        @media #{$md-layout} {
+            padding: 40px 20px 60px;
+        }
+
+        ul {
+            margin-bottom: -37px;
+
+            li {
+                color: #181818;
+                font-size: 14px;
+                padding: 10px 0;
+
+                &.off {
+                    text-decoration: line-through;
+                }
+            }
+        }
+
+        a {
+            &.price_btn {
+                bottom: -72px;
+                background: transparent;
+                display: inline-block;
+                left: 50%;
+                border-radius: 25px;
+                font-size: 14px;
+                color: #ffffff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                transform: translateX(-50%);
+                position: relative;
+                border: 1px solid transparent;
+                padding: 4px;
+                transition: 0.5;
+
+                span {
+                    padding: 0 30px;
+                    background: #0056ff;
+                    display: inline-block;
+                    border-radius: 20px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+
+                &:hover {
+                    border: 1px solid #0056ff;
+                }
+
+                &.active {
+                    border: 1px solid #0056ff;
+
+                    &:hover {
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+/*---------------------------------
+    Pricing Table 06
+-----------------------------------*/
+
+
+
+.pricing-panel-6 {
+    background: #fff;
+    box-shadow: 0 0 20px 1px rgba(35, 31, 32, 0.2);
+    padding-bottom: 30px;
+
+    &.space-left {
+        margin-left: 87px;
+        margin-right: 3px;
+
+        @media #{$md-layout} {
+            margin-left: 0;
+        }
+
+        @media #{$sm-layout} {
+            margin-left: 0;
+        }
+    }
+
+    &.space-right {
+        margin-right: 87px;
+        margin-left: 3px;
+
+        @media #{$md-layout} {
+            margin-right: 0;
+        }
+
+        @media #{$sm-layout} {
+            margin-right: 0;
+        }
+
+    }
+
+    &.space-left-right {
+        margin-right: 26px;
+        margin-left: 26px;
+
+        @media #{$sm-layout} {
+            margin-right: 0;
+            margin-left: 0;
+        
+        }
+    }
+
+    &.active {
+        .pricing-heading {
+            background: #2d3e50;
+            padding: 30px 0;
+
+            .title {
+                h2 {
+                    font-size: 26px;
+                }
+            }
+
+            .price {
+                h4 {
+                    font-size: 70px;
+
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .pricing-body {
+            padding: 55px 0;
+
+            @media #{$sm-layout} {
+                padding: 32px 0;
+
+            }
+
+            ul {
+                li {
+                    padding: 7px 0;
+                }
+            }
+        }
+    }
+
+    .pricing-heading {
+        background: #2d3e50;
+        padding: 30px 0;
+
+        .title {
+            h2 {
+                color: #ffffff;
+                font-size: 22px;
+                font-weight: 700;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+
+        .price {
+            h4 {
+                font-size: 60px;
+                color: #ffffff;
+                margin: 0;
+                font-family: 'Raleway', sans-serif;
+
+                span {
+                    color: #ecebeb;
+                    font-size: 18px;
+
+                    &.separator {
+                        margin-left: -7px;
+                        margin-right: -10px;
+                    }
+                }
+
+                sub {
+                    font-size: 18px;
+                    position: relative;
+                    top: -20px;
+                    left: 11px;
+                }
+            }
+        }
+    }
+
+    .pricing-body {
+        padding: 50px 0;
+
+        ul {
+            li {
+                color: #2d3e50;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 5px 0;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+
+    .pricing-footer {
+        a {
+            &.price_btn {
+                display: inline-block;
+                background: #2d3e50;
+                padding: 0 40px;
+                height: 40px;
+                line-height: 41px;
+                font-weight: 700;
+                border-radius: 15px;
+                font-size: 15px;
+                color: #ffffff;
+                font-family: 'Raleway', sans-serif;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: translateY(-5px)
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*---------------------------------
+    Pricing Table 07
+-----------------------------------*/
+
+
+
+.pricing-panel-7 {
+    background: #ffffff;
+    padding-top: 48px;
+    padding-bottom: 60px;
+    box-shadow: 0 0 10px rgba(1, 26, 72, 0.1);
+
+    .pricing-heading {
+        .title {
+            h2 {
+                color: #f7ca18;
+                font-size: 26px;
+                font-weight: 600;
+                margin-bottom: 32px;
+                font-family: $body-font;
+            }
+        }
+
+        .price {
+            background-position: center center;
+            background-size: cover;
+            margin-bottom: 23px;
+            padding: 12px 0;
+
+            h4 {
+                font-size: 60px;
+                color: #011a48;
+                font-weight: 700;
+                font-family: $body-font;
+
+                span {
+                    font-size: 26px;
+                    font-weight: 600;
+
+                    &.separator {
+                        margin-left: 2px;
+                        margin-right: -8px;
+                    }
+                }
+
+                sub {
+                    font-size: 26px;
+                    left: 0px;
+                    position: relative;
+                    top: -3px;
+                }
+            }
+        }
+    }
+
+    .pricing-body {
+        padding: 0 28px;
+
+        ul {
+            li {
+                color: #798294;
+                font-size: 20px;
+                line-height: 32px;
+                padding: 13px 0;
+                border-top: 1px solid #f6f6f6;
+                font-family: 'Open Sans', sans-serif;
+                @media #{$sm-layout} {
+                    font-size: 14px;
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid #f6f6f6;
+                }
+            }
+        }
+    }
+
+    .pricing-footer {
+        margin-top: 40px;
+
+        a {
+            &.price_btn {
+                height: 47px;
+                padding: 0 50px;
+                display: inline-block;
+                background: #011a48;
+                border-radius: 23px;
+                color: #fff;
+                font-size: 14px;
+                line-height: 47px;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 2px;
+                font-family: $body-font;
+                transition: 0.5s;
+
+                &:hover {
+                    background: #f7ca18;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    &.active {
+        .pricing-footer {
+            margin-top: 40px;
+
+            a {
+                &.price_btn {
+                    background: #f7ca18;
+                    color: #000000;
+
+                    &:hover {
+                        background: #011a48;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &.cln-pricing-table {
+
+        .pricing-heading {
+            .title {
+                h2 {
+                    color: $cln-theme-color;
+                    letter-spacing: 2px;
+                    font-size: 30px;
+                }
+            }
+            .price {
+                h4 {
+                    color: #011a48;
+                }
+            }
+        }
+
+        &.active{
+            .pricing-heading {
+                .title {
+                    h2 {
+                        color: #011a48;
+                    }
+                }
+                .price {
+                    h4 {
+                        color: $cln-theme-color;
+                    }
+                }
+            }
+        }
+
+        .pricing-body {
+            ul {
+                li {
+                    color: #798294;
+                }
+            }
+        }
+
+        .pricing-footer {
+            a {
+                &.price_btn {
+                    background: #011a48;
+                    color: #ffffff;
+                    &:hover {
+                        background: $cln-theme-color;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        &.active {
+            .pricing-footer a {
+                &.price_btn {
+                    background: $cln-theme-color;
+                    color: #ffffff;
+
+                    &:hover {
+                        background: #011a48;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.pricing-panel-7.active .pricing-heading .title h2 {
+    color: #011a48;
+}
+
+.pricing-panel-7.active .pricing-heading .price h4 {
+    color: #f7ca18;
+}
+
+
+
+
+
+
+
+
+
+
+
+

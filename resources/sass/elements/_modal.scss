@@ -1,0 +1,140 @@
+/*=========================
+    Setup Modal Style
+===========================*/
+
+
+/*=========================
+    Setup Modal Default
+===========================*/
+.ht_modal_btn button.ht_btn {
+    width: 205px;
+    background: #0056ff;
+    border: 0 none;
+    color: #fff;
+    border-radius: 8px;
+    height: 58px;
+    line-height: 58px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $heading-font;
+}
+
+.modal-default{
+    .modal-content {
+        padding: 42px 46px 27px;
+    }
+    .modal-header {
+        padding: 0;
+        border-bottom: 1px solid #d3d3d3;
+        padding-bottom: 28px;
+    }
+    .modal-title {
+        line-height: 39px;
+        font-weight: 300;
+        font-size: 24px;
+    }
+    .modal-body {
+        padding: 0;
+        padding-bottom: 180px;
+        padding-top: 26px;
+        p{
+            font-size: 14px;
+            line-height: 26px;
+            & + p{
+                margin-top: 27px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .modal-footer {
+        justify-content: space-between;
+        padding: 0;
+        border-top: 1px solid #d3d3d3;
+        align-items: center;
+        padding-top: 24px;
+        p{
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog-centered {
+        max-width: 670px;
+    }
+}
+
+/*=========================
+    Setup Modal Small
+===========================*/
+
+@media (min-width: 576px) {
+    .small-modal .modal-dialog-centered {
+        max-width: 310px;
+    }
+}
+.modal-default.small-modal .modal-body {
+    padding-bottom: 101px;
+    padding-top: 16px;
+}
+.modal-default.small-modal .modal-content {
+    padding: 20px;
+}
+.modal-default.small-modal .modal-title {
+    line-height: 29px;
+    font-size: 18px;
+}
+.modal-default.small-modal .modal-header {
+    padding-bottom: 11px;
+}
+
+.modal-default.small-modal .modal-footer{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+@media #{$large-mobile}{
+
+    .modal-default .modal-content {
+        padding: 42px 20px 27px;
+    }
+    .modal-default .modal-title {
+        line-height: 33px;
+        font-size: 19px;
+    }
+    .modal-default .modal-body {
+        padding-bottom: 80px;
+    }
+
+    .ht_modal_btn {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

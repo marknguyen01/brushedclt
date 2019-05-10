@@ -1,0 +1,131 @@
+
+
+/* =====================
+Body Fit Css
+========================*/
+
+.bd-welcome-inner{
+    .content{
+        ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            margin: 0 -10px;
+            margin-bottom: 10px;
+            li {
+                margin: 0 10px;
+                color: #fb5b21;
+                font-size: 18px;
+            }
+        }
+        h2 {
+            color: #464646;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            span {
+                color: $body-theme-color;
+            }
+        }
+        p {
+            color: #666666;
+            line-height: 27px;
+            font-size: 16px;
+            margin-bottom: 33px;
+        }
+        .wel-btn{
+            margin: 0 -10px;
+            a{
+                height: 47px;
+                padding: 0 35px;
+                background: #464646;
+                display: inline-block;
+                color: #ffffff;
+                line-height: 47px;
+                border-radius: 24px;
+                margin: 0 10px;
+                transition: 0.4s ease-in-out;
+                &:hover{
+                    background: $body-theme-color;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/* Blog Css */
+.post-carousel-active-5.body-fit-post-wrapper button {
+    color: #fb5b21;
+}
+.post-carousel-active-5.body-fit-post-wrapper button:hover {
+    background: #fb5b21;
+    color: #ffffff;
+}
+
+.post-carousel-5.body-fit-post .ptc-content .content h2 a:hover {
+    color: #fb5b21;
+}
+
+.post-carousel-5.body-fit-post .ptc-content .content .post-btn a.readmore-btn:hover {
+    border-bottom: 1px solid #fb5b21;
+    color: #fb5b21;
+}
+
+
+
+
+
+
+@media #{$md-layout}{
+    .bd-welcome-inner {
+        margin-top: 40px;
+    }
+
+}
+
+@media #{$sm-layout}{
+    .bd-welcome-inner {
+        margin-top: 40px;
+    }
+    .service-6.bd-service .icons{
+        border-right: 1px solid transparent;
+    }
+    .section-title--20 p {
+        padding: 0 12%;
+    }
+    .service-2.body-fit-choose .content {
+        padding: 26px 20px;
+    }
+    .bd-welcome-inner .content h2 {
+        font-size: 28px;
+    }
+    .bd-welcome-inner .content ul li {
+        font-size: 14px;
+    }
+    .bd-welcome-inner .content .wel-btn a{
+        padding: 0 20px;
+        font-size: 14px;
+    }
+    .ht-slide.slider-style-2 .hero-body.content h2{
+        font-size: 31px;
+    }
+    .ht-slide.slider-style-2 .hero-body.content h1 {
+        font-size: 28px;
+    }
+
+
+}
+
+@media #{$large-mobile}{
+    .section-title--20 p {
+        padding: 0 0;
+    }
+}
+

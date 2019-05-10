@@ -1,0 +1,207 @@
+
+/*-----------------------------
+    Brand Style
+------------------------------*/
+.single-partner {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0 15px;
+    width: calc(100% * (1/4));
+    text-align: center;
+    @media #{$large-mobile} {
+        width: calc(100% * (1/2));
+    }
+}
+
+ul{
+    &.brand-list {
+        list-style: none;
+        padding:  0;
+        margin:  0;
+        display:  flex;
+        justify-content:  space-between;
+        align-items:  center;
+        li{
+            position:  relative;
+            text-align:  center;
+
+        }
+    }
+
+    &.brand-style-2{
+
+        @media #{$sm-layout} {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        li{
+            border-right: 1px dashed #ffffff;
+            display: block;
+            float: left;
+            padding: 20px;
+            text-align: center;
+            width: 20%;
+
+            @media #{$sm-layout} {
+                border-right: 1px dashed transparent;
+            }
+
+            @media #{$large-mobile} {
+                width: 50%;
+            }
+
+
+            &:last-child{
+                border-right: 1px dashed transparent;
+            }
+        }
+    }
+
+
+    &.brand-style-3{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @media #{$md-layout} {
+            margin-right: -3px;
+        }
+        li{
+            flex-basis: 20%;
+            border-right: 1px solid #dcd9d9;
+            height:  125px;
+            line-height: 125px;
+            border-top: 1px solid #dcd9d9;
+            border-bottom: 1px solid #dcd9d9;
+            text-align: center;
+            &:first-child{
+                border-left: 1px solid #dcd9d9;
+            }
+
+            @media #{$large-mobile} {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    &.brand-style-6 {
+        padding: 0 235px;
+        margin: 0;
+        list-style: none;
+
+        @media #{$laptop-device} {
+            padding: 0 100px;
+        }
+
+        @media #{$lg-layout} {
+            padding: 0;
+        }
+
+        @media #{$md-layout} {
+            padding: 0;
+        }
+
+        @media #{$sm-layout} {
+            padding: 0;
+        }
+
+        li{
+            text-align: center;
+        }
+    }
+
+}
+
+
+.brand-style-5{
+    height:  230px;
+    line-height:  230px;
+    background:  #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+
+    @media #{$sm-layout} {
+        margin-bottom: 30px
+    }
+}
+
+.brand-style-7 {
+    text-align: center;
+    height: 340px;
+    line-height: 340px;
+    @media #{$sm-layout} {
+        margin-bottom: 30px;
+    }
+}
+
+.brand-style-3 .slick-slide img,
+.brand-style-6 .slick-slide img{
+    display: inline-block;
+}
+
+
+
+
+
+
+/*---------------------------
+Brand Style Four
+
+-------------------------===*/
+.brand-style-4{
+    height: auto;
+    min-height: 100%;
+    padding: 150px 140px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-image: url('/img/bg/bg-image-4.jpg');
+
+    @media #{$sm-layout} {
+        padding: 112px 78px;
+    }
+
+    @media #{$large-mobile} {
+        padding: 85px 15px;
+
+    }
+
+}
+
+.single-client {
+    border-bottom: 1px dashed #aaa;
+    border-right: 1px dashed #aaa;
+    float: left;
+    padding: 25px 15px;
+    text-align: center;
+    width: 33.33%;
+}
+.single-client:nth-child(1) {
+    border-bottom-color: #aaa;
+    border-right-color: #aaa;
+}
+.single-client:nth-child(6),
+.single-client:last-child {
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.single-client:nth-child(5) {
+    border-bottom-color: transparent;
+    border-right-color: #aaa;
+}
+.single-client:nth-child(4) {
+    border-bottom-color: transparent;
+    border-right-color: #aaa;
+}
+.single-client:nth-child(3) {
+    border-bottom-color: #aaa;
+    border-right-color: transparent;
+}

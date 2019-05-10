@@ -1,0 +1,393 @@
+/*=======================
+    Counterup Css
+=========================*/
+
+
+
+/*=======================
+    Counterup Style 1
+=========================*/
+.funfact{
+    &.counter-style--1{
+        text-align: center;
+        .fact-icon{
+
+            i{
+                font-size: 36px;
+                color: #ed552d;
+            }
+        }
+        .content{
+            span{
+                color: #333333;
+                font-size: 36px;
+                font-weight: 700;
+                margin-top: 20px;
+                display: inline-block;
+                font-family: $heading-font;
+            }
+            h2{
+                color: #333333;
+                font-weight: 400;
+                font-size: 17px;
+                margin: 0;
+                position: relative;
+                margin-top: 9px;
+                display: block;
+                padding-bottom: 15px;
+
+                &::before {
+                    background: #333333;
+                    width: 48px;
+                    height: 1px;
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        &.white-text{
+            .fact-icon{
+                i{
+                    color: #ffffff;
+                }
+            }
+            .content{
+                span{
+                    color: #ffffff;
+                }
+                h2{
+                    color: #ffffff;
+    
+                    &::before {
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*=======================
+    Counterup Style 2
+=========================*/
+
+.funfact{
+    &.counter-style--2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fact-icon{
+            padding-right: 20px;
+            i{
+                font-size: 48px;
+                color: #383838;
+            }
+        }
+        .content{
+            span{
+                color: #383838;
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 13px;
+                display: inline-block;
+                font-family: $heading-font;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "+";
+                    right: -20px;
+                    color: #383838;
+                    font-size: 26px;
+                }
+            }
+            h2{
+                color: #383838;
+                font-weight: 400;
+                font-size: 20px;
+                margin: 0;
+                position: relative;
+                display: block;
+            }
+        }
+
+    }
+}
+
+/*=======================
+    Counterup Style 3
+=========================*/
+
+.funfact{
+    &.counter-style--3{
+        position: relative;
+        text-align: center;
+        .fact-img{
+            display: inline-block;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: #52b6bc;
+                opacity: 0.8;
+                border-radius: 100%;
+            }
+            img{
+
+            }
+        }
+        .content{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translateX(-50%) translateY(-50%);
+            span{
+                color: #ffffff;
+                font-size: 40px;
+                font-weight: 600;
+                margin-top: 13px;
+                display: inline-block;
+                font-family: 'Courgette', cursive;
+            }
+            h2{
+                color: #ffffff;
+                font-weight: 400;
+                font-size: 20px;
+                margin: 0;
+                margin-top: 4px;
+                font-family: 'Courgette', cursive;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+/*=======================
+    Counterup Style 4
+=========================*/
+
+.funfact{
+    &.counter-style--4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fact-icon{
+            padding-right: 25px;
+            i{
+                font-size: 48px;
+                color: #383838;
+            }
+        }
+        .content{
+            text-align: center;
+            span{
+                color: #585858;
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 13px;
+                display: inline-block;
+                font-family: $heading-font;
+                position: relative;
+                padding: 0 20px;
+                margin-right: 12px;
+                &::after{
+                    position: absolute;
+                    content: "+";
+                    right: 0;
+                    color: #383838;
+                    font-size: 26px;
+                }
+            }
+            h2{
+                color: #585858;
+                font-weight: 600;
+                font-size: 24px;
+                margin: 0;
+                position: relative;
+                display: block;
+                padding-bottom: 14px;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    background: #ed552d;
+                    width: 70px;
+                    height: 2px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        
+        &.white-text{
+            .content{
+                span{
+                    color: #ffffff;
+                    &::after{
+                        color: #ffffff;
+                    }
+                }
+                h2{
+                    color: #ffffff;
+                    &::before{
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*=======================
+    Counterup Style 5
+=========================*/
+
+.funfact{
+    &.counter-style--5{
+        text-align: center;
+        .fact-icon{
+            i{
+                font-size: 36px;
+                color: #ed552d;
+            }
+        }
+        .content{
+            span{
+                color: $theme-color;
+                font-size: 36px;
+                font-weight: 700;
+                margin-top: 20px;
+                display: inline-block;
+                font-family: 'Lobster Two', cursive;
+
+                &.color-1{
+                    color: #b1c642;
+                }
+
+                &.color-2{
+                    color: #ff5020;
+                }
+
+                &.color-3{
+                    color: #ffc10d;
+                }
+
+                &.color-4{
+                    color: #68b9d8;
+                }
+            }
+            h2{
+                color: #444444;
+                font-weight: 400;
+                font-size: 24px;
+                margin: 0;
+                margin-top: 9px;
+                display: block;
+                padding-bottom: 15px;
+                font-family: 'Lobster Two', cursive;
+            }
+        }
+        &.body-counter{
+            .content{
+                span{
+                    color: #ffffff;
+                    font-size: 48px;
+                    font-weight: 600;
+                    margin-top: 0;
+                    display: inline-block;
+                    font-family: $heading-font;
+                }
+                h2{
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-size: 18px;
+                    margin-top: 9px;
+                    padding-bottom: 0;
+                    font-family: $heading-font;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+/*=======================
+    Counterup Style 6
+=========================*/
+
+.funfact{
+    margin-top: 30px;
+    &.counter-style--6{
+        text-align: center;
+        .fact-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 36px;
+                color: #ed552d;
+            }
+            span{
+                color: #363636;
+                font-size: 36px;
+                font-weight: 600;
+                display: inline-block;
+                font-family: $heading-font;
+                padding-left: 15px;
+            }
+        }
+        .content{
+            h2{
+                color: #363636;
+                font-weight: 600;
+                font-size: 16px;
+                margin: 0;
+                display: block;
+                font-family: $heading-font;
+                margin-top: 13px;
+                text-transform: uppercase;
+
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

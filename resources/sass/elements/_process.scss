@@ -1,0 +1,333 @@
+/*=========================
+    Work Process Style
+============================*/
+ 
+.ht-process {
+    text-align:  center;
+    .icon {
+        width:  116px;
+        height:  116px;
+        margin:  0 auto;
+        background:  #fff;
+        box-shadow:  0 0 10px rgba(0,0,0,0.1);
+        line-height:  116px;
+        text-align:  center;
+        border-radius: 100%;
+    }
+    .content{
+        h4 {
+            color:  #555555;
+            font-size:  19px;
+            font-weight:  600;
+            margin:  0;
+            margin-top: 36px;
+        }
+    }
+}
+.shape-bg {
+    position: relative;
+    background: url('/img/process/shape.png');
+    background-repeat: no-repeat;
+    background-position: center 0px;
+
+    @media #{$lg-layout} {
+        background-image: none;
+    }
+    @media #{$md-layout} {
+        background-image: none;
+    }
+    @media #{$sm-layout} {
+        background-image: none;
+    }
+
+}
+
+/*=========================
+    Work Process Style 2
+============================*/ 
+
+.ht-process-2 {
+    text-align:  center;
+    .number{
+        margin-bottom: 24px;
+        span {
+            width:  70px;
+            height:  70px;
+            background:  #fff;
+            display:  inline-block;
+            line-height:  70px;
+            font-size:  24px;
+            font-weight:  600;
+            color:  #5a5a5a;
+            border-radius: 14px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    }
+    .content {
+        h4 {
+            color:  #383838;
+            font-size:  18px;
+            margin-bottom: 18px;
+        }
+        p {
+            color:  #494849;
+            font-size:  14px;
+            line-height: 28px;
+            padding: 0 10%;
+            margin: 0;
+        }
+    }
+}
+
+.ht-process-2 .number {
+    position: relative;
+}
+
+.ht-process-2 .number::before {
+    position: absolute;
+    content: "";
+    background: url('/img/process/shape-2.png');
+    right: -129px;
+    top: 50%;
+    width: 236px;
+    height: 2px;
+}
+
+
+.single-work{
+    &:last-child{
+        .ht-process-2{
+            .number{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*=========================
+    Work Process Style 3
+============================*/ 
+
+.process-wrapper {
+    position: relative;
+    margin-top: 30px;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 2px;
+        background: #e51515;
+        height: 100%;
+        margin-left: -1px;
+    }
+    .ht-process-3{
+
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        .thumb{
+            width: 50%;
+            text-align: right;
+            padding: 0 30px;
+            position: relative;
+            -webkit-align-self: baseline;
+            -moz-align-self: baseline;
+            -ms-flex-item-align: baseline;
+            align-self: baseline;
+            &::before{
+                position: absolute;
+                content: "";
+                right: 0px;
+                top: 50%;
+                margin-top: -15px;
+                height: 15px;
+                width: 15px;
+                border-top: 10px solid transparent;
+                border-right: 15px solid red;
+                border-bottom: 10px solid transparent;
+                border-left: 15px solid transparent;
+            }
+            .process-img-inner{
+                display: inline-block;
+                min-height: 120px;
+                min-width: 120px;
+                height: 120px;
+                width: 120px;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                -ms-border-radius: 100%;
+                -o-border-radius: 100%;
+                border-radius: 100%;
+                overflow: hidden;
+            }
+        }
+
+        .content{
+            padding-left: 30px;
+            text-align: left;
+            width: 50%;
+            h4{
+                font-size: 22px;
+                font-weight: 500;
+                color: #494849;
+            }
+            p{
+                font-size: 14px;
+                color: #494849;
+                line-height: 28px;
+            }
+        }
+
+        &.process-reverse{
+            -webkit-box-direction: reverse;
+            -webkit-box-orient: horizontal;
+            -webkit-flex-direction: row-reverse;
+            -moz-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            .thumb{
+                text-align: left;
+                &::before{
+                    right: auto;
+                    left: 0;
+                    border-left: 15px solid red;
+                    border-right: 15px solid transparent;
+                }
+            }
+            .content{
+                padding-left: 0;
+                padding-right: 30px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+
+/*=========================
+    Work Process Style 4
+============================*/
+
+.works-wrapper {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 570px;
+    position: relative;
+    width: 590px;
+    margin: 0 auto;
+    .ht-process-4{
+        align-items: center;
+        background: #52b6bc none repeat scroll 0 0;
+        border-radius: 100%;
+        display: flex;
+        height: 190px;
+        justify-content: center;
+        text-align: center;
+        width: 190px;
+        position: absolute;
+
+        &:nth-child(1) {
+            left: 0;
+            margin: auto;
+            right: 0;
+        }
+        &:nth-child(2) {
+            right: 0;
+            top: 190px;
+        }
+        &:nth-child(3) {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            right: 0;
+        }
+        &:nth-child(4) {
+            left: 0;
+            top: 190px;
+        }
+
+        .thumb{
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: -36px;
+            transition: all 0.3s ease 0s;
+            img{
+                border: 3px solid #52b6bc;
+                border-radius: 100%;
+            }
+        }
+        .content{
+            p{
+                color: #fff;
+                font-family: 'Courgette', cursive;
+                font-size: 20px;
+                line-height: 26px;
+                margin: 0;
+                padding: 0 12px;
+            }
+        }
+
+        &.open{
+            .thumb{
+                opacity: 1;
+            }
+        }
+        &:hover{
+            .thumb{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media #{$md-layout}{
+    .ht-process-2 .number::before{
+        display: none;
+    }
+}
+
+
+@media #{$sm-layout}{
+    .ht-process-2 .number::before{
+        display: none;
+    }
+    .works-wrapper{
+        width: auto;
+    }
+    .works-wrapper .ht-process-4{
+        height: 150px;
+        width: 150px;
+    }
+    .works-wrapper .ht-process-4:nth-child(2){
+        right: -35px;
+    }
+    .works-wrapper .ht-process-4:nth-child(4){
+        left: -35px;
+    }
+
+}
+
+
+
+

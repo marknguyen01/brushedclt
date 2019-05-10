@@ -1,0 +1,153 @@
+/* =====================
+    Register Area 
+=========================*/
+
+
+.education-register-form{
+    background: rgba(255,255,255,0.3);
+    .register-title {
+        background: rgba(255,255,255,0.3);
+        h2 {
+            color: #ffffff;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 500;
+            padding: 23px 41px;
+            margin: 0;
+        }
+    }
+    form {
+        padding: 40px;
+        margin-top: -40px;
+        input {
+            margin-top: 40px;
+            height: 50px;
+            border: 1px solid #dfdfdf;
+            color: #dfdfdf;
+            font-size: 14px;
+            padding: 0 20px;
+            font-family: $heading-font;
+            &[type="submit"]{
+                width: auto;
+                background: #ffffff;
+                border: 0 none;
+                height: 50px;
+                padding: 0 50px;
+                color: $education-theme-color;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0.2px;
+                transition: 0.4s ease-in-out;
+                &:hover{
+                    background: $education-theme-color;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+}
+
+.education-register-form form input::-webkit-input-placeholder {
+    color: #dfdfdf;
+}
+
+.education-register-form form input::-moz-placeholder {
+    color: #dfdfdf;
+}
+
+.education-register-form form input:-ms-input-placeholder {
+    color: #dfdfdf;
+}
+
+.education-register-form form input:-moz-placeholder {
+    color: #dfdfdf;
+}
+
+
+
+
+.education-register-content{
+    
+    @media #{$lg-layout} {
+        margin-top: 40px;
+    }
+    @media #{$md-layout} {
+        margin-top: 40px;
+    }
+    @media #{$sm-layout} {
+        margin-top: 40px;
+    }
+
+    .content{
+        p {
+            color: #ffffff;
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 33px;
+        }
+    }
+}
+
+.education-register-content .countdown-style-1 span.ht-count {
+    padding: 13px 0px;
+    border: 2px solid #fff;
+    width: 88px;
+}
+.education-register-content .countdown-style-1 .countbox span.time-count {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+.education-register-content .countdown-style-1 .countbox span span.count-inner p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+
+.education-register-content .countdown-style-1 .countbox span.time-count::before {
+    background-image: linear-gradient(to right, rgba(255, 255, 97, 0), rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(82, 65, 97, 0));
+}
+
+.education-register-content .countbox .ht-count::before {
+    color: #fff;
+}
+
+.education-register-content .countdown-style-1 span.ht-count:first-child {
+    margin-left: 0;
+}
+
+.education-register-content .countdown-style-1 span.ht-count:last-child {
+    margin-right: 0;
+}
+
+
+.education-register-content .countdown-style-1 .countbox {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

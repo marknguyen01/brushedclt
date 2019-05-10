@@ -1,0 +1,349 @@
+
+/*============================
+    Business Hours
+==============================*/
+
+
+
+.shapebg_image--1 {
+    background-image: url('/img/others/business-shape.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.ht-mega-business-hours{
+
+    &.business-hrs-1{
+        padding: 0 50px;
+
+        @media #{$large-mobile} {
+            padding: 0 10px;
+        }
+        .business-hrs-inner {
+            padding: 70px 65px;
+            margin-top: -15px;
+
+            @media #{$md-layout} {
+                padding: 130px 65px;
+            }
+
+            @media #{$sm-layout} {
+                padding: 43px 37px;
+            }
+
+            @media #{$small-mobile} {
+                padding: 43px 21px;
+                padding-bottom: 66px;
+            }
+
+            .single-hrs {
+                margin-top: 15px;
+
+                @media #{$lg-layout} {
+                    margin-top: 21px;
+                }
+                span{
+                    &.time{
+                        float: right;
+                        font-weight: 600;
+                        color: #000000;
+                        font-size: 20px;
+                        font-family: 'Dosis', sans-serif;
+
+                        @media #{$small-mobile} {
+                            margin-top: 9px;
+                            margin-bottom: 17px;
+                            float: left;
+                        }
+                    }
+                    &.day{
+                        color: #3b3b3b;
+                        font-weight: 800;
+                        font-size: 30px;
+                        font-family: 'Dosis', sans-serif;
+
+                        @media #{$large-mobile} {
+                            font-size: 25px;
+                        }
+
+                        @media #{$small-mobile} {
+                            display: block;
+                        }
+                    }
+                }
+                &.closed-day{
+                    span{
+                        &.time{
+                            color: #fa2d2d;
+                        }
+                        &.day{
+                            color: #fa2d2d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.business-hrs-2{
+        padding: 0 50px;
+
+        @media #{$large-mobile} {
+            padding: 0;
+        }
+        .business-hrs-inner {
+            .single-hrs {
+                padding: 16px 0;
+                border-top: 1px solid #f4f4f4;
+                position: relative;
+                &:first-child{
+                    border-top: 1px solid transparent;
+                }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    background: url('/img/others/business-shape-line.png');
+                    width: 2px;
+                    height: 42px;
+
+                    @media #{$small-mobile} {
+                        display: none;
+                    }
+                }
+                span{
+                    &.day{
+                        color: #fafafa;
+                        font-weight: 400;
+                        font-size: 18px;
+                        font-family: $heading-font;
+                        padding-left: 40px;
+
+                        @media #{$small-mobile} {
+                            font-size: 16px;
+                            padding-left: 14px;
+                        }
+
+                    }
+                    &.time{
+                        float: right;
+                        font-weight: 400;
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-family: $heading-font;
+                        padding-right: 40px;
+                        @media #{$small-mobile} {
+                            font-size: 14px;
+                            padding-right: 9px;
+                        }
+                    }
+
+                }
+                &.closed-day{
+                    span{
+                        &.time{
+
+                        }
+                        &.day{
+
+                        }
+                    }
+                }
+
+                &:nth-child(odd){
+                    background: #ff6f5e;
+                }
+
+                &:nth-child(even){
+                    background: #fe5743;
+                }
+            }
+        }
+    }
+
+    &.business-hrs-3{
+        padding: 0 50px;
+        @media #{$large-mobile} {
+            padding: 0;
+        }
+        .business-hrs-inner {
+            padding: 20px 30px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+            @media #{$small-mobile} {
+                padding: 20px 18px;
+            }
+
+            .single-hrs {
+                padding: 10px 22px;
+                margin: 4px 0;
+
+                @media #{$small-mobile} {
+                    padding: 10px 5px;
+                }
+                span{
+                    font-family: 'Lobster Two', cursive;
+                    &.day{
+                        color: #565656;
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                    &.time{
+                        float: right;
+                        font-weight: 400;
+                        color: #565656;
+                        font-size: 16px;
+                    }
+                }
+                &.closed-day{
+                    background: #0056ff;
+                    span{
+                        &.time{
+                            color: #ffffff;
+                        }
+                        &.day{
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.business-hrs-4{
+        padding: 0 50px;
+        @media #{$large-mobile} {
+            padding: 0;
+        }
+        .business-hrs-inner {
+            padding: 30px 50px;
+            background-image: url('/img/bg/bg-image-40.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+            @media #{$small-mobile} {
+                padding: 30px 10px;
+            }
+
+            .single-hrs {
+                padding: 17px 0;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    background: url('/img/others/business-shape-line-2.png');
+                    width: 100%;
+                    height: 1px;
+                    bottom: 0;
+                }
+                &:last-child::before{
+                    display: none;
+                }
+
+                span{
+                    font-family: $heading-font;
+                    &.day{
+                        color: #ffffff;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    &.time{
+                        float: right;
+                        font-weight: 300;
+                        color: #ffffff ;
+                        font-size: 14px;
+                    }
+                }
+                &.closed-day{
+
+                    span{
+                        &.time{
+
+                        }
+                        &.day{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.business-hrs-5{
+        padding: 0 50px;
+        @media #{$large-mobile} {
+            padding: 0;
+        }
+        .business-hrs-inner {
+            padding: 30px 50px;
+            position: relative;
+            z-index: 2;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                z-index: 2;
+                right: 0;
+                background-image: linear-gradient(#d80d5f, #2f46dc);
+                background-image: -webkit-gradient(#d80d5f, #2f46dc);
+                background-image: -webkit-linear-gradient(#d80d5f, #2f46dc);
+                background-image: -moz-linear-gradient(#d80d5f, #2f46dc);
+                background-image: -ms-linear-gradient(#d80d5f, #2f46dc);
+                background-image: -o-linear-gradient(#d80d5f, #2f46dc);
+                z-index: -1;
+            }
+            .single-hrs {
+                padding: 17px 0;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    background: url('/img/others/business-shape-line-3.png');
+                    width: 60px;
+                    height: 2px;
+                    left: 45%;
+                    top: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+
+                }
+                span{
+                    font-family: $heading-font;
+                    &.day{
+                        color: #ffffff;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    &.time{
+                        float: right;
+                        font-weight: 300;
+                        color: #ffffff;
+                        font-size: 14px;
+                    }
+                }
+                &.closed-day{
+
+                    span{
+                        &.time{
+
+                        }
+                        &.day{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

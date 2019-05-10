@@ -1,0 +1,673 @@
+/*=======================================
+    Register Style
+=========================================*/
+
+
+/*==========
+   Register Style One
+=========================================*/
+
+.register-style-1 {
+    background: #fa4a79;
+    padding-bottom: 40px;
+    .register-title {
+        text-align:  center;
+        background-image: url('/img/icons/register-header.png');
+        background-position: center center;
+        background-size:  cover;
+        padding-top: 38px;
+        margin-bottom: 9px;
+        padding-bottom: 76px;
+
+        @media #{$sm-layout} {
+            padding-bottom: 134px;
+        }
+
+        h2 {
+            color:  #000000;
+            font-size:  18px;
+            font-weight:  600;
+            margin-bottom: 5px;
+        }
+        p {
+            color:  #000000;
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+    form{
+        padding: 0 30px 0;
+        text-align: center;
+        input {
+            height:  50px;
+            border:  1px solid #ffffff;
+            background: #fb5c87;
+            font-size:  12px;
+            color:  #ffffff;
+            font-weight:  300;
+            margin-top: 30px;
+            font-family: $heading-font;
+
+            &[type="submit"] {
+                width: auto;
+                margin: 0 auto;
+                text-align: center;
+                background: #fff;
+                font-weight: 600;
+                color: #fa4a79;
+                margin-top: 40px;
+                font-size: 14px;
+                padding: 0 47px;
+                transition: 0.5s;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+
+
+.register-style-1  form input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.register-style-1  form input::-moz-placeholder {
+    color: #ffffff;
+}
+
+.register-style-1  form input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.register-style-1  form input:-moz-placeholder {
+    color: #ffffff;
+}
+
+
+/*==========
+   Register Style 2
+=========================================*/
+
+
+.register-style-2 {
+    background: #7ca7f9;
+    padding: 50px 80px;
+    .register-title{
+        margin-bottom: 10px;
+        h2 {
+            color:  #ffffff;
+            font-weight:  600;
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+        p {
+            color:  #ffffff;
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+    form{
+        label {
+            color:  #666666;
+            font-weight:  400;
+            font-size: 12px;
+            margin-bottom: 8px;
+            font-family: $heading-font;
+        }
+        input {
+            border:  1px solid #ffffff;
+            padding:  0 20px;
+            color:  #fff;
+            margin-bottom: 30px;
+            font-weight: 300;
+            font-family: $heading-font;
+
+            &[type="submit"] {
+                width: auto;
+                text-align: center;
+                background: #fff;
+                font-weight: 600;
+                color: #0056ff;
+                font-size: 14px;
+                padding: 0 47px;
+                transition: 0.5s;
+                height: 50px;
+                margin-top: 10px;
+                margin-bottom: 0;
+
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+.register-style-2  form input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.register-style-2  form input::-moz-placeholder {
+    color: #ffffff;
+}
+
+.register-style-2  form input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.register-style-2  form input:-moz-placeholder {
+    color: #ffffff;
+}
+
+
+
+/*==========
+   Register Style 3
+=========================================*/
+
+
+
+
+
+.register-style-3 {
+    padding: 100px 56px;
+    text-align:  center;
+    @media #{$sm-layout} {
+        padding: 100px 16px;
+    }
+    .register-title {
+        margin-bottom: 42px;
+        h2 {
+            color:  #fff;
+            font-size:  30px;
+            font-weight:  700;
+            text-transform:  uppercase;
+            margin-bottom: 5px;
+        }
+        p {
+            color:  #ffffff;
+            font-size: 14px;
+        }
+    }
+    form{
+        .input_box {
+            display:  flex;
+            margin-bottom: 30px;
+            align-items:  center;
+            i {
+                background: rgba(255,255,255,0.3);
+                height: 70px;
+                width: 88px;
+                font-weight:  400;
+                line-height:  70px;
+                color:  #ffffff;
+                text-align:  center;
+                font-size: 34px;
+                border-radius: 8px 0 0 8px;
+            }
+            input {
+                background:  rgba(255,255,255,0.3);
+                border: 0 none;
+                margin-left:  2px;
+                height:  70px;
+                border-radius: 0 8px 8px 0;
+                padding: 0 50px;
+                color:  #ffffff;
+                font-size:  16px;
+                font-family: $body-font;
+
+                @media #{$sm-layout} {
+                    padding: 0 10px;
+                    font-size: 14px;
+                }
+
+                &[type="submit"] {
+                    border: 3px solid #fff;
+                    border-radius:  8px;
+                    color: #fff;
+                    box-sizing:  border-box;
+                    height: 90px;
+                    font-size:  24px;
+                    font-weight:  600;
+                    text-transform:  uppercase;
+                    margin-bottom: 51px;
+                    font-family: $heading-font;
+                    transition: 0.5s;
+                    
+                }
+
+            }
+        }
+        input {
+            &[type="submit"] {
+                border: 3px solid #fff;
+                border-radius:  8px;
+                color: #fff;
+                box-sizing:  border-box;
+                height: 90px;
+                font-size:  24px;
+                font-weight:  600;
+                text-transform:  uppercase;
+                margin-bottom: 51px;
+                font-family: $heading-font;
+                &:hover{
+                    background: #ffffff !important;
+                    color: $theme-color;
+                }
+            }
+            
+        }
+    }
+    .login{
+        a{
+            border:  3px solid #ffffff;
+            display:  block;
+            height:  90px;
+            line-height:  90px;
+            color:  #fff;
+            font-size:  24px;
+            font-weight:  600;
+            border-radius:  8px;
+            margin-top: 56px;
+            transition: 0.5s;
+            font-family: $heading-font;
+            &:hover{
+                background: #ffffff;
+                color: $theme-color;
+            }
+        }
+    }
+    .separator{
+        span{
+            color:  #ffffff;
+            font-size:  24px;
+            font-weight:  500;
+            padding: 0 24px;
+            background:  transparent;
+            position:  relative;
+            z-index: 99;
+            display:  block;
+            font-family: $heading-font;
+            &::before {
+                content:  "";
+                width: 130px;
+                height:  1px;
+                left:  0;
+                top: 50%;
+                background:  #fff;
+                position:  absolute;
+                display:  block;
+
+                @media #{$large-mobile} {
+                    width: 55px;
+                }
+
+                @media #{$lg-layout} {
+                    width: 75px;
+                }
+            }
+            &::after {
+                background:  #fff;
+                position:  absolute;
+                content:  "";
+                width:  130px;
+                height:  1px;
+                right:  0;
+                top: 50%;
+                @media #{$large-mobile} {
+                    width: 55px;
+                }
+                @media #{$lg-layout} {
+                    width: 75px;
+                }
+            }
+        }
+
+    }
+}
+
+.register-style-3 form input[type="submit"]:hover {
+    background: #fff;
+    color: $theme-color;
+}
+// placeholder Color
+
+.register-style-3  form input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.register-style-3  form input::-moz-placeholder {
+    color: #ffffff;
+}
+.register-style-3  form input:-ms-input-placeholder {
+    color: #ffffff;
+}
+.register-style-3  form input:-moz-placeholder {
+    color: #ffffff;
+}
+
+
+
+
+
+/*==========
+   Register Style 4
+=========================================*/
+
+
+
+
+
+.register_left {
+    padding: 96px 40px;
+
+    @media #{$sm-layout} {
+        padding: 32px 26px;
+    }
+    .content{
+        h2 {
+            color:  #ffffff;
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+        p {
+            color:  #000000;
+            font-size: 14px;
+            line-height:  24px;
+            padding-right: 7%;
+        }
+    }
+    
+    .register-with-social {
+        margin-top: 100px;
+        p {
+            color:  #000101;
+            font-size: 16px;
+        }
+    }
+
+}
+
+
+.register-icon {
+    padding:  0;
+    list-style: none;
+    display:  flex;
+    margin: 0;
+    li{
+        margin-right: 10px;
+        a{
+            
+            height:  36px;
+            display:  block;
+            width:  70px;
+            text-align:  center;
+            line-height: 36px;
+            border-radius: 18px;
+            color:  #ffffff;
+            font-size: 24px;
+            transition: 0.4s;
+
+            &.facebook{
+                background:  $facebook;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            &.twitter{
+                background:  $twitter;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.register-style-4{
+    padding: 0px 40px;
+    
+    @media #{$md-layout} {
+        padding: 20px 40px;
+    }
+
+    @media #{$sm-layout} {
+        padding: 20px 40px;
+    }
+    .register-title{
+        h2 {
+            color:  #000000;
+            font-size:  24px;
+            font-weight:  600;
+            margin-bottom: 7px;
+        }
+        p {
+            color:  #000000;
+            font-size:  14px;
+            line-height: 24px;
+            margin: 0;
+        }
+    }
+    form{
+        input {
+            margin-top: 17px;
+            border:  0 none;
+            border-bottom: 1px solid #687ea5;
+            padding: 0;
+            color:  #687ea5;
+            font-size: 12px;
+            font-weight: 300;
+            font-family: $heading-font;
+            &[type="submit"] {
+                background:  #0056ff;
+                color:  #fff;
+                width:  auto;
+                height:  50px;
+                padding:  0 40px;
+                border: 0  none;
+                font-size: 14px;
+                text-transform: uppercase;
+                border-radius: 25px;
+                transition: 0.5s;
+                margin-top: 30px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+
+
+// placeholder Color
+
+.register-style-4  form input::-webkit-input-placeholder {
+    color: #687ea5;
+}
+.register-style-4  form input::-moz-placeholder {
+    color: #687ea5;
+}
+.register-style-4  form input:-ms-input-placeholder {
+    color: #687ea5;
+}
+.register-style-4  form input:-moz-placeholder {
+    color: #687ea5;
+}
+
+
+
+
+
+
+
+
+
+/*==========
+   Register Style 5
+=========================================*/
+
+.register-container {
+    background:  #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 50px 70px;
+
+    @media #{$sm-layout} {
+        padding: 33px 10px;
+    }
+
+}
+
+.register-top {
+    display:  flex;
+    justify-content:  space-between;
+    margin-bottom: 33px;
+    align-items:  center;
+
+    @media #{$sm-layout} {
+        flex-wrap: wrap;
+    }
+    .register-top-left{
+        h2{
+            color:  #000000;
+            font-size:  16px;
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+    .register-top-right{
+        display:  flex;
+        justify-content:  space-between;
+        @media #{$sm-layout} {
+            flex-wrap: wrap
+        }
+        p {
+            margin: 0;
+            color:  #b1b1b1;
+            margin-right: 30px;
+            font-size: 14px;
+
+            @media #{$small-mobile} {
+                margin-top: 7px;
+                margin-bottom: 10px;
+            }
+        }
+        a {
+            background:  #eff1f2;
+            height:  30px;
+            line-height:  30px;
+            color: #000000;
+            padding: 0 14px;
+            transition: 0.5s;
+            &:hover{
+                background: $theme-color;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
+
+.register-style-5{
+    text-align:  center;
+    form{
+        input {
+            border:  1px solid #f1f1f1;
+            height:  45px;
+            margin-bottom: 30px;
+            padding:  0 20px;
+            color:  #757575;
+            font-weight:  300;
+            font-size: 12px;
+            &[type="submit"] {
+                background:  #0056ff;
+                width:  auto;
+                color:  #fff;
+                height:  48px;
+                padding: 0 40px;
+                color:  #ffffff;
+                font-size:  14px;
+                font-weight: 600;
+                margin-bottom: 50px;
+                transition: 0.5s;
+                margin-top: 12px;
+                &:hover{
+                    background: $theme-color;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .register-icon-2{
+        list-style:  none;
+        padding:  0;
+        margin: 0;
+        display:  flex;
+        justify-content:  center;
+        @media #{$sm-layout} {
+            flex-wrap: wrap;
+        }
+        li{
+            margin: 0 30px;
+            @media #{$sm-layout} {
+                margin-bottom: 10px;
+            }
+            a{
+                display:  block;
+                height:  45px;
+                line-height: 45px;
+                color:  #fff;
+                font-size:  14px;
+                text-transform:  uppercase;
+                i{
+                    width:  47px;
+                    border-right:  1px solid #fff;
+                    height:  45px;
+                    line-height: 45px;
+                }
+                span{
+                    width: 117px;
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .register-social-icons{
+        p{
+            color:  #000000;
+            font-size: 16px;
+            margin-bottom: 23px;
+        }
+    }
+
+}
+// placeholder Color
+
+.register-style-5  form input::-webkit-input-placeholder {
+    color: #757575;
+}
+.register-style-5  form input::-moz-placeholder {
+    color: #757575;
+}
+.register-style-5  form input:-ms-input-placeholder {
+    color: #757575;
+}
+.register-style-5  form input:-moz-placeholder {
+    color: #757575;
+}
+.register-form  form input:focus{
+    border: 1px solid $theme-color;
+}
+.register-form .register-style-4 form input:focus{
+    border: 0 none;
+    border-bottom: 1px solid $theme-color;
+}
+
+

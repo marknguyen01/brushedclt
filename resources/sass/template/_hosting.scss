@@ -1,0 +1,108 @@
+/* ========================
+    Hosting Css 
+===========================*/
+
+
+
+.domain-form {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+    input {
+        width: 500px;
+        height: 60px;
+        line-height: 60px;
+        border: 1px solid #dedede;
+        border-radius: 5px;
+        padding: 0 30px;
+    }
+    button {
+        background: #455ac8;
+        color: #fff;
+        height: 60px;
+        border: 0 none;
+        padding: 0 40px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: 0.4s ease-in-out;
+        &:hover{
+            background: #4f5da4;
+            color: #fff;
+        }
+    }
+}
+
+
+/* pricing Table */
+
+.hosting-switer .ht-switcher-nav-2 a.active::before {
+    background-color: #455ac8;
+}
+
+
+.pricing-panel-6.active.hosting-price .pricing-heading {
+    background: #455ac8;
+}
+
+.pricing-panel-6.active.hosting-price .pricing-footer a.price_btn{
+    background: #455ac8;
+}
+
+
+/* Counter */
+
+.funfact.counter-style--5.hosting-counter .content span{
+    color: #ffffff;
+    font-size: 48px;
+    font-family: $heading-font;
+}
+
+.funfact.counter-style--5.hosting-counter .content h2{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: $heading-font;
+}
+
+
+/* Testimonial */
+
+
+
+
+
+.testimonial-style-2.hosting-testimonial .slick-center .testimonal img {
+    border: 2px solid #455ac8;
+}
+.testimonial-style-2.hosting-testimonial .slick-dots li.slick-active button {
+    background: #455ac8;
+}
+
+
+
+
+
+/* Blog Css */
+.post-carousel-active-5.hosting-post-wrapper button {
+    color: #455ac8;
+}
+.post-carousel-active-5.hosting-post-wrapper button:hover {
+    background: #455ac8;
+    color: #ffffff;
+}
+
+.post-carousel-5.hosting-post .ptc-content .content h2 a:hover {
+    color: #455ac8;
+}
+
+.post-carousel-5.hosting-post .ptc-content .content .post-btn a.readmore-btn:hover {
+    border-bottom: 1px solid #455ac8;
+    color: #455ac8;
+}
+
+
+
+
+

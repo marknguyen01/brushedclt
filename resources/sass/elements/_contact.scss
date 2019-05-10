@@ -1,0 +1,775 @@
+/*=======================================
+    Contact Form Style
+=========================================*/
+/*==========
+   Section Title Style
+=========================================*/
+.ct-title {
+    h2 {
+        color: #18012c;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: #798294;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &.text-white {
+        h2 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #ffffff;
+        }
+    }
+}
+
+
+
+/*==========
+   Section Title Style 02
+=========================================*/
+
+.ct-title-2 {
+    position:  relative;
+    padding-left: 86px;
+    margin-bottom: 10px;
+    img {
+        position:  absolute;
+        left:  0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    h2 {
+        color:  #ffffff;
+        font-size:  30px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        
+        @media #{$small-mobile} {
+            font-size: 18px;
+        }
+    }
+    p {
+        color:  #ffffff;
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+/*==========
+   Form Style One
+=========================================*/
+.form-style-1 {
+    form{
+        input {
+            height: 55px;
+            font-weight: 300;
+            margin-top: 30px;
+            padding: 0 20px;
+            border: 1px solid #c1c1c1;
+            font-family: $heading-font;
+            font-size: 13px;
+            color: #a2a2a2;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+
+            &[type="submit"] {
+                background-color: #0056ff;
+                border: medium none;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+                height: 55px;
+                line-height: 55px;
+                padding: 0 29px;
+                text-transform: uppercase;
+                width: auto;
+                transition: 0.5s;
+                font-family: $heading-font;
+
+                &:hover {
+                    background-color: $theme-color;
+                }
+            }
+        }
+
+        textarea {
+            border: 1px solid #c1c1c1;
+            min-height: 175px;
+            margin-top: 30px;
+            padding: 20px;
+            color: #a2a2a2;
+            resize: none;
+            font-family: $heading-font;
+            font-size: 13px;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+
+    &.cln-service-boking{
+        form{
+            input {
+                &[type="submit"] {
+                    background-color: $cln-theme-color;
+                    height: 55px;
+                    padding: 0 52px;
+                    line-height: 52px;
+                    &:hover {
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &.carpenter-form{
+        form{
+            input {
+                &[type="submit"] {
+                    background-color: $carpen-theme-color;
+                    height: 46px;
+                    padding: 0 38px;
+                    line-height: 46px;
+                    margin-top: 40px;
+                    &:hover {
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &.resturant-form{
+        form{
+            input {
+                &[type="submit"] {
+                    background-color: $resturant-theme-color;
+                    height: 46px;
+                    padding: 0 38px;
+                    line-height: 46px;
+                    margin-top: 40px;
+                    &:hover {
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &.body-form{
+        form{
+            input {
+                &[type="submit"] {
+                    background-color: $body-theme-color;
+                    height: 46px;
+                    padding: 0 38px;
+                    line-height: 46px;
+                    margin-top: 40px;
+                    &:hover {
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.form-style-1 form input::-webkit-input-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form input::-moz-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form input:-ms-input-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form input:-moz-placeholder {
+    color: #a2a2a2;
+}
+
+
+
+
+
+.form-style-1 form textarea::-webkit-input-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form textarea::-moz-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form textarea:-ms-input-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form textarea:-moz-placeholder {
+    color: #a2a2a2;
+}
+
+
+
+/*==========
+   Form Style 02
+=========================================*/
+.form-style-2 {
+    label {
+        color: #ffffff;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 11px;
+    }
+
+    input {
+        height: 55px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        padding: 0 20px;
+        border: 0 none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        background: rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+        &:focus{
+            border: 1px solid $theme-color;
+        }
+        &[type="submit"] {
+            background-color: #fff;
+            border: medium none;
+            color: #0056ff;
+            font-size: 14px;
+            font-weight: 600;
+            height: 55px;
+            line-height: 54px;
+            padding: 0 29px;
+            text-transform: uppercase;
+            width: 100%;
+            transition: 0.5s;
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+
+            &:hover {
+                background-color: $theme-color;
+                color: #ffffff;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    textarea {
+        border: 1px solid #c1c1c1;
+        min-height: 209px;
+        padding: 20px;
+        color: #fff;
+        resize: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        background: rgba(255, 255, 255, 0.3);
+        margin-bottom: 30px;
+        border: 0 none;
+        &:focus{
+            border: 1px solid $theme-color;
+        }
+    }
+}
+
+.form-style-2 input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.form-style-2 input::-moz-placeholder {
+    color: #ffffff;
+}
+
+.form-style-2 input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.form-style-2 input:-moz-placeholder {
+    color: #ffffff;
+}
+
+/*==========
+   Form Style 03
+=========================================*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form-style-3 {
+    form {
+        input {
+            color: #c0c0c0;
+            font-weight: 300;
+            font-style: italic;
+            border: 0 none;
+            border-bottom: 1px solid #c0c0c0;
+            padding: 0;
+            margin-bottom: 50px;
+            padding-bottom: 4px;
+            font-size: 16px;
+            &:focus{
+                border-bottom: 1px solid $theme-color;
+            }
+
+            &[type="submit"] {
+                border: 0 none;
+                background: #0056ff;
+                color: #fff;
+                margin-top: 40px;
+                margin-bottom: 0;
+                height: 55px;
+                line-height: 59px;
+                padding: 0 20px;
+                transition: 0.5s;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    background: #ffffff;
+                    color: #0056ff;
+                }
+            }
+        }
+        textarea {
+            border: 0 none;
+            border-bottom: 1px solid #c0c0c0;
+            font-style: italic;
+            padding: 0;
+            min-height: 150px;
+            resize: none;
+            color: #c0c0c0;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:focus{
+                border-bottom: 1px solid $theme-color;
+            }
+        }
+    }
+    &.medical-aapoinment{
+        form {
+            input,
+            select {
+                color: #707070;
+                font-weight: 400;
+                font-style: normal;
+                border: 1px solid #cdcdcd;
+                padding: 0 20px;
+                margin-bottom: 30px;
+                padding-bottom: 4px;
+                font-size: 16px;
+                font-family: $heading-font;
+                background: #f0f0f0;
+                height: 50px;
+                &:focus{
+                    border: 1px solid $medical-theme-color;
+                }
+    
+                &[type="submit"] {
+                    border: 0 none;
+                    background: $medical-theme-color;
+                    color: #fff;
+                    margin-top: 40px;
+                    margin-bottom: 0;
+                    height: 55px;
+                    line-height: 59px;
+                    padding: 0 20px;
+                    transition: 0.5s;
+                    &:hover {
+                        background: #ffffff;
+                        color: $medical-theme-color;
+                    }
+                }
+            }
+            textarea {
+                border: 1px solid #cdcdcd;
+                color: #707070;
+                padding: 20px;
+                background: #f0f0f0;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 16px;
+                font-family: $heading-font;
+                &:focus{
+                    border: 1px solid $medical-theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.form-style-3.portfolio-contact form input[type="submit"]{
+    background: $portfolio-theme-color;
+}
+
+.form-style-3.portfolio-contact form input[type="submit"]:hover{
+    background: #ffffff;
+    color: $portfolio-theme-color;
+}
+
+
+/*==========
+   Form Style 05
+=========================================*/
+
+
+.form-style-5{
+    form{
+        .input-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            @media #{$small-mobile} {
+                display: block;
+            }
+            label {
+                color: #000000;
+                font-weight: 600;
+                font-size: 14px;
+                flex-basis: 16%;
+                @media #{$sm-layout} {
+                    flex-basis: 24%;
+                }
+            }
+            input {
+                background: #a2a2a2;
+                color: #a2a2a2;
+                font-weight: 300;
+                background: #f3f3f3;
+                border: 1px solid #c1c1c1;
+                height: 55px;
+                line-height: 55px;
+                padding: 0 20px;
+                font-weight: $heading-font;
+                &:focus{
+                    border: 1px solid $theme-color;
+                }
+                
+            }
+            textarea {
+                background:  #f3f3f3;
+                border: 1px solid #c1c1c1;
+                min-height:  200px;
+                padding: 20px;
+                font-weight: $heading-font;
+                &:focus{
+                    border: 1px solid $theme-color;
+                }
+            }
+        }
+        input{
+            &[type="submit"] {
+                margin-left: 75px;
+                background:  #0056ff;
+                width:  auto;
+                border:  0 none;
+                color: #fff;
+                padding: 0 30px;
+                height:  55px;
+                line-height:  55px;
+                margin:  0;
+                margin-left: 75px;
+                font-size:  14px;
+                font-weight: 500;
+                transition: 0.5s;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+/*==========
+   Form Style 06
+=========================================*/
+
+.contact_form_container {
+    background: #81abfe;
+    padding: 30px;
+    &.repair-request-form{
+        background: #f4f4f4;
+        .ct-title-2{
+            h2{
+                color: #3d3d3d;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+
+
+.form-style-6{
+    form{
+        input {
+            margin-top: 30px;
+            border:  1px solid #ffffff;
+            height: 50px;
+            line-height:  50px;
+            color:  #fff;
+            font-weight: 300;
+            font-family: $heading-font;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+
+            &[type="submit"] {
+                background:  #fff;
+                height: 55px;
+                line-height: 56px;
+                border:  0 none;
+                padding: 0 30px;
+                color:  #0056ff;
+                font-weight: 600;
+                width:  auto;
+                transition: 0.5s;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        textarea {
+            margin-top:  30px;
+            min-height:  145px;
+            border:  1px solid #fff;
+            padding:  20px;
+            font-weight:  300;
+            color:  #fff;
+            font-family: $heading-font;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+
+    &.repair-service-form{
+        form{
+            input {
+                border:  1px solid #e1e1e1;
+                background: #ffffff;
+                color: #707070;
+                &:focus{
+                    border: 1px solid $theme-color;
+                }
+                &[type="submit"] {
+                    color:  #ffffff;
+                    width:  100%;
+                    background: $repair-theme-color;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+            }
+            textarea {
+                border:  1px solid #e1e1e1;
+                color:  #707070;
+                background: #ffffff;
+                &:focus{
+                    border: 1px solid $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+.form-style-6 form input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.form-style-6 form input::-moz-placeholder {
+    color: #ffffff;
+}
+
+.form-style-6 form input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.form-style-6 form input:-moz-placeholder {
+    color: #ffffff;
+}
+
+
+.form-style-6 form textarea::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.form-style-6 form textarea::-moz-placeholder {
+    color: #ffffff;
+}
+
+.form-style-6 form textarea:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.form-style-6 form textarea:-moz-placeholder {
+    color: #ffffff;
+}
+
+
+
+
+
+
+.form-style-6.repair-service-form form input::-webkit-input-placeholder {
+    color: #707070;
+}
+
+.form-style-6.repair-service-form form input::-moz-placeholder {
+    color: #707070;
+}
+
+.form-style-6.repair-service-form form input:-ms-input-placeholder {
+    color: #707070;
+}
+
+.form-style-6.repair-service-form form input:-moz-placeholder {
+    color: #707070;
+}
+
+
+.form-style-6.repair-service-form form textarea::-webkit-input-placeholder {
+    color: #707070;
+}
+
+.form-style-6.repair-service-form form textarea::-moz-placeholder {
+    color: #707070;
+}
+
+.form-style-6.repair-service-form form textarea:-ms-input-placeholder {
+    color: #707070;
+}
+
+.form-style-6.repair-service-form form textarea:-moz-placeholder {
+    color: #707070;
+}
+
+
+
+
+/*==========
+   Form Style 07
+=========================================*/
+
+
+.form-style-7{
+    form{
+        input {
+            background:  #f3f3f3;
+            border:  0  none;
+            height:  55px;
+            padding: 0 20px;
+            margin-bottom: 30px;
+            font-family: "Montserrat", sans-serif;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+            &[type="submit"] {
+                width:  auto;
+                margin: 0;
+                padding:  0 58px;
+                background:  #0056ff;
+                color:  #fff;
+                height:  58px;
+                font-weight: 600;
+                line-height: 61px;
+                text-transform: uppercase;
+                transition: 0.5s;
+                margin-top: 10px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        label {
+            font-size:  14px;
+            color:  #000000;
+            font-weight: 300;
+            font-style:  italic;
+        }
+        textarea {
+            background:  #f3f3f3;
+            border:  0 none;
+            margin-bottom:  30px;
+            min-height:  230px;
+            resize:  none;
+            padding:  20px;
+            margin-bottom: 30px;
+            font-family: "Montserrat", sans-serif;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+
+    &.political-form{
+        form{
+            input {
+                
+                &[type="submit"] {
+                    background:  $political-theme-color;
+                    border-radius: 3px;
+                    &:hover{
+                        opacity: 1;
+                        background:  #043174;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+input, textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+   
