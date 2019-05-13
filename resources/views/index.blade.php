@@ -39,7 +39,7 @@
                     <div class="cuscol">
                         <div class="logo">
                             <a href="#">
-                                <img src="img/logo/logo-w.png" alt="logo">
+                                <img style="max-height: 60px" src="/storage/{{ setting('site.logo') }}" alt="{{ setting('site.title') }} Logo">
                             </a>
                         </div>
                     </div>
@@ -141,11 +141,10 @@
                         <div class="row align-items-center text-left">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-12">
                                 <div class="hero-beauty-salon content text-left">
-                                    <h2>Beauty & Spa Wellness</h2>
-                                    <h1>Therapy Center</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing sed do eiusmod tempor incididunt ut labore</p>
+                                    <h2>Blowouts & Nails & Brows</h2>
+                                    <p>{{ setting('site.description') }}</p>
                                     <div class="slide-btn">
-                                        <a class="cln-btn" href="#">More About Us</a>
+                                        <a class="cln-btn" href="#">Schedule Appointments</a>
                                     </div>
                                 </div>
                             </div>
