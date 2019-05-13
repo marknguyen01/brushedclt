@@ -696,7 +696,7 @@
 
     &.beauty-team{
         &:hover .team-hover-action{
-            background-color: rgba(238, 108, 157, 0.8);
+            background-color: lighten($beauty-theme-color, 20%);
         }
         .team-hover-action{
             .hover-action{
