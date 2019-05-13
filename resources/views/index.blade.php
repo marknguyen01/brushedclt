@@ -49,85 +49,19 @@
                                 <li>
                                     <a href="#">Home</a>
                                 </li>
-                                <li class="drop withdropdown">
-                                    <a href="#">Ready Pages</a>
-                                    <!-- Start Mega Menu -->
-                                    <div class="mega-menu dropdown">
-
-                                        <ul class="item">
-                                            <li><a href="index-cleaning-service.html">Cleaning Service</a></li>
-                                            <li><a href="index-agency.html">Creative Agency</a></li>
-                                            <li><a href="index-education.html">Education</a></li>
-                                            <li><a href="index-construction.html">Construction</a></li>
-                                            <li><a href="index-gardening.html">Gardening</a></li>
-                                            <li><a href="index-event.html">Event</a></li>
-                                            <li><a href="index-medical.html">Medical</a></li>
-                                            <li><a href="index-portfolio.html">Potrtfolio</a></li>
-                                            <li><a href="index-corporate.html">Corporate</a></li>
-                                            <li><a href="index-repair.html">Repair</a></li>
-                                        </ul>
-
-                                        <ul class="item">
-                                            <li><a href="index-political.html">Political</a></li>
-                                            <li><a href="index-travel.html">Traveling</a></li>
-                                            <li><a href="index-carpenter.html">Carpenter</a></li>
-                                            <li><a href="index-charity.html">Charity</a></li>
-                                            <li><a href="index-software.html">Software</a></li>
-                                            <li><a href="index-resturant.html">Resturant</a></li>
-                                            <li><a href="index-real-estate.html">Real Estate</a></li>
-                                            <li><a href="index-hosting.html">Hosting</a></li>
-                                            <li><a href="index-beauty-salon.html">Beauty Salon</a></li>
-                                            <li><a href="index-body-fitness.html">Body Fitness</a></li>
-                                        </ul>
-
-                                    </div>
-                                    <!-- End Mega Menu -->
+                                <li>
+                                  <a href="#services">Services</a>
                                 </li>
-
+                                <li>
+                                  <a href="#contact">Contact</a>
+                                </li>
                             </ul>
                         </nav>
                         <div class="header-btn text-right purchase_btn">
-                            <a href="#">purchase</a>
+                            <a href="/app">Book Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12 d-none">
-                        <nav class="mobilemenu__nav">
-                            <ul class="meninmenu">
-                                <li><a href="#">Home</a></li>
-                                <li>
-                                    <a href="#">Ready Pages</a>
-                                    <ul>
-                                        <li><a href="index-cleaning-service.html">Cleaning Service</a></li>
-                                        <li><a href="index-agency.html">Creative Agency</a></li>
-                                        <li><a href="index-education.html">Education</a></li>
-                                        <li><a href="index-construction.html">Construction</a></li>
-                                        <li><a href="index-gardening.html">Gardening</a></li>
-                                        <li><a href="index-event.html">Event</a></li>
-                                        <li><a href="index-medical.html">Medical</a></li>
-                                        <li><a href="index-portfolio.html">Potrtfolio</a></li>
-                                        <li><a href="index-corporate.html">Corporate</a></li>
-                                        <li><a href="index-repair.html">Repair</a></li>
-                                        <li><a href="index-political.html">Political</a></li>
-                                        <li><a href="index-travel.html">Traveling</a></li>
-                                        <li><a href="index-carpenter.html">Carpenter</a></li>
-                                        <li><a href="index-charity.html">Charity</a></li>
-                                        <li><a href="index-software.html">Software</a></li>
-                                        <li><a href="index-resturant.html">Resturant</a></li>
-                                        <li><a href="index-real-estate.html">Real Estate</a></li>
-                                        <li><a href="index-hosting.html">Hosting</a></li>
-                                        <li><a href="index-beauty-salon.html">Beauty Salon</a></li>
-                                        <li><a href="index-body-fitness.html">Body Fitness</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <!-- Mobile Menu -->
-                <div class="mobile-menu d-block d-lg-none"></div>
-                <!-- Mobile Menu -->
             </div>
         </header>
         <!--// Header -->
@@ -877,89 +811,12 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="footer-top bg_color--39 ht-footer-2">
-                <div class="container">
-                    <div class="row">
-
-                        <!-- Start Single Widget -->
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="footer-widget footer-style-2">
-                                <h4 class="ft-title">About Us</h4>
-                                <div class="content">
-                                    <p>But I must explain to you how at mistakidea of denouncing pleasure and praisi pain was born and I will give you</p>
-                                    <div class="social-share social-square">
-                                        <a class="facebook" title="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="twitter" title="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="google-plus" title="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                                        <a class="pinterest" title="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
-                                        <a class="linkedin" title="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Widget -->
-
-                        <!-- Start Single Widget -->
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="footer-widget footer-style-2 space-left">
-                                <h4 class="ft-title">Our Courses</h4>
-                                <div class="content">
-                                    <ul class="ft-menu">
-                                        <li><a href="#">About Company</a></li>
-                                        <li><a href="#">Our Services</a></li>
-                                        <li><a href="#">Our Feature</a></li>
-                                        <li><a href="#">Latest News</a></li>
-                                        <li><a href="#">Cleaning Tips</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Widget -->
-
-                        <!-- Start Single Widget -->
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="footer-widget footer-style-2 space-left">
-                                <h4 class="ft-title">Event’s Link</h4>
-                                <div class="content">
-                                    <ul class="ft-menu">
-                                        <li><a href="#">Dry Clean Your Winter Coat</a></li>
-                                        <li><a href="#">Dry Clean</a></li>
-                                        <li><a href="#">Ironing Services</a></li>
-                                        <li><a href="#">Laundry</a></li>
-                                        <li><a href="#">Wash & Fold</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Widget -->
-
-                        <!-- Start Single Widget -->
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="footer-widget footer-style-2">
-                                <h4 class="ft-title">Our Gallery</h4>
-                                <div class="content">
-                                    <ul class="ft-gallery">
-                                        <li><a href="#"><img src="img/gallery/sm-gallery/gallery-1.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="img/gallery/sm-gallery/gallery-2.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="img/gallery/sm-gallery/gallery-5.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="img/gallery/sm-gallery/gallery-3.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="img/gallery/sm-gallery/gallery-4.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="img/gallery/sm-gallery/gallery-1.jpg" alt="gallery images"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Widget -->
-
-                    </div>
-                </div>
-            </div>
             <div class="copyright bg_color--40 copyright-2">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="copyright-left content text-center">
-                                <p>Powered by Reyes</p>
+                                <p><a href="marknguyen.org">Design by Mark Nguyen</a></p>
                             </div>
                         </div>
                     </div>

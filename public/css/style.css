@@ -6047,7 +6047,7 @@ textarea:-ms-input-placeholder {
 /* Section Title Style 20 */
 
 .section-title--19 span {
-  color: #ff759d;
+  color: #5b4c63;
   font-weight: 400;
   font-size: 30px;
   font-family: "Cookie", cursive;
@@ -14935,7 +14935,7 @@ textarea {
 }
 
 .service-2.beauty-service:hover .content a.readmore_btn {
-  color: #ff759d;
+  color: #5b4c63;
 }
 
 /* Cleaning Service Activation  */
@@ -32074,7 +32074,7 @@ div#example_paginate {
 .header-1.header--static.beauty-theme-color .header-btn a.cln-btn {
   background: #ffffff;
   border: 2px solid #ffffff;
-  color: #ff759d;
+  color: #5b4c63;
 }
 
 .header-1.header--static.beauty-theme-color .header-btn a.cln-btn:hover {
@@ -32877,7 +32877,7 @@ Line Menu
 }
 
 .ht-slide.slider-style-2 .hero-beauty-salon.content h2 {
-  color: #ff759d;
+  color: #5b4c63;
   font-size: 40px;
   font-weight: 400;
   font-family: "Cookie", cursive;
@@ -32926,19 +32926,19 @@ Line Menu
   height: 60px;
   padding: 0 40px;
   line-height: 57px;
-  border: 2px solid #ff759d;
+  border: 2px solid #5b4c63;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: 500;
   border-radius: 30px;
-  background: #ff759d;
+  background: #5b4c63;
 }
 
 .ht-slide.slider-style-2 .hero-beauty-salon.content .slide-btn a.cln-btn:hover {
   background: transparent;
-  color: #ff759d;
-  border: 2px solid #ff759d;
+  color: #5b4c63;
+  border: 2px solid #5b4c63;
 }
 
 .ht-slide.slider-style-3 {
@@ -34149,7 +34149,7 @@ Line Menu
 }
 
 .beauty-theme-color {
-  background: #ff759d;
+  background: #5b4c63;
 }
 
 /* ===================
@@ -34157,7 +34157,7 @@ Beauty Salon Css
 ===========================*/
 
 .beauty-welcome-inner .content span {
-  color: #ff759d;
+  color: #5b4c63;
   font-size: 30px;
   font-weight: 300;
   font-family: "Cookie", cursive;
@@ -34181,11 +34181,11 @@ Beauty Salon Css
 }
 
 .beauty-welcome-inner .content a.buty-btn {
-  color: #ff759d;
+  color: #5b4c63;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 28px;
-  border-bottom: 1px solid #ff759d;
+  border-bottom: 1px solid #5b4c63;
 }
 
 .bty-awesome {
@@ -34222,12 +34222,12 @@ Beauty Salon Css
 
 .cr-welcome-wrapper .beauty-counter .funfact .content span {
   font-family: "Cookie", cursive;
-  color: #ff759d;
+  color: #5b4c63;
   font-size: 60px;
 }
 
 .cr-welcome-wrapper .beauty-counter .funfact .content span::after {
-  color: #ff759d;
+  color: #5b4c63;
   font-size: 60px;
 }
 
@@ -34257,41 +34257,41 @@ Beauty Salon Css
 }
 
 .pricing-panel-7.beauty-pricing-table .pricing-heading .title h2 {
-  color: #ff759d;
+  color: #5b4c63;
 }
 
 .pricing-panel-7.active.beauty-pricing-table .pricing-footer a.price_btn {
-  background: #ff759d;
+  background: #5b4c63;
   color: #ffffff;
 }
 
 .pricing-panel-7.beauty-pricing-table .pricing-footer a.price_btn:hover {
-  background: #ff759d;
+  background: #5b4c63;
   color: #ffffff;
 }
 
 /* Blog Css */
 
 .post-carousel-active-5.beauty-post-wrapper button {
-  color: #ff759d;
+  color: #5b4c63;
 }
 
 .post-carousel-active-5.beauty-post-wrapper button:hover {
-  background: #ff759d;
+  background: #5b4c63;
   color: #ffffff;
 }
 
 .post-carousel-5.beauty-post .ptc-content .content h2 a:hover {
-  color: #ff759d;
+  color: #5b4c63;
 }
 
 .post-carousel-5.beauty-post .ptc-content .content .post-btn a.readmore-btn:hover {
-  border-bottom: 1px solid #ff759d;
-  color: #ff759d;
+  border-bottom: 1px solid #5b4c63;
+  color: #5b4c63;
 }
 
 .form-style-1 form input[type=submit] {
-  background-color: #ff759d;
+  background-color: #5b4c63;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -34976,7 +34976,7 @@ Beauty Salon Css
 
   .header.header-1 .cleaning-btn,
   .header.header-1 .header-btn {
-    margin-left: 0;
+    margin: 0 auto;
   }
 
   .ht-slide.slider-style-2 .hero-political.content h1 {

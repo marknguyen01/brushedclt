@@ -5,7 +5,7 @@ Beauty Salon Css
 .beauty-welcome-inner {
     .content {
         span {
-            color: #ff759d;
+            color: $beauty-theme-color;
             font-size: 30px;
             font-weight: 300;
             font-family: 'Cookie', cursive;
@@ -30,11 +30,11 @@ Beauty Salon Css
 
         a {
             &.buty-btn {
-                color: #ff759d;
+                color: $beauty-theme-color;
                 font-family: $heading-font;
                 font-size: 16px;
                 line-height: 28px;
-                border-bottom: 1px solid #ff759d;
+                border-bottom: 1px solid $beauty-theme-color;
             }
         }
     }
@@ -81,12 +81,12 @@ Beauty Salon Css
 
 .cr-welcome-wrapper .beauty-counter .funfact .content span {
     font-family: 'Cookie', cursive;
-    color: #ff759d;
+    color: $beauty-theme-color;
     font-size: 60px;
 }
 
 .cr-welcome-wrapper .beauty-counter .funfact .content span::after {
-    color: #ff759d;
+    color: $beauty-theme-color;
     font-size: 60px;
 }
 .cr-welcome-wrapper .funfact .content h2{
@@ -116,39 +116,39 @@ Beauty Salon Css
 }
 
 .pricing-panel-7.beauty-pricing-table .pricing-heading .title h2{
-    color: #ff759d;
+    color: $beauty-theme-color;
 }
 
 .pricing-panel-7.active.beauty-pricing-table .pricing-footer a.price_btn {
-    background: #ff759d;
+    background: $beauty-theme-color;
     color: #ffffff;
 }
 
 .pricing-panel-7.beauty-pricing-table .pricing-footer a.price_btn:hover {
-    background: #ff759d;
+    background: $beauty-theme-color;
     color: #ffffff;
 }
 
 /* Blog Css */
 .post-carousel-active-5.beauty-post-wrapper button {
-    color: #ff759d;
+    color: $beauty-theme-color;
 }
 .post-carousel-active-5.beauty-post-wrapper button:hover {
-    background: #ff759d;
+    background: $beauty-theme-color;
     color: #ffffff;
 }
 
 .post-carousel-5.beauty-post .ptc-content .content h2 a:hover {
-    color: #ff759d;
+    color: $beauty-theme-color;
 }
 
 .post-carousel-5.beauty-post .ptc-content .content .post-btn a.readmore-btn:hover {
-    border-bottom: 1px solid #ff759d;
-    color: #ff759d;
+    border-bottom: 1px solid $beauty-theme-color;
+    color: $beauty-theme-color;
 }
 
 .form-style-1 form input[type="submit"]{
-    background-color: #ff759d;
+    background-color: $beauty-theme-color;
 }
 
 
