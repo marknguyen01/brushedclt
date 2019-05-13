@@ -1,5 +1,5 @@
 /* ===================
-Beauty Salon Css 
+Beauty Salon Css
 ===========================*/
 
 .beauty-welcome-inner {
@@ -94,16 +94,18 @@ Beauty Salon Css
     font-size: 15px;
 }
 
-.beauty-welcome .cr-welcome-wrapper > .content p{
-    color: #3d3d3d;
-    font-size: 16px;
-    line-height: 28px;
-    font-family: $heading-font;
-    margin-top: 25px;
+.beauty-welcome {
+  background-image: url('/img/about.png');
+  .cr-welcome-wrapper > .content p{
+      color: #3d3d3d;
+      font-size: 16px;
+      line-height: 28px;
+      font-family: $heading-font;
+      margin-top: 25px;
+  }
 }
-
 /*=====================
-    Pricing Table 
+    Pricing Table
 ========================*/
 
 
@@ -192,13 +194,3 @@ Beauty Salon Css
 @media #{$large-mobile}{
 
 }
-
-
-
-
-
-
-
-
-
-

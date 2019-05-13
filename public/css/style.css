@@ -32423,7 +32423,7 @@ Line Menu
 }
 
 /* ===================
-Beauty Salon Css 
+Beauty Salon Css
 ===========================*/
 
 .beauty-welcome-inner .content span {
@@ -32506,6 +32506,10 @@ Beauty Salon Css
   font-size: 15px;
 }
 
+.beauty-welcome {
+  background-image: url("/img/about.png");
+}
+
 .beauty-welcome .cr-welcome-wrapper > .content p {
   color: #3d3d3d;
   font-size: 16px;
@@ -32515,7 +32519,7 @@ Beauty Salon Css
 }
 
 /*=====================
-    Pricing Table 
+    Pricing Table
 ========================*/
 
 .pricing-panel-7.beauty-pricing-table .pricing-heading .price h4 {
