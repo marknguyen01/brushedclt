@@ -70,7 +70,7 @@
         <div class="ht-mega-slider">
             <div class="ht-mega-slider-activation">
                 <!-- Start Single Slide -->
-                <div class="ht-slide slider-style-2 bg_image--98 d-flex align-items-center animation__style--1">
+                <div class="ht-slide slider-style-2 bg_image--1 d-flex align-items-center animation__style--1">
                     <div class="container">
                         <div class="row align-items-center text-left">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-12">

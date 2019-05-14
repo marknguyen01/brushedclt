@@ -477,7 +477,7 @@
     Background Image
 ---------------------------*/
 
-@for $i from 1 through 120{
+@for $i from 1 through 3{
 	.bg_image--#{$i}{
 		background-image: url('/img/bg/bg-image-#{$i}.jpg');
 		background-repeat: no-repeat;

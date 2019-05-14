@@ -1,5 +1,5 @@
 <!-- Start Contact Form Style -->
-<div class="section-contact section-ptb-120 bg_image--101">
+<div class="section-contact section-ptb-120 bg_image--3">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-12">

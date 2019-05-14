@@ -17,14 +17,15 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="service text-center service-2 padding-none beauty-service">
                     <div class="thumb">
-                        <a href="#">
-                            <img src="img/beauty/service/service-1.jpg" alt="service img">
+                        <a href="{{ $s->url ? $s->url : route('menu') }}">
+                            <img src="{{ $s->image ? '/storage/' . $s->image : asset('img/no_image.png') }}" alt="service img">
                         </a>
                     </div>
                     <div class="content">
-                        <h4>Quick Fix Makeup</h4>
-                        <p>Lorem ipsum dolor sit amet ectetur adipelitl sed do eiusmod tempor incidid</p>
-                        <a class="readmore_btn" href="#">Read More</a>
+                        <h4>{{ $s->name }}</h4>
+                        <p>${{ $s->price }}{{ $s->price_exact ? '' : '+'}}</p>
+                        <p>{{ $s->description }}</p>
+                        <a class="readmore_btn" href="{{ $s->url ? $s->url : route('menu') }}">View Menu</a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <!-- Start Welcome Area -->
-<div class="beauty-welcome section-ptb-120 bg_image--99">
+<div class="beauty-welcome section-ptb-120 bg_image--2">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
