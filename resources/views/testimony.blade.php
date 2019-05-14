@@ -1,3 +1,4 @@
+@if(isset($review))
 <!-- Start Testimonial Style -->
 <div class="section-testimonial section-ptb-120 bg_color--39">
     <div class="container">
@@ -96,4 +97,5 @@
         </div>
     </div>
 </div>
+@endif
 <!-- End Testimonial Style -->

@@ -5,7 +5,7 @@
             <div class="col-lg-6 col-md-12 col-12">
                 <div class="section-title--19 text-left">
                     <span>Your Best Solution</span>
-                    <h2>Make a Appointment</h2>
+                    <h2>Contact Us</h2>
                 </div>
             </div>
         </div>

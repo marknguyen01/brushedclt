@@ -1,4 +1,5 @@
 <!-- Start Service Style-->
+@if(isset($featured_services))
 <div class="section-service section-ptb-120 bg_color--48">
     <div class="container">
         <div class="row">
@@ -11,6 +12,7 @@
             </div>
         </div>
         <div class="row mt--30">
+            @foreach($featured_services as $s)
             <!-- Start Single Service -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="service text-center service-2 padding-none beauty-service">
@@ -26,41 +28,10 @@
                     </div>
                 </div>
             </div>
+            @endforeach
             <!-- End Single Service -->
-            <!-- Start Single Service -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="service text-center service-2 padding-none beauty-service">
-                    <div class="thumb">
-                        <a href="#">
-                            <img src="img/beauty/service/service-2.jpg" alt="service img">
-                        </a>
-                    </div>
-                    <div class="content">
-                        <h4>L'oreal Color</h4>
-                        <p>Lorem ipsum dolor sit amet ectetur adipelitl sed do eiusmod tempor incidid</p>
-                        <a class="readmore_btn" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Service -->
-            <!-- Start Single Service -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="service text-center service-2 padding-none beauty-service">
-                    <div class="thumb">
-                        <a href="#">
-                            <img src="img/beauty/service/service-3.jpg" alt="service img">
-                        </a>
-                    </div>
-                    <div class="content">
-                        <h4>Nail Treatment</h4>
-                        <p>Lorem ipsum dolor sit amet ectetur adipelitl sed do eiusmod tempor incidid</p>
-                        <a class="readmore_btn" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Service -->
-
         </div>
     </div>
 </div>
+@endif
 <!-- End Service Style-->

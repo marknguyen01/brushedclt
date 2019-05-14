@@ -33,7 +33,7 @@
     <div id="wrapper" class="wrapper">
 
         <!-- Header -->
-        <header class="header header-1 header--static beauty-header beauty-theme-color clearfix">
+        <header class="header header-1 header--static beauty-header beauty-theme-color clearfi9999x">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="cuscol">
@@ -108,7 +108,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="copyright-left content text-center">
-                                <p><a href="marknguyen.org">Design by Mark Nguyen</a></p>
+                                <p><a href="http://www.marknguyen.org">Design by Mark Nguyen</a></p>
                             </div>
                         </div>
                     </div>

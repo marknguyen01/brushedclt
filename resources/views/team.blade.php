@@ -1,4 +1,5 @@
 <!-- Start Team Style -->
+@if(isset($team_members))
 <div class="section-team section-ptb-120 bg_color--2">
     <div class="container">
         <div class="row">
@@ -95,4 +96,5 @@
         <!-- End Team Area -->
     </div>
 </div>
+@endif
 <!-- End Team Style -->
