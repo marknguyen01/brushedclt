@@ -89,10 +89,8 @@
 	|
 	|
 	|___Template Styles
-	|	|___ Header
 	|	|___ Navigation
 	|	|___ Banner
-	|	|___ Footer Style
 	|	|___ Slide Style
 	|	|___ agency Style
 	|	|___ event Style
@@ -179,10 +177,8 @@
 /**************************************
 	Template Styles
 ***************************************/
-@import 'template/header';
 @import 'template/navigation';
 @import 'template/banner';
-@import 'template/footer';
 @import 'template/slider';
 @import 'template/register';
 @import 'template/gallery';

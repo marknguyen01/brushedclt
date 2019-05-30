@@ -1,0 +1,55 @@
+@import 'variables';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
+body {
+    background-color: #fff !important;
+}
+.menu {
+    padding: 10vh 0;
+    &__item {
+        margin: 5vh 0;
+    }
+}
+.category {
+    &__name {
+        @include media-breakpoint-up(md) {
+            font-size: 5rem;
+        }
+        font-size: 3rem;
+        font-family: "Cookie", cursive;
+        color: #5b4c63;
+    }
+}
+
+.sub-category {
+    &__name {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.service-item, .sub-service-item {
+    &__header {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        &::after {
+            content: "";
+            border-bottom: 1px solid;
+            flex-grow: 1;
+            order: 2;
+            position: relative;
+            top: -0.75rem;
+        }
+    }
+    &__name {
+        order: 1;
+    }
+    &__price {
+        order: 3;
+    }
+}
+.sub-service-item {
+    margin-left: 4%;
+    display: list-item;
+}

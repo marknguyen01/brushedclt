@@ -1,5 +1,5 @@
 <!-- Start Contact Form Style -->
-<div class="section-contact section-ptb-120 bg_image--3">
+<div class="section-contact section-ptb-120 bg_image--3" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-12">
@@ -25,7 +25,7 @@
                             </div>
 
                             <div class="col-lg-12">
-                                <textarea name="message" placeholder="Massege*"></textarea>
+                                <textarea name="message" placeholder="Message*"></textarea>
                             </div>
 
                             <div class="col-lg-12">

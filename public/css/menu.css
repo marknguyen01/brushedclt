@@ -1,0 +1,59 @@
+body {
+  background-color: #fff !important;
+}
+
+.menu {
+  padding: 10vh 0;
+}
+
+.menu__item {
+  margin: 5vh 0;
+}
+
+.category__name {
+  font-size: 3rem;
+  font-family: "Cookie", cursive;
+  color: #5b4c63;
+}
+
+@media (min-width: 768px) {
+  .category__name {
+    font-size: 5rem;
+  }
+}
+
+.sub-category__name {
+  font-family: "Montserrat", sans-serif;
+}
+
+.service-item__header,
+.sub-service-item__header {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+}
+
+.service-item__header::after,
+.sub-service-item__header::after {
+  content: "";
+  border-bottom: 1px solid;
+  flex-grow: 1;
+  order: 2;
+  position: relative;
+  top: -0.75rem;
+}
+
+.service-item__name,
+.sub-service-item__name {
+  order: 1;
+}
+
+.service-item__price,
+.sub-service-item__price {
+  order: 3;
+}
+
+.sub-service-item {
+  margin-left: 4%;
+  display: list-item;
+}
+

@@ -1,13 +1,13 @@
 <!-- Start Service Style-->
 @if(isset($featured_services))
-<div class="section-service section-ptb-120 bg_color--48">
+<div class="section-service section-ptb-120 bg_color--48" id="service">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title--19 text-center">
                     <span>We take for you</span>
                     <h2>Best Services</h2>
-                    <p>Lorem ipsum dolor sit amet consectetu adipisicin sed do eiusm tempor incidid ut labore et dolore magna aliqua.</p>
+                    <p>The ultimate destination for all your beauty needs</p>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="content">
                         <h4>{{ $s->name }}</h4>
-                        <p>${{ $s->price }}{{ $s->price_exact ? '' : '+'}}</p>
+                        <p>starts at ${{ $s->price }}</p>
                         <p>{{ $s->description }}</p>
                         <a class="readmore_btn" href="{{ $s->url ? $s->url : route('menu') }}">View Menu</a>
                     </div>

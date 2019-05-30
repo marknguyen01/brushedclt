@@ -9,7 +9,13 @@
                     <h2>Our History</h2>
                 </div>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet, cons adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>
+                            We are a group of experienced technicians aspiring to
+provide the perfect services to all Ladies and Gentlemen in
+Charlotte. Done using professional-grade, top-branded
+products and skills, our services provide a 100% satisfaction to
+meet your requirements. Welcome to BRUSHED!
+                        </p>
                     </div>
                     <div class="beauty-counter d-flex">
                         <div class="funfact counter-style--2">
