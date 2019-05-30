@@ -11,7 +11,7 @@ class MenuController extends Controller
     public function index() {
         $categories = Category::whereNull('category_id')->get();
         $services = Service::all();
-        return view('menu\index', [
+        return view('menu.index', [
             'services' => $services,
             'categories' => $categories
         ]);
