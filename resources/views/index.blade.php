@@ -1,13 +1,6 @@
 @extends('layout')
 
 @section('css_links')
-<!-- Plugins -->
-<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
-<!-- Style Css -->
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-<!-- Custom Styles -->
-<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 @endsection
 
 @section('header')
@@ -24,7 +17,7 @@
                                 <h2>Blowouts & Nails & Brows</h2>
                                 <p>{{ setting('site.description') }}</p>
                                 <div class="slide-btn">
-                                    <a class="cln-btn" href="#">Schedule Appointments</a>
+                                    <a class="cln-btn" href="#">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -55,10 +48,5 @@
 @endsection
 
 @section('js_links')
-    <script src="{{ asset('js/vendor/modernizr-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('js/vendor/jquery-3.3.1.min.js') }}"></script>
-    <script src="{{ asset('js/popper.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/plugins.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/parallax.min.js') }}"></script>
 @endsection

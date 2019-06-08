@@ -10,6 +10,7 @@
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
     <!-- <link rel="apple-touch-icon" href="img/icon.png"> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @yield('css_links')
 </head>
@@ -34,6 +35,10 @@
     <!--// Wrapper -->
 
     <!-- Js Files -->
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/vendor/modernizr-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/vendor/jquery-3.3.1.min.js') }}"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     @yield('js_links')
 </body>
 </html>

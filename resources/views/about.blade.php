@@ -1,21 +1,20 @@
 <!-- Start Welcome Area -->
-<div class="beauty-welcome section-ptb-120 bg_image--2">
+<div class="section parallax-window" data-parallax="scroll" data-position="top right" data-image-src="{{ asset('/img/bg/bg-image-2.jpg') }}" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="cr-welcome-wrapper">
-                    <div class="section-title--19 text-left">
-                    <span>Who We Are</span>
+                <div class="section__title text-left">
+                    <span class="section__title--cursive">Who We Are</span>
                     <h2>Our History</h2>
                 </div>
-                    <div class="content">
-                        <p>
-                            We are a group of experienced technicians aspiring to
+                <div class="section__content">
+                    <p>
+                        We are a group of experienced technicians aspiring to
 provide the perfect services to all Ladies and Gentlemen in
 Charlotte. Done using professional-grade, top-branded
 products and skills, our services provide a 100% satisfaction to
 meet your requirements. Welcome to BRUSHED!
-                        </p>
+                    </p>
                     </div>
                     <div class="beauty-counter d-flex">
                         <div class="funfact counter-style--2">
