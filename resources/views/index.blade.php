@@ -6,26 +6,17 @@
 @section('header')
     @include('partials.header')
     <!-- Start Slider Area -->
-    <div class="ht-mega-slider">
-        <div class="ht-mega-slider-activation">
-            <!-- Start Single Slide -->
-            <div class="ht-slide slider-style-2 bg_image--1 d-flex align-items-center animation__style--1">
-                <div class="container">
-                    <div class="row align-items-center text-left">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-12">
-                            <div class="hero-beauty-salon content text-left">
-                                <h2>Blowouts & Nails & Brows</h2>
-                                <p>{{ setting('site.description') }}</p>
-                                <div class="slide-btn">
-                                    <a class="cln-btn" href="#">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+    <div class="slider">
+        <!-- Start Single Slide -->
+        <div class="slider__child d-flex align-items-center" style="background-image:url('{{ asset('img/bg/bg-image-4.jpg')}}')">
+            <div class="slider__content text-center w-100">
+                <h2>Blowouts & Nails & Brows</h2>
+                <p>{{ setting('site.description') }}</p>
+                <div class="slider__button-group mt-5">
+                    <a class="button button--purple" href="#">Book Now</a>
+                    <a class="button button--regular" href="/menu">View Menu</a>
                 </div>
             </div>
-            <!-- End Single Slide -->
         </div>
     </div>
     <!-- End Slider Area -->

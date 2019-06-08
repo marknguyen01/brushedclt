@@ -8,13 +8,16 @@
           <a class="navbar-brand w-100 text-center text-lg-left" href="/">
               <img style="max-height: 60px" src="/storage/{{ setting('site.logo') }}" alt="{{ setting('site.title') }} Logo">
           </a>
-          <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarContent">
+          <div class="collapse navbar-collapse mt-3 mt-lg-0 w-100" id="navbarContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="/#about" scroll-to="">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/#service" scroll-to="services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/gift">Buy Gifts</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/#contact" scroll-to="contact">Contact</a>

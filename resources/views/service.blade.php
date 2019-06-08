@@ -18,7 +18,7 @@
               <div class="row no-gutters service">
                 <div class="col-6 service__thumb {{ $count < 2 ? 'order-2' : 'order-1' }}">
                   <a href="{{ $s->url ? $s->url : route('menu') }}">
-                      <img src="{{ $s->image ? '/storage/' . $s->image : asset('img/no_image.png') }}" alt="service img">
+                      <img src="{{ isset($s->image) ? '/storage/' . $s->image : asset('img/no_image.png') }}" alt="{{ $s->name }}">
                   </a>
                 </div>
                 <div class="col-6 service__content py-5 px-1 text-center text-color--white {{ $count < 2 ? 'order-1' : 'order-2' }} {{ $count % 2 ? 'bg-color--black' : 'bg-color--purple' }}">
