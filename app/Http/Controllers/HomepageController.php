@@ -8,7 +8,7 @@ use App\Models\FeaturedService;
 class HomepageController extends Controller
 {
     public function index() {
-        $featured_services = FeaturedService::paginate(3);
+        $featured_services = FeaturedService::paginate(4);
         return view('index', [
             'featured_services' => $featured_services,
         ]);
