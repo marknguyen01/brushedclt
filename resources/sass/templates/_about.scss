@@ -1,0 +1,9 @@
+.about-counter {
+    .counter {
+        &__number {
+            font-family: 'Cookie';
+            font-size: 60px;
+            color: $purple
+        }
+    }
+}

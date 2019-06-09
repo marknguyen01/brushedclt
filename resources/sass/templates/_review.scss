@@ -1,0 +1,30 @@
+.review-header {
+    &__image {
+        outline: none;
+        cursor: pointer;
+        img {
+            display: inline-block;
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+            transform: scale(0.8);
+            transition: 0.5s transform;
+        }
+
+        &.is-active {
+            img {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.review-body {
+    &__client {
+        outline: none;
+
+        .client-rating {
+            color: $yellow;
+        }
+    }
+}

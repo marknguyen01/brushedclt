@@ -11,8 +11,46 @@
 @import '~bootstrap/scss/bootstrap';
 @import 'templates/footer';
 @import 'templates/slider';
+@import 'templates/navbar';
+@import 'templates/review';
+@import 'templates/about';
 
+@font-face {
+    font-family: 'typicons';
+    src: url('/fonts/typicons.eot');
+    src: url('/fonts/typicons.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/typicons.woff') format('woff'),
+        url('/fonts/typicons.ttf') format('truetype'),
+        url('/fonts/typicons.svg#typicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* :before psuedo-selector inserts and styles icon */
 
+.typcn:before {
+    font-family: 'typicons';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    height: 1em;
+    font-size: 1em;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.typcn-social-facebook-circular:before {
+    content: '\e0e4';
+}
+.typcn-social-instagram-circular:before {
+    content: '\e0ec';
+}
+.typcn-social-pinterest-circular:before {
+    content: '\e0f2';
+}
 html {
   scroll-behavior: smooth;
 }
@@ -24,6 +62,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
+    color: #3d3d3d;
 }
 
 a {
@@ -36,43 +75,8 @@ a {
     }
 }
 
-.header {
-    background-color: $purple;
-
-    .nav-item {
-        margin: 0 20px;
-        a {
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: 500;
-            font-family: "Montserrat", sans-serif;
-            color: $white !important;
-        }
-    }
-    .navbar-collapse {
-      @include media-breakpoint-down(lg) {
-        background: white;
-        margin: -9px -32px;
-        .nav-item {
-          padding: 10px 0;
-          a {
-            color: #333 !important;
-          }
-        }
-      }
-    }
-		.navbar-toggler {
-			background-color: $white;
-			position: fixed;
-			top: 24px;
-			left: 10px;
-			z-index: 1;
-			padding: 0.25rem;
-		}
-}
-
 .section {
-  padding: 120px 0;
+  padding: 124px 0;
   &__title {
     h2 {
       font-size: 36px;

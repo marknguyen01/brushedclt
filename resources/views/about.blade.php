@@ -16,24 +16,18 @@ products and skills, our services provide a 100% satisfaction to
 meet your requirements. Welcome to BRUSHED!
                     </p>
                     </div>
-                    <div class="beauty-counter d-flex">
-                        <div class="funfact counter-style--2">
-                            <div class="content">
-                                <span class="count">15</span>
-                                <h2 class="fact-title">Years of Exprience</h2>
-                            </div>
+                    <div class="about-counter row text-justify mt-5">
+                        <div class="counter col-4">
+                            <span class="counter__number">5</span>
+                            <div class="counter__title">Years of Exprience</div>
                         </div>
-                        <div class="funfact counter-style--2">
-                            <div class="content">
-                                <span class="count">20</span>
-                                <h2 class="fact-title">Happy Customers</h2>
-                            </div>
+                        <div class="counter col-4">
+                            <span class="counter__number">50</span>
+                            <div class="counter__title">Happy Customers</div>
                         </div>
-                        <div class="funfact counter-style--2">
-                            <div class="content">
-                                <span class="count">60</span>
-                                <h2 class="fact-title">Satisfaction Guranteed</h2>
-                            </div>
+                        <div class="counter col-4">
+                            <span class="counter__number">100</span>
+                            <div class="counter__title">Satisfaction Guranteed</div>
                         </div>
                     </div>
                 </div>

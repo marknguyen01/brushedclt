@@ -5,11 +5,11 @@
 @endsection
 
 @section('header')
-    @include('partials.header')
+    @include('partials.navbar')
 @endsection
 
 @section('content')
-    <div class="menu">
+    <div class="menu mt-5">
         <div class="container">
             @if(isset($categories))
             @foreach($categories as $c)
