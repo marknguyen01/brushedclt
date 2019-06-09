@@ -10822,6 +10822,7 @@ footer {
 
 .review-body__client .client-rating {
   color: #f4e580;
+  font-size: 24px;
 }
 
 .about-counter .counter__number {
@@ -10914,6 +10915,14 @@ footer {
 
 .typcn-location-outline:before {
   content: "\E09F";
+}
+
+.typcn-star-full-outline:before {
+  content: "\E105";
+}
+
+.typcn-star-outline:before {
+  content: "\E108";
 }
 
 html {

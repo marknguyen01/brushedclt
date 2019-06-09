@@ -14,10 +14,10 @@
                     <div class="review-body__client text-center">
                         <div class="client-rating mb-3">
                             @for($i = 0; $i < $review['rating']; $i++)
-                                <img src="{{ asset('img/star-filled.svg')}}" class="d-inline">
+                                <span class="typcn typcn-star-full-outline"></span>
                             @endfor
                             @for($i = 0; $i < 5 - $review['rating']; $i++)
-                                <img src="{{ asset('img/star.svg')}}" class="d-inline">
+                                <span class="typcn typcn-star-outline"></span>
                             @endfor
                         </div>
                         <h3 class="client-name">{{ $review['name'] }}</h3>

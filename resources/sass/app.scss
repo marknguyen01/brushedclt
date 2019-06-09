@@ -58,7 +58,8 @@
 .typcn-location-outline:before {
     content: '\e09f';
 }
-
+.typcn-star-full-outline:before { content: '\e105'; }
+.typcn-star-outline:before { content: '\e108'; }
 
 html {
   scroll-behavior: smooth;
