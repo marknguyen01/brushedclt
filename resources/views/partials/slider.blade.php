@@ -1,7 +1,9 @@
 <div class="slider">
     <div class="slider__child d-flex align-items-center" style="background-image:url('{{ asset('img/bg/bg-image-4.jpg')}}')">
         <div class="slider__content text-center w-100">
-            <img style="max-height: 120px" class="img-fluid d-inline" src="/storage/{{ setting('site.logo') }}" alt="{{ setting('site.title') }} Logo">
+            <a href="/">
+                <img style="max-height: 120px" class="img-fluid d-inline" src="/storage/{{ setting('site.logo') }}" alt="{{ setting('site.title') }} Logo">
+            </a>
             <div class="slider__social my-3">
                 <a class="typcn typcn-social-facebook-circular social-icon" href="/"></a>
                 <a class="typcn typcn-social-instagram-circular social-icon" href="/"></a>
