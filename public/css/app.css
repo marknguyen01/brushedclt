@@ -10830,6 +10830,46 @@ footer {
   color: #5b4c63;
 }
 
+.contact-form textarea,
+.contact-form input {
+  margin-top: 30px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  border: 1px solid #c1c1c1;
+  color: #a2a2a2;
+  width: 100%;
+  background-color: transparent;
+  transition: border 0.5s;
+}
+
+.contact-form textarea:focus,
+.contact-form input:focus {
+  border: 1px solid #18012c;
+}
+
+.contact-form textarea:focus,
+.contact-form textarea:active,
+.contact-form input:focus,
+.contact-form input:active {
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 175px;
+  resize: none;
+}
+
+.contact-info__title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-info__title:last-child {
+  margin-top: 8px;
+}
+
 @font-face {
   font-family: "typicons";
   src: url("/fonts/typicons.eot");
@@ -10866,6 +10906,14 @@ footer {
 
 .typcn-social-pinterest-circular:before {
   content: "\E0F2";
+}
+
+.typcn-device-phone:before {
+  content: "\E05B";
+}
+
+.typcn-location-outline:before {
+  content: "\E09F";
 }
 
 html {
@@ -10918,36 +10966,6 @@ a:hover {
 .service__thumb img {
   height: 100%;
   width: 100%;
-}
-
-.contact-form textarea,
-.contact-form input {
-  margin-top: 30px;
-  padding: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  border: 1px solid #c1c1c1;
-  color: #a2a2a2;
-  width: 100%;
-  background-color: transparent;
-  transition: border 0.5s;
-}
-
-.contact-form textarea:focus,
-.contact-form input:focus {
-  border: 1px solid #18012c;
-}
-
-.contact-form textarea:focus,
-.contact-form textarea:active,
-.contact-form input:focus,
-.contact-form input:active {
-  outline: none;
-}
-
-.contact-form textarea {
-  min-height: 175px;
-  resize: none;
 }
 
 .bg-color--black {

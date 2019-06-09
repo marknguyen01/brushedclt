@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="section__title text-left">
+                <div class="section__title text-lg-left text-center">
                     <span class="section__title--cursive">Who We Are</span>
                     <h2>Our History</h2>
                 </div>
