@@ -14,10 +14,7 @@ body {
 }
 .category {
     &__name {
-        @include media-breakpoint-up(md) {
-            font-size: 5rem;
-        }
-        font-size: 3rem;
+        font-size: 48px;
         font-family: "Cookie", cursive;
         color: #5b4c63;
     }
