@@ -5,16 +5,16 @@
   <div class="collapse navbar-collapse mt-3 mt-lg-0 w-100" id="navbarContent">
     <ul class="navbar-nav mx-auto">
     <li class="nav-item">
-      <a class="nav-link" href="/#service" scroll-to="services">Services</a>
+      <a class="nav-link" href="/#service">Services</a>
     </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/#about" scroll-to="">About</a>
+        <a class="nav-link" href="/#about">About</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/#review" scroll-to="">Our Reviews</a>
+        <a class="nav-link" href="/#review">Our Reviews</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/#contact" scroll-to="contact">Contact</a>
+        <a class="nav-link" href="/#contact">Contact</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/gift">Buy Gifts</a>

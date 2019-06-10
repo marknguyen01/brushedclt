@@ -12,6 +12,17 @@
     <div class="menu mt-5">
         <div class="container">
             @if(isset($categories))
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Select a menu</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01" onchange="Menu.change(this)">
+                <option value="all">All</option>
+                @foreach($all_categories as $c)
+                <option value="{{ str_slug($c->name) }}" {{ $c->name == $active_category ? 'selected' : '' }}>{{ $c->name }}</option>
+                @endforeach
+              </select>
+            </div>
             @foreach($categories as $c)
                 <div class="menu__item">
                     <div class="category">

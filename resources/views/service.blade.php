@@ -17,7 +17,7 @@
             <div class="col-md-6 col-12">
               <div class="row no-gutters service">
                 <div class="col-6 service__thumb {{ $count < 2 ? 'order-2' : 'order-1' }}">
-                  <a href="{{ $s->url ? $s->url : route('menu') }}">
+                  <a href="{{ route('menu', str_slug($s->name)) }}" alt="{{ $s->name }}">
                       <img src="{{ isset($s->image) ? '/storage/' . $s->image : asset('img/no_image.png') }}" alt="{{ $s->name }}">
                   </a>
                 </div>
@@ -25,7 +25,7 @@
                     <h3>{{ $s->name }}</h3>
                     <p>starts at ${{ $s->price }}</p>
                     <p>{{ $s->description }}</p>
-                    <a class="readmore_btn" href="{{ $s->url ? $s->url : route('menu') }}">View Menu</a>
+                    <a class="readmore_btn" href="{{ route('menu', str_slug($s->name)) }}">View Menu</a>
                 </div>
               </div>
             </div>

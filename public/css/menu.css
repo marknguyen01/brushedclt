@@ -4,6 +4,7 @@ body {
 
 .menu {
   padding: 10vh 0;
+  min-height: 100vh;
 }
 
 .menu__item {
