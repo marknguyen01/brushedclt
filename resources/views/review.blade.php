@@ -1,6 +1,10 @@
 @if(isset($reviews) && sizeof($reviews) > 0)
 <div class="section" id="review">
     <div class="container">
+        <div class="section__title text-center">
+            <span class="section__title--cursive">Customers love us</span>
+            <h2>Our Reviews</h2>
+        </div>
         <div class="review">
             <div class="review-header">
                 @foreach($reviews as $review)

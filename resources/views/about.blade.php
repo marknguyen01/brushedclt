@@ -1,5 +1,5 @@
 <!-- Start Welcome Area -->
-<div class="section parallax-window" data-parallax="scroll" data-position="top right" data-image-src="{{ asset('/img/bg/bg-image-2.jpg') }}" id="about">
+<div class="section parallax-window" data-parallax="scroll" data-position="right center" data-image-src="{{ asset('/img/bg/bg-image-2.jpg') }}" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -16,7 +16,7 @@ products and skills, our services provide a 100% satisfaction to
 meet your requirements. Welcome to BRUSHED!
                     </p>
                     </div>
-                    <div class="about-counter row text-justify mt-5">
+                    <div class="about-counter row text-center mt-5">
                         <div class="counter col-4">
                             <span class="counter__number">5</span>
                             <div class="counter__title">Years of Exprience</div>

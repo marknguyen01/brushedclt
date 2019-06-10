@@ -10998,7 +10998,7 @@ a:hover {
 }
 
 .button {
-  padding: 0 40px;
+  padding: 0 25px;
   height: 60px;
   margin: 0 10px;
   line-height: 57px;
@@ -11006,6 +11006,12 @@ a:hover {
   transition: background-color 1s, color 1s;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+  .button {
+    padding: 0 40px;
+  }
 }
 
 .button--purple {
