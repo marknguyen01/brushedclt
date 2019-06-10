@@ -11,28 +11,28 @@ class HomepageController extends Controller
         $featured_services = FeaturedService::paginate(4);
         $reviews = [
             [
-                'name' => 'John Doe',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consectetur laboris nisi ut aliquip ex ea commodo consequat.',
-                'rating' => 3,
-                'image' => asset('img/no_image.png'),
+                'name' => 'Gary D.',
+                'description' => 'I had a pedicure done a couple weeks ago there. They did a really good job and making me feel comfortable and relaxed. My feet feel great! Thank you.',
+                'rating' => 5,
+                'image' => asset('img/user.png'),
             ],
             [
-                'name' => 'Mark Johnson',
-                'description' => 'test',
+                'name' => 'Mendi W.',
+                'description' => 'I had micro blading done and was very pleased with how they turned out. It only took about 30 minutes and was not painful at all. I would highly recommend having this done if you are unsatisfied with the way your eyebrows look. This procedure fills in your brows and looks very natural.',
                 'rating' => 5,
-                'image' => asset('img/no_image.png'),
+                'image' => asset('img/user.png'),
             ],
             [
-                'name' => 'Ashley',
-                'description' => 'Nothing here',
+                'name' => 'Danielle E.',
+                'description' => 'Very happy with our service. 4 of us, 2 adults and 2 children received pedicures. The nail tech were so nice and paid attention to detail. Very beautiful decor, asked if we wanted wine or a beverage. Chairs are beautiful and comfortable. Their utensils were in a sterile bag, the foot tubs were covered with a bag, super clean and professional. Will definitely be coming back.',
                 'rating' => 5,
-                'image' => asset('img/no_image.png'),
+                'image' => asset('img/user.png'),
             ],
             [
-                'name' => 'Jay',
-                'description' => 'Test',
+                'name' => 'Alexis J.',
+                'description' => 'Professional. Friendly staffs. Great prices too!!!',
                 'rating' => 5,
-                'image' => asset('img/no_image.png'),
+                'image' => asset('img/user.png'),
             ],
         ];
         return view('index', [
