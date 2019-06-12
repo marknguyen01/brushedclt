@@ -9,7 +9,9 @@
             <div class="review-header">
                 @foreach($reviews as $review)
                     <div class="review-header__image text-center">
-                        <img src="{{ $review['image'] }}" alt="{{ $review['name'] }} Image">
+                        <div class="client-image-wrapper">
+                            <img src="{{ $review['image'] }}" alt="{{ $review['name'] }} Image">
+                        </div>
                     </div>
                 @endforeach
             </div>
@@ -18,10 +20,10 @@
                     <div class="review-body__client text-center">
                         <div class="client-rating mb-3">
                             @for($i = 0; $i < $review['rating']; $i++)
-                                <span class="typcn typcn-star-full-outline"></span>
+                                <ion-icon name="star"></ion-icon>
                             @endfor
                             @for($i = 0; $i < 5 - $review['rating']; $i++)
-                                <span class="typcn typcn-star-outline"></span>
+                                <ion-icon name="star-outline"></ion-icon>
                             @endfor
                         </div>
                         <h3 class="client-name">{{ $review['name'] }}</h3>

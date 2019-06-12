@@ -10824,13 +10824,14 @@ footer {
   cursor: pointer;
 }
 
-.review-header__image img {
-  display: inline-block;
+.review-header__image .client-image-wrapper {
   border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+}
+
+.review-header__image .client-image-wrapper img {
+  display: inline-block;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
   transition: 0.5s -webkit-transform;
   transition: 0.5s transform;
   transition: 0.5s transform, 0.5s -webkit-transform;

@@ -51,3 +51,10 @@ body {
     margin-left: 4%;
     display: list-item;
 }
+.navbar {
+    .nav-item {
+        a {
+            color: $black;
+        }
+    }
+}

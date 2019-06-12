@@ -4,7 +4,7 @@
             <a href="/">
                 <img style="max-height: 190px" class="img-fluid d-inline" src="/storage/{{ setting('site.logo') }}" alt="{{ setting('site.title') }} Logo">
             </a>
-            <h2>Blowouts & Nails & Brows</h2>
+            <h2 class="mt-3">Blowouts & Nails & Brows</h2>
             <p>{{ setting('site.description') }}</p>
             <div class="slider__social my-3">
                 <a class="social-icon" item-start href="tel:{{ setting('contact.phone') }}">

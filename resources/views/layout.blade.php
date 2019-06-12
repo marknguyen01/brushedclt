@@ -35,10 +35,10 @@
     <!--// Wrapper -->
 
     <!-- Js Files -->
-    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/vendor/modernizr-3.6.0.min.js') }}"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     @yield('js_links')
 </body>
 </html>

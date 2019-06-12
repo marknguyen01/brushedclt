@@ -52,3 +52,7 @@ body {
   display: list-item;
 }
 
+.navbar .nav-item a {
+  color: #151515;
+}
+
