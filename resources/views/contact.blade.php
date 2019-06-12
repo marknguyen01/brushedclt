@@ -12,19 +12,19 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-12 order-2 order-lg-1">
                 <div class="contact-form">
-                    <form action="#">
+                    <form action="/contact" method="POST">
                         <div class="row">
                             <div class="col-lg-6">
-                                <input type="text" placeholder="Your Name*">
+                                <input type="text" placeholder="Your Name*" required>
                             </div>
                             <div class="col-lg-6">
-                                <input type="email" placeholder="Your Mail*">
+                                <input type="email" placeholder="Your Email*" required>
                             </div>
                             <div class="col-lg-12">
-                                <textarea name="message" placeholder="Message*"></textarea>
+                                <textarea name="message" placeholder="Message*" required></textarea>
                             </div>
                             <div class="col-lg-12">
-                                <input type="submit" value="SEND MESSAGE">
+                                <button type="submit" class="w-100">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -34,18 +34,22 @@
             <div class="col-lg-6 col-md-12 col-12 pt-3 order-1 order-lg-2">
                 <div class="contact-info text-center">
                     <div class="contact-info__title">
-                        <span class="typcn typcn-device-phone"></span>Phone Number:
+                        <ion-icon name="ios-call" class="align-middle mr-1"></ion-icon>Phone Number:
                     </div>
                     <div class="contact-info__content">
-                        <a href="tel:9807713366">(980) 771-3366</a>
+                        <a href="tel:{{ setting('contact.phone') }}">
+                            {{ setting('contact.phone') }}
+                        </a>
                     </div>
                 </div>
                 <div class="contact-info text-center mt-3">
                     <div class="contact-info__title">
-                        <span class="typcn typcn-location-outline"></span>Address:
+                        <ion-icon name="ios-navigate"class="align-middle mr-1"></ion-icon>Address:
                     </div>
                     <div class="contact-info__content">
-                        <a href="https://www.google.com/maps/place/1204+Central+Ave+%23101,+Charlotte,+NC+28204/@35.2209048,-80.820222,17z">1204 Central Ave Ste.101, Charlotte, NC 28204</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination={{ urlencode(setting('contact.address')) }}">
+                            {{ setting('contact.address') }}
+                        </a>
                     </div>
                 </div>
             </div>

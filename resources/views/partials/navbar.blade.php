@@ -19,6 +19,9 @@
       <li class="nav-item">
         <a class="nav-link" href="/gift">Buy Gifts</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/book">Book Now</a>
+      </li>
     </ul>
   </div>
 </nav>

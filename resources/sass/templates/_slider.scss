@@ -1,30 +1,50 @@
 .slider {
     &__child {
-        height: fill-available;
+        height: stretch;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
 
         &:before {
             content: " ";
-            background: rgba(255, 255, 255, 0.45);
+            background: rgba($black, 0.35);
             position: absolute;
-            height: fill-available;
+            height: stretch;
             width: 100%;
         }
     }
     &__content {
         z-index: 1;
+        color: $white;
     }
     &__social {
         .social-icon {
-            font-size: 40px;
-            margin: 0 8px;
-            line-height: 40px;
+            color: $white;
+            font-size: 28px;
+            margin: 0 12px;
+            text-align: center;
+            display: inline-block;
+            border: 2px solid $white;
+            padding: 4px;
+            border-radius: 8px;
+            transition: color 0.5s, border-color 0.5s;
             &:hover {
-                color: $purple;
+                color: $yellow;
+                border-color: $yellow;
+            }
+            ion-icon {
+                vertical-align: bottom;
+                display: inline-block;
+            }
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
             }
         }
     }
-    &__button-group {}
+    &__button-group {
+
+    }
 }

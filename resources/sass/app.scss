@@ -16,51 +16,6 @@
 @import 'templates/about';
 @import 'templates/contact';
 
-@font-face {
-    font-family: 'typicons';
-    src: url('/fonts/typicons.eot');
-    src: url('/fonts/typicons.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/typicons.woff') format('woff'),
-        url('/fonts/typicons.ttf') format('truetype'),
-        url('/fonts/typicons.svg#typicons') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-/* :before psuedo-selector inserts and styles icon */
-
-.typcn:before {
-    font-family: 'typicons';
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    height: 1em;
-    font-size: 1em;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-.typcn-social-facebook-circular:before {
-    content: '\e0e4';
-}
-.typcn-social-instagram-circular:before {
-    content: '\e0ec';
-}
-.typcn-social-pinterest-circular:before {
-    content: '\e0f2';
-}
-.typcn-device-phone:before {
-    content: '\e05b';
-}
-.typcn-location-outline:before {
-    content: '\e09f';
-}
-.typcn-star-full-outline:before { content: '\e105'; }
-.typcn-star-outline:before { content: '\e108'; }
-
 html {
   scroll-behavior: smooth;
 }
@@ -81,7 +36,7 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: $pink;
+        color: $yellow;
     }
 }
 
@@ -163,6 +118,15 @@ a {
         &:hover {
             background: transparent;
             color: $black;
+        }
+    }
+    &--yellow {
+        border: 2px solid $yellow;
+        color: $white;
+        background-color: $yellow;
+        &:hover {
+            background: transparent;
+            color: $yellow;
         }
     }
 }

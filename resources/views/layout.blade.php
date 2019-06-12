@@ -6,7 +6,7 @@
     <title>{{ setting('site.title') }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
     <!-- <link rel="apple-touch-icon" href="img/icon.png"> -->
@@ -35,6 +35,7 @@
     <!--// Wrapper -->
 
     <!-- Js Files -->
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/vendor/modernizr-3.6.0.min.js') }}"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
