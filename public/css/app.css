@@ -10965,6 +10965,16 @@ a:hover {
   width: 100%;
 }
 
+.service__content .service-title {
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .service__content .service-title {
+    font-size: 24px;
+  }
+}
+
 .bg-color--black {
   background-color: #151515;
 }
@@ -11033,5 +11043,35 @@ a:hover {
 .button--yellow:hover {
   background: transparent;
   color: #FBB040;
+}
+
+.button--transparent-purple,
+.button--transparent-black {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.button--transparent-purple:hover,
+.button--transparent-black:hover {
+  background: #fff;
+}
+
+.button--transparent-purple:hover {
+  color: #5b4c63;
+}
+
+.button--transparent-black:hover {
+  color: #151515;
+}
+
+.button-small {
+  padding: 0 20px;
+  height: 36px;
+  line-height: 34px;
+  display: inline-block;
+  transition: background-color 1s, color 1s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 

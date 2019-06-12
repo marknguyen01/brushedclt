@@ -22,10 +22,10 @@
                   </a>
                 </div>
                 <div class="col-6 service__content py-5 px-1 text-center text-color--white {{ $count < 2 ? 'order-1' : 'order-2' }} {{ $count % 2 ? 'bg-color--black' : 'bg-color--purple' }}">
-                    <h3>{{ $s->name }}</h3>
+                    <div class="service-title">{{ $s->name }}</div>
                     <p>starts at ${{ $s->price }}</p>
                     <p>{{ $s->description }}</p>
-                    <a class="readmore_btn" href="{{ route('menu', str_slug($s->name)) }}">View Menu</a>
+                    <a class="button-small button--{{ $count % 2 ? 'transparent-black' : 'transparent-purple' }}" href="{{ route('menu', str_slug($s->name)) }}">View Menu</a>
                 </div>
               </div>
             </div>
