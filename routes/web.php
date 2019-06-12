@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'HomepageController@index');
-Route::get('menu/{name?}', 'MenuController@index')->name('menu');
+Route::get('/menu/{name?}', 'MenuController@index')->name('menu');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
