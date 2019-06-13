@@ -1,5 +1,5 @@
 <!-- Start Contact Form Style -->
-<div class="section bg-color--purple"  id="contact">
+<div class="section bg-color--purple p-3 p-lg-5"  id="contact">
     <div class="container">
         {{-- <div class="row">
             <div class="col-lg-6 col-md-12 col-12">

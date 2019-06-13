@@ -1,5 +1,5 @@
 <!-- Start Welcome Area -->
-<div class="section bg-color--purple" id="about">
+<div class="section bg-color--purple p-3 p-lg-5" id="about">
     <div class="container">
         <div class="row">
             <div class="col-12">

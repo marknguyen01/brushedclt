@@ -1,6 +1,6 @@
 <!-- Start Service Style-->
 @if(isset($featured_services))
-<div class="section bg-color--white" id="service" style="
+<div class="section bg-color--white p-3 p-lg-5" id="service" style="
     background-image: url('/img/bg/bg-image-1.png');
     background-size: cover;
     background-position: center center;">

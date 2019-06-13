@@ -1,5 +1,5 @@
 @if(isset($reviews) && sizeof($reviews) > 0)
-<div class="section bg-color--purple" id="review">
+<div class="section bg-color--purple p-3 p-lg-5" id="review">
     <div class="container">
         <div class="section__title text-center">
             <span class="section__title--cursive text-color--white">Customers love us</span>

@@ -10841,6 +10841,10 @@ footer {
   font-size: 24px;
 }
 
+#about p {
+  font-size: 24px;
+}
+
 .contact-form textarea,
 .contact-form input {
   margin-top: 30px;
@@ -10918,17 +10922,13 @@ body {
 }
 
 a {
-  color: #151515;
+  color: #fff;
   transition: color 0.5s;
 }
 
 a:hover {
   text-decoration: none;
   color: #FBB040;
-}
-
-.section {
-  padding: 124px 0;
 }
 
 .section__title {
@@ -10948,6 +10948,10 @@ a:hover {
   font-family: "Castelar", serif;
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+#service {
+  min-height: 100vh;
 }
 
 .service__thumb img {
