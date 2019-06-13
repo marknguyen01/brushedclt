@@ -12,7 +12,7 @@
     <div class="menu mt-5">
         <div class="container">
             @if(isset($categories))
-            <div class="input-group mb-3">
+            <div class="input-group my-5">
               <div class="input-group-prepend">
                 <label class="input-group-text" for="inputGroupSelect01">Select a menu</label>
               </div>
@@ -26,7 +26,7 @@
             @foreach($categories as $c)
                 <div class="menu__item">
                     <div class="category">
-                        <h1 class="category__name text-center mb-2">{{ $c->name }}</h1>
+                        <h1 class="category__name text-center my-5">{{ $c->name }}</h1>
                         @if(isset($c->description))
                             <p class="category__description">{!! $c->description !!}</p>
                         @endif

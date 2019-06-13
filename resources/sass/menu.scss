@@ -15,7 +15,10 @@ body {
 }
 .category {
     &__name {
-        font-size: 48px;
+        font-size: 32px;
+        @include media-breakpoint-up(lg) {
+          font-size: 48px;
+        }
         font-family: "Castelar", serif;
         color: $pink;
         text-transform: uppercase;
