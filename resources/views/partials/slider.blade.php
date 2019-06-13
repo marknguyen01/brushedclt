@@ -1,10 +1,9 @@
 <div class="slider">
-    <div class="slider__child d-flex align-items-center" style="background-image:url('{{ asset('img/bg/bg-image-4.jpg')}}')">
+    <div class="slider__child d-flex align-items-center bg-color--purple" style="background-image:url('{{ asset('img/bg/bg-image-4.png')}}')">
         <div class="slider__content text-center w-100">
             <a href="/">
-                <img style="max-height: 190px" class="img-fluid d-inline" src="/storage/{{ setting('site.logo') }}" alt="{{ setting('site.title') }} Logo">
+                <img class="img-fluid d-inline" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
             </a>
-            <h2 class="mt-3">Blowouts & Nails & Brows</h2>
             <p>{{ setting('site.description') }}</p>
             <div class="slider__social my-3">
                 <a class="social-icon" item-start href="tel:{{ setting('contact.phone') }}">
@@ -24,8 +23,8 @@
                 </a>
             </div>
             <div class="slider__button-group mt-5">
-                <a class="button button--yellow" href="#">Book Now</a>
-                <a class="button button--regular" href="/menu">View Menu</a>
+                <a class="button button--yellow" href="/book">Book Now</a>
+                <a class="button button--purple-light" href="/gift">Gift Cards</a>
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 body {
-  background-color: #fff !important;
+  background-color: #151515 !important;
 }
 
 .menu {
@@ -13,8 +13,9 @@ body {
 
 .category__name {
   font-size: 48px;
-  font-family: "Cookie", cursive;
-  color: #5b4c63;
+  font-family: "Castelar", serif;
+  color: #dca99f;
+  text-transform: uppercase;
 }
 
 .sub-category__name {
@@ -50,9 +51,5 @@ body {
 .sub-service-item {
   margin-left: 4%;
   display: list-item;
-}
-
-.navbar .nav-item a {
-  color: #151515;
 }
 

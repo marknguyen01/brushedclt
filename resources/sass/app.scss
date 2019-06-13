@@ -16,6 +16,10 @@
 @import 'templates/about';
 @import 'templates/contact';
 
+@font-face {
+	font-family: "Castelar";
+	src: url("/fonts/Castelar.ttf") format("truetype"),
+}
 html {
   scroll-behavior: smooth;
 }
@@ -27,11 +31,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
-    color: #3d3d3d;
+    color: $white;
 }
 
 a {
-    color: #333333;
+    color: $black;
     transition: color 0.5s;
 
     &:hover {
@@ -52,8 +56,8 @@ a {
     &--cursive {
       color: $purple;
       display: inline-block;
-      font-family:  "Cookie", cursive;
-      font-size: 30px;
+      font-family:  "Castelar", serif;
+      font-size: 20px;
       margin-bottom: 10px;
     }
     margin-bottom: 45px;
@@ -69,9 +73,10 @@ a {
   }
   &__content {
       .service-title {
-          font-size: 18px;
+          font-size: 16px;
+					text-transform: uppercase;
           @include media-breakpoint-up(lg) {
-              font-size: 24px;
+              font-size: 20px;
           }
       }
   }
@@ -80,7 +85,7 @@ a {
 
 .bg-color {
   &--black {
-    background-color: $black;
+    background-color: rgba($black, 0.7);
   }
   &--white {
     background-color: $white;
@@ -88,6 +93,9 @@ a {
   &--purple {
     background-color: $purple;
   }
+	&--purple-light {
+		background-color: $purple-light;
+	}
 }
 .text-color {
   &--white {
@@ -95,6 +103,9 @@ a {
     * {
       color: $white;
     }
+  }
+  &--pink {
+    color: $pink
   }
 }
 
@@ -119,6 +130,15 @@ a {
             color: $purple;
         }
     }
+		&--purple-light {
+				border: 2px solid $purple-light;
+				color: $white;
+				background-color: $purple-light;
+				&:hover {
+						background: transparent;
+						color: $purple-light;
+				}
+		}
     &--regular {
         border: 2px solid $black;
         color: $white;

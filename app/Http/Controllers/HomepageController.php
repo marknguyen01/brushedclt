@@ -8,7 +8,7 @@ use App\Models\FeaturedService;
 class HomepageController extends Controller
 {
     public function index() {
-        $featured_services = FeaturedService::paginate(4);
+        $featured_services = FeaturedService::all();
         $reviews = [
             [
                 'name' => 'Gary D.',

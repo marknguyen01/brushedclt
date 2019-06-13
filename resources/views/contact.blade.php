@@ -1,16 +1,16 @@
 <!-- Start Contact Form Style -->
-<div class="section parallax-window" data-parallax="scroll" data-position="top right" data-image-src="{{ asset('/img/bg/bg-image-3.jpg') }}" id="contact">
+<div class="section bg-color--purple"  id="contact">
     <div class="container">
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-lg-6 col-md-12 col-12">
                 <div class="section__title text-lg-left text-center">
-                    <span class="section__title--cursive">Your Best Solution</span>
-                    <h2>Contact Us</h2>
+                    <span class="section__title--cursive text-color--white">Your Best Solution</span>
+                    <h2 class="text-color--pink">Contact Us</h2>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <div class="row">
-            <div class="col-lg-6 col-md-12 col-12 order-2 order-lg-1">
+            {{-- <div class="col-lg-6 col-md-12 col-12 order-2 order-lg-1">
                 <div class="contact-form">
                     <form action="/contact" method="POST">
                         <div class="row">
@@ -30,8 +30,8 @@
                     </form>
                     <!-- End Form -->
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-12 pt-3 order-1 order-lg-2">
+            </div> --}}
+            <div class="col-12">
                 <div class="contact-info text-center">
                     <div class="contact-info__title">
                         <ion-icon name="ios-call" class="align-middle mr-1"></ion-icon>Phone Number:

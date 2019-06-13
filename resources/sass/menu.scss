@@ -4,7 +4,7 @@
 @import "~bootstrap/scss/mixins/_breakpoints";
 
 body {
-    background-color: #fff !important;
+    background-color: $black !important;
 }
 .menu {
     padding: 10vh 0;
@@ -16,8 +16,9 @@ body {
 .category {
     &__name {
         font-size: 48px;
-        font-family: "Cookie", cursive;
-        color: #5b4c63;
+        font-family: "Castelar", serif;
+        color: $pink;
+        text-transform: uppercase;
     }
 }
 
@@ -54,7 +55,6 @@ body {
 .navbar {
     .nav-item {
         a {
-            color: $black;
         }
     }
 }
