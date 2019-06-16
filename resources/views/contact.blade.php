@@ -47,9 +47,15 @@
                         <ion-icon name="ios-navigate"class="align-middle mr-1"></ion-icon>Address:
                     </div>
                     <div class="contact-info__content">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination={{ urlencode(setting('contact.address')) }}">
-                            {{ setting('contact.address') }}
-                        </a>
+                        @if($user_agent == 'ios')
+                            <a href="http://maps.apple.com/?daddr={{ urlencode(setting('contact.address')) }}">
+                                {{ setting('contact.address') }}
+                            </a>
+                        @else
+                            <a href="https://www.google.com/maps/dir/?api=1&destination={{ urlencode(setting('contact.address')) }}">
+                                {{ setting('contact.address') }}
+                            </a>
+                        @endif
                     </div>
                 </div>
             </div>
