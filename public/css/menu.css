@@ -63,3 +63,9 @@ body {
   color: #151515;
 }
 
+@media (min-width: 992px) {
+  .navbar .nav-item a {
+    color: #fff;
+  }
+}
+
