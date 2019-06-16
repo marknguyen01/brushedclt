@@ -10,7 +10,8 @@
                 @foreach($reviews as $review)
                     <div class="review-header__image text-center">
                         <div class="client-image-wrapper">
-                            <img src="{{ $review['image'] }}" alt="{{ $review['name'] }} Image">
+                            <div class="client-image" style="background-image:url('{{ $review['image'] }}')">
+                            </div>
                         </div>
                     </div>
                 @endforeach

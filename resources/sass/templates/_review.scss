@@ -5,14 +5,22 @@
 
         .client-image-wrapper {
             border-radius: 100%;
-            img {
-                display: inline-block;
+            .client-image {
+                height: 128px;
+                width: 128px;
+                margin: 0 auto;
+                background-size: contain;
+                background-position: center center;
+                background-size: 70%;
+                background-color: $white;
+                background-repeat: no-repeat;
+                border-radius: 100%;
                 transform: scale(0.75);
                 transition: 0.5s transform;
             }
         }
         &.is-active {
-            img {
+            .client-image {
                 transform: scale(1);
             }
         }

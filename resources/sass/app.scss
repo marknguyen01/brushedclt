@@ -47,10 +47,13 @@ a {
 .section {
   &__title {
     h2 {
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 600;
       position: relative;
       margin-bottom: 10px;
+	  @include media-breakpoint-up(lg) {
+		  font-size: 36px;
+	  }
     }
     &--cursive {
       color: $purple;
@@ -74,11 +77,8 @@ a {
   }
   &__content {
       .service-title {
-          font-size: 16px;
-					text-transform: uppercase;
-          @include media-breakpoint-up(lg) {
-              font-size: 20px;
-          }
+          font-size: 20px;
+		text-transform: uppercase;
       }
   }
 }
