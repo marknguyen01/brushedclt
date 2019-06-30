@@ -10852,6 +10852,8 @@ footer {
 
 #about p {
   font-size: 24px;
+  line-height: normal;
+  letter-spacing: 2px;
 }
 
 .contact-form textarea,
@@ -10904,7 +10906,7 @@ footer {
   font-size: 18px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #dca99f;
+  color: #FBB040;
 }
 
 .contact-info__title:last-child {
@@ -10949,6 +10951,7 @@ a:hover {
   font-weight: 600;
   position: relative;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 992px) {
@@ -10969,18 +10972,30 @@ a:hover {
   min-height: 100vh;
 }
 
-.service__thumb img {
-  height: 100%;
-  width: 100%;
+.service:hover .service__content {
+  background-color: #151515;
+}
+
+.service:hover .service__content .service-title {
+  color: #FBB040;
+}
+
+.service__content {
+  transition: 0.5s background-color ease;
 }
 
 .service__content .service-title {
   font-size: 20px;
   text-transform: uppercase;
+  transition: 0.5s color ease-in;
 }
 
 .bg-color--black {
   background-color: rgba(21, 21, 21, 0.7);
+}
+
+.bg-color--black-light {
+  background-color: #222222;
 }
 
 .bg-color--white {
@@ -11096,5 +11111,9 @@ a:hover {
   transition: background-color 1s, color 1s;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+#map {
+  color: #151515;
 }
 

@@ -17818,12 +17818,6 @@ $(document).ready(function () {
   $('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
   });
-  $('.slider').slick({
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });
   $('.review-body').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -17847,9 +17841,7 @@ $(document).ready(function () {
       breakpoint: 992,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
+        slidesToScroll: 3
       }
     }, {
       breakpoint: 768,

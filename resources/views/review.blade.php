@@ -2,7 +2,6 @@
 <div class="section bg-color--purple p-3 p-lg-5" id="review">
     <div class="container">
         <div class="section__title text-center">
-            <span class="section__title--cursive text-color--white">Customers love us</span>
             <h2 class="text-color--pink">Our Reviews</h2>
         </div>
         <div class="review">

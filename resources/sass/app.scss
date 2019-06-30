@@ -51,9 +51,10 @@ a {
       font-weight: 600;
       position: relative;
       margin-bottom: 10px;
-	  @include media-breakpoint-up(lg) {
-		  font-size: 36px;
-	  }
+			text-transform: uppercase;
+			@include media-breakpoint-up(lg) {
+				font-size: 36px;
+			}
     }
     &--cursive {
       color: $purple;
@@ -69,16 +70,20 @@ a {
 	min-height: 100vh;
 }
 .service {
-  &__thumb {
-    img {
-      height: 100%;
-      width: 100%;
-    }
-  }
+	&:hover {
+		.service__content {
+			background-color: $black;
+			.service-title {
+				color: $yellow;
+			}
+		}
+	}
   &__content {
+		transition: 0.5s background-color ease;
       .service-title {
           font-size: 20px;
-		text-transform: uppercase;
+					text-transform: uppercase;
+					transition: 0.5s color ease-in;
       }
   }
 }
@@ -87,6 +92,9 @@ a {
 .bg-color {
   &--black {
     background-color: rgba($black, 0.7);
+		&-light {
+			background-color: lighten($black, 5%);
+		}
   }
   &--white {
     background-color: $white;
@@ -186,4 +194,8 @@ a {
     transition: background-color 1s, color 1s;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+#map {
+	color: $black;
 }
