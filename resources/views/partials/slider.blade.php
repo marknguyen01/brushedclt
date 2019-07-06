@@ -23,7 +23,7 @@
                 </a>
             </div>
             <div class="slider__button-group mt-5">
-                <a class="button button--yellow" href="/book">Book Now</a>
+                <a class="button button--yellow" href="https://phorest.com/book/salons/brushed">Book Now</a>
                 <a class="button button--purple-light" href="/gift">Gift Cards</a>
             </div>
         </div>
