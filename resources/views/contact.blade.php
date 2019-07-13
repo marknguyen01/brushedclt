@@ -33,7 +33,7 @@ async defer></script>
           <div class="col-lg-6 py-5 text-center text-lg-left px-0 px-lg-5">
             <div class="contact-info">
                 <div class="contact-info__title">
-                    <ion-icon name="ios-time"class="align-middle mr-1"></ion-icon>Operating hours:
+                    <ion-icon name="ios-time"class="align-middle mr-1"></ion-icon>Operating Hours:
                 </div>
                 <div class="contact-info__content">
                   <div>Monday-Saturday: 10AM - 7:30PM</div>
