@@ -1,4 +1,4 @@
-<div class="section bg-color--purple p-3 p-lg-5" id="about">
+<div class="section p-3 p-lg-5" id="about">
       <div class="section__content text-center py-3 py-lg-5 py-md-4 px-md-5">
           <p>
               We are a group of experienced technicians aspiring to

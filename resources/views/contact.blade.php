@@ -1,5 +1,5 @@
 <!-- Start Contact Form Style -->
-<div class="section bg-color--black-light"  id="contact">
+<div class="section bg-color--black-light mt-5"  id="contact">
       <div class="row no-gutters">
           <div class="col-lg-6">
             <div id="map" class="w-100" style="height: 296px"></div>

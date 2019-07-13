@@ -11,7 +11,7 @@
 @endsection
 
 @section('content')
-    <main class="page-content">
+    <main class="page-content bg-color--purple">
         @include('service')
         @include('about')
         @include('team')

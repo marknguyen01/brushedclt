@@ -1,6 +1,6 @@
 <!-- Start Service Style-->
 @if(isset($featured_services))
-<div class="section bg-color--purple p-3 p-lg-5 align-content-center d-flex flex-wrap" id="service">
+<div class="sectin p-3 p-lg-5 align-content-center d-flex flex-wrap" id="service">
       <div class="w-100 h-100 round-decor"></div>
       <div class="section__title text-center w-100" style="padding-top: 25vh">
           {{-- <span class="section__title--cursive text-color--white">Ultimate destination</span> --}}
