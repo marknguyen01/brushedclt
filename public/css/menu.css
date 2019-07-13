@@ -59,6 +59,14 @@ body {
   display: list-item;
 }
 
+@media (min-width: 992px) {
+  .navbar {
+    position: unset;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 .navbar .nav-item a {
   color: #151515;
 }

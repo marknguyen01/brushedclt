@@ -5,11 +5,16 @@
 @endsection
 
 @section('header')
+    <div class="text-center mb-0 mb-lg-5">
+      <a href="/">
+          <img class="img-fluid d-inline" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
+      </a>
+    </div>
     @include('partials.navbar')
 @endsection
 
 @section('content')
-    <div class="menu mt-5">
+    <div class="menu mt-0 mt-lg-5">
         <div class="container">
             @if(isset($categories))
             <div class="input-group my-5">

@@ -56,6 +56,10 @@ body {
     display: list-item;
 }
 .navbar {
+    @include media-breakpoint-up(lg) {
+      position: unset;
+      transform: none;
+    }
     .nav-item {
         a {
           color: $black;
