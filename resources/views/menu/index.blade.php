@@ -33,7 +33,7 @@
                     </div>
                     <div class="service">
                         <div class="row">
-                            @foreach($c->services()->whereNull('service_id')->get() as $s)
+                            @foreach($c->services()->whereNull('service_id')->orderBy('order')->get() as $s)
                                 @include('menu.service', [
                                     'service' => $s
                                 ])
@@ -47,7 +47,7 @@
                         </div>
                         <div class="sub-service">
                             <div class="row">
-                                @foreach($sc->services()->whereNull('service_id')->get() as $s)
+                                @foreach($sc->services()->whereNull('service_id')->orderBy('order')->get() as $s)
                                     @include('menu.sub-service', [
                                         'service' => $s
                                     ])
