@@ -31,6 +31,12 @@
     &__client {
         outline: none;
 
+        .client-name {
+          font-size: 32px;
+        }
+        .client-review {
+          font-size: 24px;
+        }
         .client-rating {
             color: $yellow;
             font-size: 24px;

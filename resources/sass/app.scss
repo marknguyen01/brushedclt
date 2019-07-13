@@ -109,11 +109,29 @@ a {
 .round-decor {
 	background-image: url(/img/bg/bg-image-1.png);
   background-size: 100%;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
+	height: stretch;
   top: -25vh;
+}
+
+.quote {
+	&:before {
+		content: open-quote;
+		right: 5px;
+	}
+	&:after {
+		content: close-quote;
+		left: 5px;
+	}
+	&:before, &:after {
+		font-size: 64px;
+		position: relative;
+		top: 30px;
+		line-height: 0;
+	}
 }
 
 

@@ -26,8 +26,8 @@
                                 <ion-icon name="star-outline"></ion-icon>
                             @endfor
                         </div>
-                        <h3 class="client-name">{{ $review['name'] }}</h3>
-                        <p class="client-review">{{ $review['description'] }}</p>
+                        <div class="client-name mb-3">{{ $review['name'] }}</div>
+                        <div class="client-review">{{ $review['description'] }}</div>
                     </div>
                 @endforeach
             </div>

@@ -10850,6 +10850,14 @@ footer {
   outline: none;
 }
 
+.review-body__client .client-name {
+  font-size: 32px;
+}
+
+.review-body__client .client-review {
+  font-size: 24px;
+}
+
 .review-body__client .client-rating {
   color: #FBB040;
   font-size: 24px;
@@ -11018,11 +11026,32 @@ a:hover {
 .round-decor {
   background-image: url(/img/bg/bg-image-1.png);
   background-size: 100%;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
   top: -25vh;
+}
+
+.quote:before {
+  content: open-quote;
+  right: 5px;
+}
+
+.quote:after {
+  content: close-quote;
+  left: 5px;
+}
+
+.quote:before,
+.quote:after {
+  font-size: 64px;
+  position: relative;
+  top: 30px;
+  line-height: 0;
 }
 
 .bg-color--black {
