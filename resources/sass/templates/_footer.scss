@@ -1,6 +1,10 @@
 footer {
     background-color: $black;
     padding: 20px 0;
+}
+.footer {
+  &--positioned {
     position: relative;
     top: -25vh;
+  }
 }

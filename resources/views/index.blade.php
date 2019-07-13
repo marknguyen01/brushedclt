@@ -21,7 +21,7 @@
 @endsection
 
 @section('footer')
-    @include('partials.footer')
+    @include('partials.footer', ['positioned' => true])
 @endsection
 
 @section('js_links')
