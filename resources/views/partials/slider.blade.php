@@ -1,5 +1,5 @@
 <div class="slider">
-    <div class="slider__child d-flex align-items-center bg-color--purple" style="background-image:url('{{ asset('img/bg/bg-image-4.png')}}')">
+    <div class="slider__child d-flex align-items-center" style="background-image:url('{{ asset('img/bg/bg-image-4.png')}}')">
         <div class="slider__content text-center w-100">
             <a href="/">
                 <img class="img-fluid d-inline" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">

@@ -10665,6 +10665,8 @@ a.text-dark:focus {
 footer {
   background-color: #151515;
   padding: 20px 0;
+  position: relative;
+  top: -25vh;
 }
 
 .slider__child {
@@ -10942,6 +10944,26 @@ a:hover {
   color: #FBB040;
 }
 
+.wrapper {
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
+}
+
+.header,
+.page-content {
+  position: relative;
+}
+
+.header {
+  z-index: 2;
+}
+
+.page-content {
+  z-index: 1;
+  top: -25vh;
+}
+
 .section__title {
   margin-bottom: 45px;
 }
@@ -10988,6 +11010,16 @@ a:hover {
   font-size: 20px;
   text-transform: uppercase;
   transition: 0.5s color ease-in;
+}
+
+.round-decor {
+  background-image: url("/img/bg/bg-image-1.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: -40vh;
 }
 
 .bg-color--black {

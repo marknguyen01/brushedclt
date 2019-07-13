@@ -44,7 +44,25 @@ a {
     }
 }
 
+.wrapper {
+	height: fill-available;
+}
+
+.header, .page-content {
+	position: relative;
+}
+
+.header {
+	z-index: 2;
+}
+
+.page-content {
+	z-index: 1;
+	top: -25vh;
+}
+
 .section {
+
   &__title {
     h2 {
       font-size: 30px;
@@ -86,6 +104,16 @@ a {
 					transition: 0.5s color ease-in;
       }
   }
+}
+
+.round-decor {
+	background-image: url('/img/bg/bg-image-1.png');
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	position: absolute;
+	left:0;
+	top:-40vh;
 }
 
 

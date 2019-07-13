@@ -11,7 +11,6 @@
 @endsection
 
 @section('content')
-    <!-- Page Conttent -->
     <main class="page-content">
         @include('service')
         @include('about')
@@ -19,7 +18,6 @@
         @include('review')
         @include('contact')
     </main>
-    <!--// Page Conttent -->
 @endsection
 
 @section('footer')
