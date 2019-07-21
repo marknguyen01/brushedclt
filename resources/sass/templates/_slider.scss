@@ -46,6 +46,7 @@
     }
     &__logo {
       width: 220px;
+      margin-top: 5vh;
       @include media-breakpoint-up(md) {
         width: 250px;
       }

@@ -10718,6 +10718,7 @@ footer {
 
 .slider__logo {
   width: 220px;
+  margin-top: 5vh;
 }
 
 @media (min-width: 768px) {

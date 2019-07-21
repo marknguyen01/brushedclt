@@ -3,8 +3,19 @@ body {
 }
 
 .menu {
-  padding: 10vh 0;
   min-height: 100vh;
+}
+
+@media (min-width: 992px) {
+  .menu {
+    padding: 10vh 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    padding: 5vh 0;
+  }
 }
 
 .menu__item {

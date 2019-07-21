@@ -7,7 +7,7 @@
 @section('header')
     <div class="text-center mb-0 mb-lg-5">
       <a href="/">
-          <img class="img-fluid d-inline" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
+          <img class="img-fluid d-inline slider__logo" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
       </a>
     </div>
     @include('partials.navbar')
