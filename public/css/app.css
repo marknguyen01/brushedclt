@@ -10943,6 +10943,10 @@ footer {
   margin-top: 8px;
 }
 
+.contact-content {
+  min-height: 50vh;
+}
+
 @font-face {
   font-family: "Castelar";
   src: url("/fonts/Castelar.ttf") format("truetype");
