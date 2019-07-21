@@ -10716,6 +10716,22 @@ footer {
   margin-right: 0;
 }
 
+.slider__logo {
+  width: 220px;
+}
+
+@media (min-width: 768px) {
+  .slider__logo {
+    width: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slider__logo {
+    width: 280px;
+  }
+}
+
 .navbar {
   position: fixed;
   top: 5vh;

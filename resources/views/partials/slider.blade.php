@@ -2,14 +2,14 @@
     <div class="slider__child d-flex align-items-center" style="background-image:url('{{ asset('img/bg/bg-image-4.png')}}')">
         <div class="slider__content text-center w-100">
             <a href="/">
-                <img class="img-fluid d-inline" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
+                <img class="img-fluid d-inline slider__logo" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
             </a>
-            <p>{{ setting('site.description') }}</p>
+            <p class="h3">{{ setting('site.description') }}</p>
             <div class="slider__social my-3">
                 <a class="social-icon" item-start href="tel:{{ setting('contact.phone') }}">
                     <ion-icon name="ios-call"></ion-icon>
                 </a>
-                <a class="social-icon" href="https://www.google.com/maps/dir/?api=1&destination={{ urlencode(setting('contact.address')) }}">
+                <a class="social-icon" href="{{ $user_agent == 'ios' ? 'http://maps.apple.com/?daddr=' : 'https://www.google.com/maps/dir/?api=1&destination=' }}{{ urlencode(setting('contact.address')) }}">
                     <ion-icon name="ios-navigate"></ion-icon>
                 </a>
                 <a class="social-icon" href="{{ setting('contact.facebook') }}">
@@ -24,7 +24,6 @@
             </div>
             <div class="slider__button-group mt-5">
                 <a class="button button--yellow" href="https://phorest.com/book/salons/brushed">Book Now</a>
-                <a class="button button--purple-light" href="/gift">Gift Cards</a>
             </div>
         </div>
     </div>

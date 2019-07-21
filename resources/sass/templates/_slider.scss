@@ -44,6 +44,15 @@
             }
         }
     }
+    &__logo {
+      width: 220px;
+      @include media-breakpoint-up(md) {
+        width: 250px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 280px;
+      }
+    }
     &__button-group {
 
     }
