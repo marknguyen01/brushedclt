@@ -23,7 +23,7 @@
                 infoWindow.open(map, marker);
 
                 map.addListener('click', function (){
-                  window.open("{{ $user_agent == 'ios' ? 'http://maps.apple.com/?daddr=' . urlencode(setting('contact.address')) : 'https://www.google.com/maps/dir/?api=1&destination=' . urlencode(setting('contact.address')) }}")
+                  window.open("{!! $user_agent == 'ios' ? 'http://maps.apple.com/?daddr=' : 'https://www.google.com/maps/dir/?api=1&destination='!!}{{ urlencode(setting('contact.address')) }}")
                 });
               }
             </script>
