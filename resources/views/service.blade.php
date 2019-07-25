@@ -14,7 +14,7 @@
                   <div class="service-title">
                     {{ $s->name }}
                   </div>
-                  <div>starts at ${{ $s->price }}</div>
+                  <div>starts at {{ $s->price }}</div>
                   @if($s->description)
                       <p>{{ $s->description }}</p>
                   @endif
