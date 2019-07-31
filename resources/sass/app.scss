@@ -163,6 +163,15 @@ a {
       color: $white;
     }
   }
+	&--black {
+		color: $black;
+		&-light {
+			background-color: lighten($black, 5%);
+		}
+	}
+	&--yellow {
+		color: $yellow;
+	}
   &--pink {
     color: $pink
   }

@@ -17818,6 +17818,33 @@ $(document).ready(function () {
   $('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
   });
+  $('.about-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    infinite: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }, {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
   $('.review-body').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -17924,9 +17951,9 @@ function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Project\Websites\brushedclt\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! D:\Project\Websites\brushedclt\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\Project\Websites\brushedclt\resources\sass\menu.scss */"./resources/sass/menu.scss");
+__webpack_require__(/*! D:\Projects\Websites\brushedclt\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! D:\Projects\Websites\brushedclt\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\Projects\Websites\brushedclt\resources\sass\menu.scss */"./resources/sass/menu.scss");
 
 
 /***/ })

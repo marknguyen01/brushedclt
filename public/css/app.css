@@ -10880,10 +10880,12 @@ footer {
   font-size: 24px;
 }
 
-#about p {
-  font-size: 24px;
+.about-content {
+  font-size: 16px;
   line-height: normal;
   letter-spacing: 2px;
+  padding: 0 5px;
+  outline: none;
 }
 
 .contact-form textarea,
@@ -11106,6 +11108,18 @@ a:hover {
 
 .text-color--white * {
   color: #fff;
+}
+
+.text-color--black {
+  color: #151515;
+}
+
+.text-color--black-light {
+  background-color: #222222;
+}
+
+.text-color--yellow {
+  color: #FBB040;
 }
 
 .text-color--pink {
