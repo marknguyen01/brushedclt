@@ -9,6 +9,9 @@ require('bootstrap');
 
 
 $(document).ready(function() {
+    $("#preloader").fadeOut('slow', function(){
+      $(this).remove();
+    });
     $('.navbar-collapse a').click(function() {
         $(".navbar-collapse").collapse('hide');
     });

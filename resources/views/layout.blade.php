@@ -28,6 +28,9 @@
     <!-- Add your site or application content here -->
 
     <!-- Wrapper -->
+    <div id="preloader" class="text-center">
+      <img class="img-fluid d-inline" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
+    </div>
     <div id="wrapper" class="wrapper">
         @yield('header')
         <!-- Page Conttent -->

@@ -11221,3 +11221,48 @@ a:hover {
   color: #151515;
 }
 
+#preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #151515;
+}
+
+#preloader img {
+  top: 25%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: logo 1s ease-in-out infinite alternate;
+          animation: logo 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
