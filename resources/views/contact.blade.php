@@ -37,7 +37,7 @@ async defer></script>
                       <ion-icon name="ios-time"class="align-middle mr-1"></ion-icon>Operating Hours:
                   </div>
                   <div class="contact-info__content">
-                    {{ setting('contact.hours') }}
+                    {!! setting('contact.hours') !!}
                   </div>
               </div>
               <div class="contact-info mt-3 w-100">

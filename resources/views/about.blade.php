@@ -4,7 +4,7 @@
       </div>
       <div class="section__content text-center px-md-5">
           <p>
-              <span class="quote">{{ setting('site.about') }}</span>
+              <span class="quote">{!! setting('site.about') !!}</span>
           </p>
       </div>
 </div>
