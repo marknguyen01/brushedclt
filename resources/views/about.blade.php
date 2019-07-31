@@ -3,6 +3,6 @@
           <h2 class="text-color--pink">About Us</h2>
       </div>
       <div class="section__content text-center px-md-5">
-        <span class="quote">{!! setting('site.about') !!}</span>
+        {!! setting('site.about') !!}
       </div>
 </div>
