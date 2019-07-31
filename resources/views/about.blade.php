@@ -4,11 +4,7 @@
       </div>
       <div class="section__content text-center px-md-5">
           <p>
-              <span class="quote">We are a group of experienced technicians aspiring to
-provide the perfect services to all Ladies and Gentlemen in
-Charlotte. Done using professional-grade, top-branded
-products and skills, our services provide a 100% satisfaction to
-meet your requirements. Welcome to BRUSHED!</span>
+              <span class="quote">{{ setting('site.about') }}</span>
           </p>
       </div>
 </div>
