@@ -7,6 +7,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="US-NC">
+    <meta name="geo.placename" content="Charlotte">
+    <meta name="geo.position" content="35.220513;-80.82805">
+    <meta name="ICBM" content="35.220513, -80.82805">
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
     <!-- <link rel="apple-touch-icon" href="img/icon.png"> -->
