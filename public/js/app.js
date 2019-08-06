@@ -17954,9 +17954,9 @@ function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Projects\Websites\brushedclt\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! D:\Projects\Websites\brushedclt\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\Projects\Websites\brushedclt\resources\sass\menu.scss */"./resources/sass/menu.scss");
+__webpack_require__(/*! D:\Project\Websites\brushedclt\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! D:\Project\Websites\brushedclt\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\Project\Websites\brushedclt\resources\sass\menu.scss */"./resources/sass/menu.scss");
 
 
 /***/ })

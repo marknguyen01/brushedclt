@@ -9,7 +9,7 @@
                 @foreach($reviews as $review)
                     <div class="review-header__image text-center">
                         <div class="client-image-wrapper">
-                            <div class="client-image" style="background-image:url('{{ $review['image'] }}')">
+                            <div class="client-image" style="background-image:url('{{ $review->profile_photo }}')">
                             </div>
                         </div>
                     </div>
@@ -19,15 +19,15 @@
                 @foreach($reviews as $review)
                     <div class="review-body__client text-center">
                         <div class="client-rating mb-3">
-                            @for($i = 0; $i < $review['rating']; $i++)
+                            @for($i = 0; $i < $review->rating; $i++)
                                 <ion-icon name="star"></ion-icon>
                             @endfor
-                            @for($i = 0; $i < 5 - $review['rating']; $i++)
+                            @for($i = 0; $i < 5 - $review->rating; $i++)
                                 <ion-icon name="star-outline"></ion-icon>
                             @endfor
                         </div>
-                        <div class="client-name mb-3">{{ $review['name'] }}</div>
-                        <div class="client-review">{{ $review['description'] }}</div>
+                        <div class="client-name mb-3">{{ $review->username }}</div>
+                        <div class="client-review">{{ $review->comment }}</div>
                     </div>
                 @endforeach
             </div>

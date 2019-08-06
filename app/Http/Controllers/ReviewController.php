@@ -68,14 +68,16 @@ class ReviewController extends Controller
 
         $latest_record = Review::orderBy('created_at', 'desc')->first();
         foreach($review_array['reviews'] as $x) {
+          \Debugbar::info('Reviewer photo: ' . $x['reviewer']['profilePhotoUrl']);
           if($latest_record) {
             if($latest_record->review_id != $x['reviewId']) {
               Review::create([
                 'username' => $x['reviewer']['displayName'],
-                'comment' => isset($x['comment']) ? $x['comment'] : '',
-                'created_at' => new \DateTimeZone($x['createTime']),
+                'comment' => isset($x['comment']) ? $x['comment'] : null,
                 'rating' => $this->wordToDigit($x['starRating']),
-                'profilePhoto' => $x['reviewer']['profilePhotoUrl'],
+                'profile_photo' => $x['reviewer']['profilePhotoUrl'],
+                'review_id' => $x['reviewId'],
+                'created_at' => \DateTime::createFromFormat('Y-m-d\TH:i:s.u\Z', $x['createTime'])->format('Y-m-d H:i:s'),
               ]);
             }
             else {
@@ -85,10 +87,11 @@ class ReviewController extends Controller
           else {
             Review::create([
               'username' => $x['reviewer']['displayName'],
-              'comment' => isset($x['comment']) ? $x['comment'] : '',
-              'created_at' => \DateTime::createFromFormat('Y-m-d\TH:i:s.u\Z', $x['createTime'])->format('Y-m-d H:i:s'),
+              'comment' => isset($x['comment']) ? $x['comment'] : null,
               'rating' => $this->wordToDigit($x['starRating']),
-              'profilePhoto' => $x['reviewer']['profilePhotoUrl'],
+              'profile_photo' => $x['reviewer']['profilePhotoUrl'],
+              'review_id' => $x['reviewId'],
+              'created_at' => \DateTime::createFromFormat('Y-m-d\TH:i:s.u\Z', $x['createTime'])->format('Y-m-d H:i:s'),
             ]);
           }
         }
