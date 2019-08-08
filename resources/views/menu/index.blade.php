@@ -4,6 +4,10 @@
     <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
 @endsection
 
+@section('title')
+ | {{ $active_category }}
+@endsection
+
 @section('header')
     <div class="text-center mb-0 mb-lg-5">
       <a href="/">

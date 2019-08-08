@@ -3,6 +3,10 @@
 @section('css_links')
 @endsection
 
+@section('title')
+ | Home
+@endsection
+
 @section('header')
     <header class="header">
         @include('partials.navbar')
