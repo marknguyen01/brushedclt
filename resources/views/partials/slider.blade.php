@@ -22,8 +22,8 @@
                     <ion-icon name="logo-pinterest"></ion-icon>
                 </a>
             </div>
-            <div class="slider__button-group mt-lg-5 mt-md-3 mt-1">
-                <a class="button button--yellow" href="https://phorest.com/book/salons/brushed">Book Now</a>
+            <div class="slider__button-group mt-lg-5 mt-3">
+                <a class="button button--yellow" href="https://phorest.com/book/salons/brushed">BOGO 50% Off on Blowouts</a>
             </div>
         </div>
     </div>
