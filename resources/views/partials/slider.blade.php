@@ -23,7 +23,7 @@
                 </a>
             </div>
             <div class="slider__button-group mt-lg-5 mt-3">
-                <a class="button button--yellow" href="https://phorest.com/book/salons/brushed">BOGO 50% Off on Blowouts</a>
+                <a class="button button--yellow" href="https://phorest.com/book/salons/brushed">BOOK NOW</a>
             </div>
         </div>
     </div>

@@ -1,4 +1,5 @@
 window.Popper = require('popper.js');
+
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
@@ -8,10 +9,18 @@ window.$ = window.jQuery = require('jquery');
 require('bootstrap');
 
 
+window.Cookies = require('js-cookie');
+
+
 $(document).ready(function() {
     $("#preloader").fadeOut('slow', function(){
       $(this).remove();
     });
+    // Check if user has not seen the popup
+    if(Cookies.get('popup') === undefined) {
+        $('#dealModal').modal();
+        Cookies.set('popup', true, {expires: 7})
+    }
     $('.navbar-collapse a').click(function() {
         $(".navbar-collapse").collapse('hide');
     });

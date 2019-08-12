@@ -277,6 +277,45 @@ a {
 	}
 }
 
+.btn-deal {
+    position: fixed;
+    top: 0;
+    right: 5vw;
+    z-index: 99999;
+    padding: 8px;
+    background: $white;
+    color: $yellow;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+    ion-icon {
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
+.modal-body {
+    color: $black;
+}
+
+.modal-footer {
+    justify-content: center;
+    border-top: 0;
+}
+
+.modal-header {
+    border-bottom: 0;
+    .close {
+        border: 2px solid $black;
+        color: $black;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0 0 0 auto;
+        height: 28px;
+        width: 28px;
+        line-height: 26px;
+    }
+}
+
 @keyframes logo {
 	0% {
 		transform: scale(0.5);
