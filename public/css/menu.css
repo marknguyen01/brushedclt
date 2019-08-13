@@ -73,8 +73,7 @@ body {
 @media (min-width: 992px) {
   .navbar {
     position: unset;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
 
