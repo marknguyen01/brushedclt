@@ -48,9 +48,11 @@
             <div class="modal-body">
                 <h4 class="text-center">For a limited time, get your second blowout service for</h4>
                 <h1 class="text-center font-weight-bold">50% OFF</h1>
+                <h4 class="text-center">Schedule your appointment today!</h4>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-secondary" href="https://phorest.com/book/salons/brushed#/service-category?id=wzn5341MyeNN_BH2Pl3m1A">BOOK NOW</a>
+                  <a class="btn btn-secondary w-100 " href="https://phorest.com/book/salons/brushed#/service-category?id=wzn5341MyeNN_BH2Pl3m1A">ONLINE BOOKING</a>
+                  <a class="btn btn-secondary w-100 " href="tel:{{ setting('contact.phone') }}">PHONE BOOKING</a>
             </div>
         </div>
         </div>
