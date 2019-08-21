@@ -18,7 +18,6 @@
 @endsection
 
 @section('content')
-<!-- Button trigger modal -->
     <div class="menu mt-0 mt-lg-5">
         <div class="container">
             @if(isset($categories))
@@ -36,7 +35,7 @@
             @foreach($categories as $c)
                 <div class="menu__item">
                     <div class="category">
-                        <h1 class="category__name text-center my-5">{{ $c->name }}</h1>
+                        <h1 class="category__name text-center my-5 font-size--32 font-family--h1 text-color--pink">{{ $c->name }}</h1>
                         @if(isset($c->description))
                             <p class="category__description">{!! $c->description !!}</p>
                         @endif
@@ -52,7 +51,7 @@
                     </div>
                     @foreach($c->subCategories as $sc)
                         <div class="sub-category">
-                            <h3 class="sub-category__name">{{ $sc->name }}</h3>
+                            <h3 class="sub-category__name font-family--h2">{{ $sc->name }}</h3>
                             <p class="sub-category__description">{!! $sc->description !!}</p>
                         </div>
                         <div class="sub-service">

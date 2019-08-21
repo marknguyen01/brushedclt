@@ -11,7 +11,7 @@
           <!-- Start Single Service -->
           <a class="col-lg-3 col-md-4 d-flex align-items-center service" href="{{ route('menu', str_slug($s->category()->exists() ? $s->category->name : $s->name)) }}">
               <div class="service__content w-100 py-3 py-md-4 py-lg-5 px-1 mb-3 mb-md-4 mb-lg-5 text-center text-color--white bg-color--black">
-                  <div class="service-title">
+                  <div class="service-title font-size--20">
                     {{ $s->name }}
                   </div>
                   <div>starts at {{ $s->price }}</div>

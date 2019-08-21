@@ -1,0 +1,38 @@
+body {
+  background-color: #151515 !important;
+}
+
+.policy {
+  min-height: 100vh;
+}
+
+@media (min-width: 992px) {
+  .policy {
+    padding: 10vh 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .policy {
+    padding: 5vh 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    position: unset;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.navbar .nav-item a {
+  color: #151515;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item a {
+    color: #fff;
+  }
+}
+

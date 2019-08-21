@@ -23,25 +23,11 @@ body {
 }
 
 .category__name {
-  font-size: 32px;
-  font-family: "Castelar", serif;
-  color: #dca99f;
   text-transform: uppercase;
-}
-
-@media (min-width: 992px) {
-  .category__name {
-    font-size: 48px;
-  }
-}
-
-.sub-category__name {
-  font-family: "Montserrat", sans-serif;
 }
 
 .service-item__header,
 .sub-service-item__header {
-  font-family: "Montserrat", sans-serif;
   display: flex;
 }
 
@@ -73,7 +59,8 @@ body {
 @media (min-width: 992px) {
   .navbar {
     position: unset;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 

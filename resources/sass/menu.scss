@@ -20,25 +20,12 @@ body {
 }
 .category {
     &__name {
-        font-size: 32px;
-        @include media-breakpoint-up(lg) {
-          font-size: 48px;
-        }
-        font-family: "Castelar", serif;
-        color: $pink;
         text-transform: uppercase;
-    }
-}
-
-.sub-category {
-    &__name {
-        font-family: 'Montserrat', sans-serif;
     }
 }
 
 .service-item, .sub-service-item {
     &__header {
-        font-family: 'Montserrat', sans-serif;
         display: flex;
         &::after {
             content: "";

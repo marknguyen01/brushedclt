@@ -16,6 +16,8 @@
 @import 'templates/about';
 @import 'templates/contact';
 
+@import 'global';
+
 @font-face {
 	font-family: "Castelar";
 	src: url("/fonts/Castelar.ttf") format("truetype"),
@@ -78,13 +80,6 @@ a {
 				font-size: 36px;
 			}
     }
-    &--cursive {
-      color: $purple;
-      display: inline-block;
-      font-family:  "Castelar", serif;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
     margin-bottom: 45px;
   }
 }
@@ -102,10 +97,9 @@ a {
 	}
   &__content {
 		transition: 0.5s background-color ease;
-      .service-title {
-          font-size: 20px;
-					text-transform: uppercase;
-					transition: 0.5s color ease-in;
+        .service-title {
+            text-transform: uppercase;
+            transition: 0.5s color ease-in;
       }
   }
 }
@@ -137,114 +131,6 @@ a {
 		line-height: 0;
 	}
 }
-
-
-.bg-color {
-  &--black {
-    background-color: rgba($black, 0.7);
-		&-light {
-			background-color: lighten($black, 5%);
-		}
-  }
-  &--white {
-    background-color: $white;
-  }
-  &--purple {
-    background-color: $purple;
-  }
-	&--purple-light {
-		background-color: $purple-light;
-	}
-}
-.text-color {
-  &--white {
-    color: $white;
-    * {
-      color: $white;
-    }
-  }
-	&--black {
-		color: $black;
-		&-light {
-			background-color: lighten($black, 5%);
-		}
-	}
-	&--yellow {
-		color: $yellow;
-	}
-  &--pink {
-    color: $pink
-  }
-}
-
-.button {
-    padding: 0 25px;
-    @include media-breakpoint-up(lg) {
-        padding: 0 40px;
-    }
-    height: 60px;
-    margin: 0 10px;
-    line-height: 57px;
-    display: inline-block;
-    transition: background-color 1s, color 1s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    &--purple {
-        border: 2px solid $purple;
-        color: $white;
-        background-color: $purple;
-        &:hover {
-            background: transparent;
-            color: $purple;
-        }
-    }
-		&--purple-light {
-				border: 2px solid $purple-light;
-				color: $white;
-				background-color: $purple-light;
-				&:hover {
-						background: transparent;
-						color: $purple-light;
-				}
-		}
-    &--regular {
-        border: 2px solid $black;
-        color: $white;
-        background-color: $black;
-        &:hover {
-            background: transparent;
-            color: $black;
-        }
-    }
-    &--yellow {
-        border: 2px solid $yellow;
-        color: $white;
-        background-color: $yellow;
-        &:hover {
-            background: transparent;
-            color: $yellow;
-        }
-    }
-    &--transparent-purple, &--transparent-black {
-        border: 2px solid $white;
-        color: $white;
-        background-color: transparent;
-        &:hover {
-            background: $white;
-        }
-    }
-    &--transparent-purple {
-        &:hover {
-            color: $purple
-        }
-    }
-    &--transparent-black {
-        &:hover {
-            color: $black;
-        }
-    }
-}
-
 .button-small {
     padding: 0 20px;
     height: 36px;
