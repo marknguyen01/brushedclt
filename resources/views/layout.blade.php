@@ -31,7 +31,7 @@
     <div id="preloader" class="text-center">
       <img class="img-fluid d-inline" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
     </div>
-    <!-- Button trigger modal -->
+    {{-- <!-- Button trigger modal -->
     <div class="btn-deal" data-toggle="modal" data-target="#dealModal">
         <ion-icon name="flame"></ion-icon> BOGO 50%
     </div>
@@ -56,7 +56,7 @@
             </div>
         </div>
         </div>
-    </div>
+    </div> --}}
     <div id="wrapper" class="wrapper">
         @yield('header')
         <!-- Page Conttent -->

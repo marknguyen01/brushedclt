@@ -17997,13 +17997,10 @@ $(document).ready(function () {
   $("#preloader").fadeOut('slow', function () {
     $(this).remove();
   }); // Check if user has not seen the popup
-
-  if (Cookies.get('popup') === undefined) {
-    $('#dealModal').modal();
-    Cookies.set('popup', true, {
-      expires: 7
-    });
-  }
+  // if(Cookies.get('popup') === undefined) {
+  //     $('#dealModal').modal();
+  //     Cookies.set('popup', true, {expires: 7})
+  // }
 
   $('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
