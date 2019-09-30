@@ -6,7 +6,7 @@
           {{-- <span class="section__title--cursive text-color--white">Ultimate destination</span> --}}
           <h2 class="text-color--pink">The ultimate destination for all your beauty needs</h2>
       </div>
-      <div class="row w-100">
+      <div class="row" style="width:100vw">
           @foreach($featured_services as $s)
           <!-- Start Single Service -->
           <a class="col-lg-3 col-md-4 d-flex align-items-center service" href="{{ route('menu', str_slug($s->category()->exists() ? $s->category->name : $s->name)) }}">
