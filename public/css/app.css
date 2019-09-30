@@ -10669,7 +10669,6 @@ footer {
 
 .footer--positioned {
   position: relative;
-  top: -25vh;
 }
 
 .slider__child {
@@ -11118,6 +11117,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #fff;
+  background-color: #5d1d59;
 }
 
 a {
@@ -11147,7 +11147,6 @@ a:hover {
 
 .page-content {
   z-index: 1;
-  top: -25vh;
 }
 
 .section__title {
@@ -11166,10 +11165,6 @@ a:hover {
   .section__title h2 {
     font-size: 36px;
   }
-}
-
-#service {
-  min-height: 100vh;
 }
 
 .service:hover .service__content {
