@@ -1,7 +1,20 @@
-.about-content {
-  font-size: 16px;
-  line-height: normal;
-  letter-spacing: 2px;
-  padding: 0 5px;
-  outline: none;
+
+#about {
+  position: relative;
+  background-image: url('/img/bg/bg-image-3.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section__content {
+    overflow-y: scroll;
+    max-height: 100vh;
+  }
+  .about-content {
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 2px;
+    padding: 0 5px;
+    outline: none;
+  }
 }

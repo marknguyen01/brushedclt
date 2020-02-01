@@ -15,12 +15,18 @@
 @import 'templates/review';
 @import 'templates/about';
 @import 'templates/contact';
+@import 'templates/team';
 
 @import 'global';
 
 @font-face {
 	font-family: "Castelar";
 	src: url("/fonts/Castelar.ttf") format("truetype"),
+}
+
+@font-face {
+	font-family: "Gloss and Bloom";
+	src: url("/fonts/Gloss_And_Bloom.ttf")
 }
 html {
   scroll-behavior: smooth;
@@ -37,8 +43,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
-    color: $white;
-    background-color: $purple;
+  color: $black;
+  background-color: $body-bg-white;
 }
 
 a {
@@ -51,24 +57,16 @@ a {
     }
 }
 
+.header {
+	height: 100vh;
+}
+
 .wrapper {
 	height: stretch;
 }
 
-.header, .page-content {
-	position: relative;
-}
-
-.header {
-	z-index: 2;
-}
-
-.page-content {
-	z-index: 1;
-}
-
 .section {
-
+	padding: 100px 0;
   &__title {
     h2 {
       font-size: 30px;
@@ -84,35 +82,46 @@ a {
   }
 }
 #service {
-
-}
-.service {
-	&:hover {
-		.service__content {
-			background-color: $black;
-			.service-title {
-				color: $yellow;
+	.service {
+	  &__content {
+			min-height: 50vh;
+			transition: 0.5s outline ease;
+	    .service-title {
+					color: $yellow;
+					@extend .font-family--cursive;
+	        text-transform: uppercase;
+	        transition: 0.5s color ease-in;
+					font-size: 30px;
+	  	}
+			.service-price {
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 300;
+			}
+			&:hover {
+				outline: 3px solid $yellow;
+				outline-offset: -30px;
+			}
+	  }
+	}
+	.slick-slide {
+		&:nth-of-type(odd) {
+			.service__content {
+				background: $white;
+			}
+			.service-price {
+				color: $black;
+			}
+		}
+		&:nth-of-type(even) {
+			.service__content {
+				background: $black;
+			}
+			.service-price {
+				color: $white;
 			}
 		}
 	}
-  &__content {
-		transition: 0.5s background-color ease;
-        .service-title {
-            text-transform: uppercase;
-            transition: 0.5s color ease-in;
-      }
-  }
-}
-
-.round-decor {
-	background-image: url(/img/bg/bg-image-1.png);
-  background-size: 100%;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-	height: stretch;
-  top: -25vh;
 }
 
 .quote {
@@ -208,5 +217,35 @@ a {
 	}
 	100% {
 		transform: scale(0.7)
+	}
+}
+
+.slick-dots {
+	cursor: pointer;
+	margin-top: 5vh;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	li {
+		float: left;
+	}
+
+	.slick-active {
+		.review-dot {
+			background-color: #5e5e5e;
+		}
+	}
+
+	.review-dot {
+		background-color: #c9c9c9;
+		border-radius: 3em;
+		box-sizing: border-box;
+		height: 10px;
+		margin: 0 6px;
+		width: 10px;
 	}
 }

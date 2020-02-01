@@ -1,5 +1,5 @@
 <!-- Start Contact Form Style -->
-<div class="section bg-color--black-light mt-5"  id="contact">
+<div class="section p-0"  id="contact">
       <div class="row no-gutters">
           <div class="col-lg-6">
             <div id="map" class="w-100" style="height: 100%; min-height: 50vh"></div>
@@ -23,7 +23,7 @@
                 infoWindow.open(map, marker);
 
                 map.addListener('click', function (){
-                  window.open("{!! $user_agent == 'ios' ? 'http://maps.apple.com/?daddr=' : 'https://www.google.com/maps/dir/?api=1&destination='!!}{{ urlencode(setting('contact.address')) }}")
+                  window.open("http://maps.apple.com/?daddr={{ urlencode(setting('contact.address')) }}")
                 });
               }
             </script>
@@ -36,34 +36,28 @@ async defer></script>
                   <div class="contact-info__title">
                       <ion-icon name="ios-time"class="align-middle mr-1"></ion-icon>Operating Hours:
                   </div>
-                  <div class="contact-info__content">
+                  <div class="contact-info__content mt-3">
                     {!! setting('contact.hours') !!}
                   </div>
               </div>
-              <div class="contact-info mt-3 w-100">
+              <div class="contact-info mt-5 w-100">
                   <div class="contact-info__title">
                       <ion-icon name="ios-call" class="align-middle mr-1"></ion-icon>Phone Number:
                   </div>
-                  <div class="contact-info__content">
+                  <div class="contact-info__content mt-3">
                       <a href="tel:{{ setting('contact.phone') }}">
                           {{ setting('contact.phone') }}
                       </a>
                   </div>
               </div>
-              <div class="contact-info mt-3 w-100">
+              <div class="contact-info mt-5 w-100">
                   <div class="contact-info__title">
                       <ion-icon name="ios-navigate"class="align-middle mr-1"></ion-icon>Address:
                   </div>
-                  <div class="contact-info__content">
-                      @if($user_agent == 'ios')
-                          <a href="http://maps.apple.com/?daddr={{ urlencode(setting('contact.address')) }}">
-                              {{ setting('contact.address') }}
-                          </a>
-                      @else
-                          <a href="https://www.google.com/maps/dir/?api=1&destination={{ urlencode(setting('contact.address')) }}">
-                              {{ setting('contact.address') }}
-                          </a>
-                      @endif
+                  <div class="contact-info__content mt-3">
+                      <a href="http://maps.apple.com/?daddr={{ urlencode(setting('contact.address')) }}">
+                          {{ setting('contact.address') }}
+                      </a>
                   </div>
               </div>
             </div>

@@ -9,68 +9,75 @@
 @endsection
 
 @section('header')
-    <div class="text-center mb-0 mb-lg-5">
-      <a href="/">
-          <img class="img-fluid d-inline slider__logo" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
-      </a>
+<div class="menu-header">
+  @include('partials.navbar')
+  <div class="menu-header-content d-flex align-items-center h-100 text-center justify-content-center">
+    <div>
+      <div class="menu-title">Pricing List</div>
+      <div class="menu-name">{{ $active_category }}</div>
     </div>
-    @include('partials.navbar')
+  </div>
+</div>
 @endsection
 
 @section('content')
-    <div class="menu mt-0 mt-lg-5">
-        <div class="container">
-            @if(isset($categories))
-            <div class="input-group my-5">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Select a menu</label>
-              </div>
-              <select class="custom-select" id="inputGroupSelect01" onchange="Menu.change(this)">
-                <option value="all">All</option>
-                @foreach($all_categories as $c)
-                <option value="{{ str_slug($c->name) }}" {{ $c->name == $active_category ? 'selected' : '' }}>{{ $c->name }}</option>
-                @endforeach
-              </select>
-            </div>
-            @foreach($categories as $c)
-                <div class="menu__item">
-                    <div class="category">
-                        <h1 class="category__name text-center my-5 font-size--32 font-family--h1 text-color--pink">{{ $c->name }}</h1>
-                        @if(isset($c->description))
-                            <p class="category__description">{!! $c->description !!}</p>
-                        @endif
-                    </div>
-                    <div class="service">
-                        <div class="row">
-                            @foreach($c->services()->whereNull('service_id')->orderBy('order')->get() as $s)
-                                @include('menu.service', [
-                                    'service' => $s
-                                ])
-                            @endforeach
-                        </div>
-                    </div>
-                    @foreach($c->subCategories as $sc)
-                        <div class="sub-category">
-                            <h3 class="sub-category__name font-family--h2">{{ $sc->name }}</h3>
-                            <p class="sub-category__description">{!! $sc->description !!}</p>
-                        </div>
-                        <div class="sub-service">
-                            <div class="row">
-                                @foreach($sc->services()->whereNull('service_id')->orderBy('order')->get() as $s)
-                                    @include('menu.sub-service', [
-                                        'service' => $s
-                                    ])
-                                @endforeach
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
+  @if(isset($categories))
+  <div class="menu-selector">
+    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+      <div class="container">
+        <div class="input-group">
+          <select class="custom-select" id="inputGroupSelect01" onchange="Menu.change(this)">
+            <option value="all">All</option>
+            @foreach($all_categories->sortBy('order') as $c)
+            <option value="{{ str_slug($c->name) }}" {{ $c->name == $active_category ? 'selected' : '' }}>{{ $c->name }}</option>
             @endforeach
-            @else
-                <h1>No menu items to show</h1>
-            @endif
+          </select>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="menu">
+    <div class="container">
+      @foreach($categories as $c)
+          <div class="menu__item">
+              <div class="category">
+                  @if(isset($c->description))
+                      <p class="category__description">{!! $c->description !!}</p>
+                  @endif
+              </div>
+              <div class="service">
+                  <div class="row">
+                      @foreach($c->services()->whereNull('service_id')->orderBy('order')->get() as $s)
+                          @include('menu.service', [
+                              'service' => $s
+                          ])
+                      @endforeach
+                  </div>
+              </div>
+              @foreach($c->subCategories as $sc)
+                  <div class="sub-category">
+                      <h3 class="sub-category__name font-family--h2">{{ $sc->name }}</h3>
+                      <p class="sub-category__description">{!! $sc->description !!}</p>
+                  </div>
+                  <div class="sub-service">
+                      <div class="row">
+                          @foreach($sc->services()->whereNull('service_id')->orderBy('order')->get() as $s)
+                              @include('menu.sub-service', [
+                                  'service' => $s
+                              ])
+                          @endforeach
+                      </div>
+                  </div>
+              @endforeach
+          </div>
+      @endforeach
+    </div>
+  </div>
+  @else
+      <h1>No menu items to show</h1>
+  @endif
+
+  @include('contact')
 @endsection
 
 

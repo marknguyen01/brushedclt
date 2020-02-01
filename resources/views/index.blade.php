@@ -15,11 +15,11 @@
 @endsection
 
 @section('content')
-    <main class="page-content bg-color--purple">
+    <main class="page-content" id="app">
         @include('service')
         @include('about')
-        @include('team')
         @include('review')
+        @include('team')
         @include('contact')
     </main>
 @endsection

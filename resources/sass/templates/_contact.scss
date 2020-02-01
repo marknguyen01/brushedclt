@@ -1,3 +1,7 @@
+#contact {
+  background-color: $body-bg-black;
+  color: $white;
+}
 .contact-form {
   textarea, input {
     margin-top: 30px;
@@ -44,6 +48,17 @@
     }
     &__title:last-child {
         margin-top: 8px;
+    }
+    &__content {
+      letter-spacing: 2px;
+
+      a {
+        color: $white;
+        &:hover {
+          text-decoration: none;
+          color: $yellow;
+        }
+      }
     }
 }
 

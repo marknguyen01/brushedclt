@@ -10,10 +10,11 @@
     .nav-item {
         margin: 0 20px;
         a {
-            font-size: 20px;
+            font-size: 16px;
             text-transform: uppercase;
             font-weight: 600;
-            font-family: "Montserrat", sans-serif;
+            @extend .font-family--normal;
+            letter-spacing: 2px;
             position: relative;
             color: $black;
             &:hover {

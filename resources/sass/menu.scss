@@ -1,22 +1,77 @@
 @import 'variables';
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins/_breakpoints";
+@import '~bootstrap/scss/bootstrap';
+
+@import 'templates/navbar';
+
+@import 'global';
+
+
+
 
 body {
     background-color: $black !important;
 }
-.menu {
+
+
+.menu-header {
+  position: relative;
+  height: 100vh;
+  @include media-breakpoint-up(lg) {
+    height: 80vh;
+  }
+
+  .menu-title {
+    color: $yellow;
+    font-size: 18px;
+    @extend .font-family--cursive;
+
     @include media-breakpoint-up(lg) {
-      padding: 10vh 0;
+      font-size: 32px;
     }
-    @include media-breakpoint-up(md) {
-      padding: 5vh 0;
+  }
+
+  .menu-name {
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-size: 24px;
+    @extend .font-family--normal;
+    color: $white;
+    @include media-breakpoint-up(lg) {
+      line-height: 130px;
+      font-size: 85px;
     }
-    min-height: 100vh;
-    &__item {
-        margin: 5vh 0;
+  }
+  .menu-header-content {
+    background-image: url('img/bg/bg-image-6.jpg');
+    background-size: cover;
+    &:after {
+      @extend .bg-color--overlay;
     }
+    div {
+      z-index: 1;
+    }
+  }
+}
+
+.menu {
+  background-color: white;
+  @include media-breakpoint-up(lg) {
+    padding: 10vh 0;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 5vh 0;
+  }
+  &__item {
+      margin: 5vh 0;
+  }
+}
+
+.menu-selector {
+  background: #F7F8F9;
+  height: 20vh;
 }
 .category {
     &__name {
@@ -46,18 +101,4 @@ body {
 .sub-service-item {
     margin-left: 4%;
     display: list-item;
-}
-.navbar {
-    @include media-breakpoint-up(lg) {
-      position: unset;
-      transform: none;
-    }
-    .nav-item {
-        a {
-          color: $black;
-          @include media-breakpoint-up(lg) {
-              color: $white;
-          }
-        }
-    }
 }

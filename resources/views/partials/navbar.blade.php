@@ -7,17 +7,17 @@
     <li class="nav-item">
       <a class="nav-link" href="/#service">Services</a>
     </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/#about">About</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/#review">Our Reviews</a>
+      <li class="nav-item">
+        <a class="nav-link" href="/#review">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/#team">Team</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/#contact">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://phorest.com/book/salons/brushed">Book Now</a>
       </li>
     </ul>
   </div>

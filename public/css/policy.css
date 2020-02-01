@@ -21,8 +21,7 @@ body {
 @media (min-width: 992px) {
   .navbar {
     position: unset;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
 
@@ -32,7 +31,7 @@ body {
 
 @media (min-width: 992px) {
   .navbar .nav-item a {
-    color: #fff;
+    color: #f7f8f9;
   }
 }
 

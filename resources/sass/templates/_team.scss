@@ -1,0 +1,29 @@
+#team {
+  background-color: $body-bg-white;
+  .section__title {
+    font-size: 30px;
+    color: $yellow;
+    text-transform: uppercase;
+  }
+}
+
+.member {
+  text-align: center;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  &__name {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &__role, &__number {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+    a {
+      color: $black;
+    }
+  }
+}
