@@ -2,21 +2,28 @@
     position: fixed;
     @include media-breakpoint-up(lg) {
         position: absolute;
+        top: 5vh;
+        background: none;
     }
-    top: 5vh;
+    background-color: $body-bg-white;
     z-index: 2;
     left: 50%;
     transform: translateX(-50%);
     .nav-item {
         margin: 0 20px;
         a {
-            font-size: 16px;
+            font-size: 14px;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 300;
             @extend .font-family--normal;
             letter-spacing: 2px;
             position: relative;
             color: $black;
+
+            @include media-breakpoint-up(lg) {
+              letter-spacing: 4px;
+              font-size: 18px;
+            }
             &:hover {
                 color: $yellow;
             }
@@ -43,10 +50,16 @@
         }
     }
     .navbar-collapse {
-        background: white;
-        border: 1px solid rgba(0,0,0,.1);
         .nav-item {
+          margin-left: 20px;
           padding: 10px 0;
+          &:not(:last-of-type) {
+            border-bottom: 1px solid $black;
+          }
+          font-weight: 300;
+          @include media-breakpoint-up(lg) {
+            border: none !important;
+          }
         }
       @include media-breakpoint-up(lg) {
           background: transparent;
@@ -57,13 +70,9 @@
       }
     }
     .navbar-toggler {
-        background-color: $white;
         top: 0;
-        left: 10px;
         z-index: 1;
-        padding: 0.25rem;
         cursor: pointer;
-        border: 1px solid rgba(0,0,0,.1);
         .navbar-toggler-icon {
             display: inline-block;
             width: 34px;
