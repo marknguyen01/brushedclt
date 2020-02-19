@@ -126,10 +126,26 @@ window.Menu = class Menu {
     }
 }
 
+import Parallax from "vue-parallaxy";
+import * as VueGoogleMaps from "vue2-google-maps";
+
 Vue.component('service-component', require('./components/ServiceComponent.vue').default);
 Vue.component('review-component', require('./components/ReviewComponent.vue').default);
 Vue.component('team-component', require('./components/TeamComponent.vue').default);
+Vue.component('contact-component', require('./components/COntactComponent.vue').default);
+
+Vue.use(Parallax);
+
+Vue.use(VueGoogleMaps, {
+    load: {
+        key: "AIzaSyA0ADDoM8I2FpsEFB41nfnNGdSBt96ZvX8"
+    },
+    installComponents: true
+});
+
+Vue.config.ignoredElements = ['ion-icon'];
 
 new Vue({
+  components: {Parallax},
   el: '#app',
 })

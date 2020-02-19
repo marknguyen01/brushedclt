@@ -22,7 +22,7 @@ export default {
     components: {Slick},
     props: {
       serviceData: {
-        type: Array,
+        type: Object,
         required: true,
       }
     },

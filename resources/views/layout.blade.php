@@ -61,6 +61,7 @@
         </div>
     </div> --}}
     <div id="wrapper" class="wrapper">
+      <div id="app">
         @yield('header')
         <!-- Page Conttent -->
         @yield('content')
@@ -68,6 +69,7 @@
         <!-- Footer -->
         @yield('footer')
         <!--// Footer -->
+      </div>
     </div>
     <!--// Wrapper -->
 

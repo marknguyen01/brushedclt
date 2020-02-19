@@ -1,6 +1,10 @@
 footer {
     background-color: $black;
     padding: 20px 0;
+    margin-bottom: 62px;
+    @include media-breakpoint-up(lg) {
+        margin: 0;
+    }
 }
 .footer {
   &--positioned {

@@ -15,7 +15,7 @@
 @endsection
 
 @section('content')
-    <main class="page-content" id="app">
+    <main class="page-content">
         @include('service')
         @include('about')
         @include('review')

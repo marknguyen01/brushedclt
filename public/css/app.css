@@ -10879,6 +10879,13 @@ a.text-dark:focus {
 footer {
   background-color: #151515;
   padding: 20px 0;
+  margin-bottom: 62px;
+}
+
+@media (min-width: 992px) {
+  footer {
+    margin: 0;
+  }
 }
 
 .footer--positioned {
@@ -11090,7 +11097,7 @@ footer {
 }
 
 #review {
-  background-color: #000;
+  background-color: #151515;
 }
 
 #review .section__title {
@@ -11213,6 +11220,14 @@ footer {
 
 .contact-content {
   min-height: 50vh;
+}
+
+.gm-style-iw-d {
+  color: #151515;
+}
+
+.gm-style-iw-d a {
+  color: #151515;
 }
 
 #team {

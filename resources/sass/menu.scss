@@ -62,7 +62,16 @@ body {
 
 .menu-selector {
   background: #F7F8F9;
-  height: 20vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 12;
+  padding: 12px 0;
+  @include media-breakpoint-up(lg) {
+    height: 20vh;
+    position: none;
+    padding: 0;
+  }
 }
 .category {
     &__name {

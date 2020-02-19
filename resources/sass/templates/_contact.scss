@@ -1,5 +1,5 @@
 #contact {
-  background-color: $body-bg-black;
+  background-color: #000;
   color: $white;
 }
 .contact-form {
@@ -64,4 +64,11 @@
 
 .contact-content {
   min-height: 50vh;
+}
+
+.gm-style-iw-d {
+    color: $black;
+    a {
+        color: $black;
+    }
 }
