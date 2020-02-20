@@ -69,7 +69,7 @@ body {
   padding: 12px 0;
   @include media-breakpoint-up(lg) {
     height: 20vh;
-    position: none;
+    position: initial;
     padding: 0;
   }
 }

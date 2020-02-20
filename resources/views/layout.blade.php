@@ -19,7 +19,7 @@
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
     <!-- <link rel="apple-touch-icon" href="img/icon.png"> -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @yield('css_links')
 </head>
 
@@ -74,7 +74,7 @@
     <!--// Wrapper -->
 
     <!-- Js Files -->
-    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
     <script src="{{ asset('js/modernizr.min.js') }}"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>

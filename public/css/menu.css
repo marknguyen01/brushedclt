@@ -11208,7 +11208,7 @@ body {
 @media (min-width: 992px) {
   .menu-selector {
     height: 20vh;
-    position: none;
+    position: initial;
     padding: 0;
   }
 }

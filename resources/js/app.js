@@ -147,5 +147,5 @@ Vue.config.ignoredElements = ['ion-icon'];
 
 new Vue({
   components: {Parallax},
-  el: '#app',
+  el: '#app'
 })

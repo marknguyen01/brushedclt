@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('css_links')
-    <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/menu.css') }}">
 @endsection
 
 @section('title')
