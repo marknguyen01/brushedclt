@@ -254,12 +254,12 @@ __webpack_require__.r(__webpack_exports__);
         autoplay: true,
         autoplaySpeed: 2500,
         focusOnSelect: false,
+        infinite: false,
         responsive: [{
           breakpoint: 991.98,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true
+            slidesToScroll: 1
           }
         }]
       }
