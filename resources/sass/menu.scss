@@ -43,9 +43,12 @@ body {
     }
   }
   .menu-header-content {
-    background-image: url('img/bg/bg-image-6.jpg');
     background-position: center;
     background-size: cover;
+
+    &.no-image {
+        background-image: url('images/bg/default-menu-bg.jpg');
+    }
     &:after {
       @extend .bg-color--overlay;
     }
@@ -57,7 +60,7 @@ body {
 
 .menu {
   background-color: white;
-  padding: 100px 0;
+  padding: 5vh 0;
 }
 
 .menu-selector {
@@ -101,4 +104,11 @@ body {
 .sub-service-item {
     margin-left: 4%;
     display: list-item;
+}
+
+footer {
+    margin-bottom: 62px;
+    @include media-breakpoint-up(lg) {
+        margin: 0;
+    }
 }

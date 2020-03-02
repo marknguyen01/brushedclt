@@ -1,12 +1,12 @@
-<div class="slider">
-    <div class="slider__child d-flex align-items-center" style="background-image:url('{{ asset('img/bg/bg-image.jpg')}}')">
-        <div class="slider__content text-center w-100">
+<div class="hero">
+    <div class="hero__child d-flex align-items-center">
+        <div class="hero__content text-center w-100">
             <a href="/">
                 <div class="site-motto">{{ setting('site.description') }}</div>
                 <div class="site-title">Brushed</div>
-                <!-- <img class="img-fluid d-inline slider__logo" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo"> -->
+                <!-- <img class="img-fluid d-inline hero__logo" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo"> -->
             </a>
-            <div class="slider__social my-3">
+            <div class="hero__social my-3">
                 <a class="social-icon" href="tel:{{ setting('contact.phone') }}">
                     <ion-icon name="ios-call"></ion-icon>
                 </a>

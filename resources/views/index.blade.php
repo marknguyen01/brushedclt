@@ -10,7 +10,7 @@
 @section('header')
     <header class="header">
         @include('partials.navbar')
-        @include('partials.slider')
+        @include('partials.hero')
     </header>
 @endsection
 

@@ -10880,8 +10880,7 @@ a.text-dark:focus {
   position: fixed;
   background-color: #fff;
   z-index: 2;
-  left: 50%;
-  transform: translateX(-50%);
+  border-bottom: 2px solid #151515;
 }
 
 @media (min-width: 992px) {
@@ -10889,6 +10888,9 @@ a.text-dark:focus {
     position: absolute;
     top: 5vh;
     background: none;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: none;
   }
 }
 
@@ -11182,9 +11184,12 @@ body {
 }
 
 .menu-header .menu-header-content {
-  background-image: url(/images/bg-image-6.jpg?eda8e801d475076a36a2628b75c666e8);
   background-position: center;
   background-size: cover;
+}
+
+.menu-header .menu-header-content.no-image {
+  background-image: url(/images/default-menu-bg.jpg?eda8e801d475076a36a2628b75c666e8);
 }
 
 .menu-header .menu-header-content div {
@@ -11193,7 +11198,7 @@ body {
 
 .menu {
   background-color: white;
-  padding: 100px 0;
+  padding: 5vh 0;
 }
 
 .menu-selector {
@@ -11245,5 +11250,15 @@ body {
 .sub-service-item {
   margin-left: 4%;
   display: list-item;
+}
+
+footer {
+  margin-bottom: 62px;
+}
+
+@media (min-width: 992px) {
+  footer {
+    margin: 0;
+  }
 }
 

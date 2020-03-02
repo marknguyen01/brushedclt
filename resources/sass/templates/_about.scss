@@ -1,13 +1,13 @@
 
 #about {
   position: relative;
-  background-image: url('/img/bg/bg-image-3.jpg');
+  background-image: url('/images/bg/about-bg.jpg');
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 
   .section__content {
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 50vh;
   }
   .about-content {

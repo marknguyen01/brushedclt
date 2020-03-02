@@ -32,7 +32,7 @@
 
     <!-- Wrapper -->
     <div id="preloader" class="text-center">
-      <img class="img-fluid d-inline" src="{{ asset('img/logo.png') }}" alt="{{ setting('site.title') }} Logo">
+      <img class="img-fluid d-inline" src="{{ asset('images/logo.png') }}" alt="{{ setting('site.title') }} Logo">
     </div>
     {{-- <!-- Button trigger modal -->
     <div class="btn-deal" data-toggle="modal" data-target="#dealModal">

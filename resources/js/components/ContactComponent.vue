@@ -4,7 +4,6 @@
       :center="options.center"
       :options="options"
       ref="mapRef"
-      style="height: 100%; min-height: 50vh"
       @click="openWindow()">
     <GmapInfoWindow :position="options.center">
         <p><strong>Brushed</strong></p>

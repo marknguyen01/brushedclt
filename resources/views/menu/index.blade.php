@@ -5,16 +5,25 @@
 @endsection
 
 @section('title')
- | {{ $active_category }}
+ | {{ isset($active_category) ? Str::title($active_category) : 'All Services' }}
 @endsection
 
 @section('header')
 <div class="menu-header">
   @include('partials.navbar')
-  <div class="menu-header-content d-flex align-items-center h-100 text-center justify-content-center">
+  <div class="menu-header-content d-flex align-items-center h-100 text-center justify-content-center
+        @if(count($categories) > 1)
+            no-image">
+        @else
+            @if(isset($categories->first()->image))
+            " style="background-image:url({{ $categories->first()->image }})">
+            @else
+            no-image">
+            @endif
+        @endif
     <div>
       <div class="menu-title">Pricing List</div>
-      <div class="menu-name">{{ $active_category }}</div>
+      <div class="menu-name">{{ isset($active_category) ? $active_category : 'All Services' }}</div>
     </div>
   </div>
 </div>
@@ -27,7 +36,7 @@
       <div class="container">
         <div class="input-group">
           <select class="custom-select" id="inputGroupSelect01" onchange="Menu.change(this)">
-            <option value="all">All</option>
+            <option value="all">All Services</option>
             @foreach($all_categories->sortBy('order') as $c)
             <option value="{{ str_slug($c->name) }}" {{ $c->name == $active_category ? 'selected' : '' }}>{{ $c->name }}</option>
             @endforeach
@@ -41,6 +50,11 @@
       @foreach($categories as $c)
           <div class="menu__item">
               <div class="category">
+                  @if(count($categories) > 1)
+                  <div class="category_name">
+                    {{ $c->name }}
+                  </div>
+                  @endif
                   @if(isset($c->description))
                       <p class="category__description">{!! $c->description !!}</p>
                   @endif

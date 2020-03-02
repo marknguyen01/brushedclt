@@ -4,11 +4,13 @@
         position: absolute;
         top: 5vh;
         background: none;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: none;
     }
     background-color: $body-bg-white;
     z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
+    border-bottom: 2px solid #151515;
     .nav-item {
         margin: 0 20px;
         a {

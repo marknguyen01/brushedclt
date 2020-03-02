@@ -10879,49 +10879,43 @@ a.text-dark:focus {
 footer {
   background-color: #151515;
   padding: 20px 0;
-  margin-bottom: 62px;
-}
-
-@media (min-width: 992px) {
-  footer {
-    margin: 0;
-  }
 }
 
 .footer--positioned {
   position: relative;
 }
 
-.slider {
+.hero {
   position: relative;
 }
 
-.slider__child {
+.hero__child {
   height: -webkit-fill-available;
   height: -moz-available;
   height: stretch;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(/images/hero-bg.jpg?814dde730269f4b73c9c04755611a6de);
 }
 
-.slider__content {
+.hero__content {
   z-index: 1;
   color: #f7f8f9;
 }
 
-.slider__content .site-motto {
+.hero__content .site-motto {
   color: #FBB040;
   font-size: 18px;
 }
 
 @media (min-width: 992px) {
-  .slider__content .site-motto {
+  .hero__content .site-motto {
     font-size: 32px;
   }
 }
 
-.slider__content .site-title {
+.hero__content .site-title {
   white-space: nowrap;
   font-weight: 700;
   line-height: 50px;
@@ -10931,17 +10925,17 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .slider__content .site-title {
+  .hero__content .site-title {
     line-height: 130px;
     font-size: 85px;
   }
 }
 
-.slider__content a:hover {
+.hero__content a:hover {
   color: inherit;
 }
 
-.slider__social .social-icon {
+.hero__social .social-icon {
   color: #f7f8f9;
   font-size: 28px;
   margin: 0 12px;
@@ -10953,37 +10947,37 @@ footer {
   transition: color 0.5s, border-color 0.5s;
 }
 
-.slider__social .social-icon:hover {
+.hero__social .social-icon:hover {
   color: #FBB040;
   border-color: #FBB040;
 }
 
-.slider__social .social-icon ion-icon {
+.hero__social .social-icon ion-icon {
   vertical-align: bottom;
   display: inline-block;
 }
 
-.slider__social .social-icon:first-of-type {
+.hero__social .social-icon:first-of-type {
   margin-left: 0;
 }
 
-.slider__social .social-icon:last-of-type {
+.hero__social .social-icon:last-of-type {
   margin-right: 0;
 }
 
-.slider__logo {
+.hero__logo {
   width: 220px;
   margin-top: 5vh;
 }
 
 @media (min-width: 768px) {
-  .slider__logo {
+  .hero__logo {
     width: 250px;
   }
 }
 
 @media (min-width: 992px) {
-  .slider__logo {
+  .hero__logo {
     width: 280px;
   }
 }
@@ -10992,8 +10986,7 @@ footer {
   position: fixed;
   background-color: #fff;
   z-index: 2;
-  left: 50%;
-  transform: translateX(-50%);
+  border-bottom: 2px solid #151515;
 }
 
 @media (min-width: 992px) {
@@ -11001,6 +10994,9 @@ footer {
     position: absolute;
     top: 5vh;
     background: none;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: none;
   }
 }
 
@@ -11114,6 +11110,8 @@ footer {
 .review .review-desc {
   font-size: 20px;
   font-weight: 300;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .review .review-name {
@@ -11124,14 +11122,14 @@ footer {
 
 #about {
   position: relative;
-  background-image: url("/img/bg/bg-image-3.jpg");
+  background-image: url("/images/bg/about-bg.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #about .section__content {
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 50vh;
 }
 
@@ -11230,6 +11228,17 @@ footer {
   color: #151515;
 }
 
+.vue-map-container {
+  height: 100%;
+  min-height: 35vh;
+}
+
+@media (min-width: 992px) {
+  .vue-map-container {
+    min-height: 65vh;
+  }
+}
+
 #team {
   background-color: #fff;
 }
@@ -11287,7 +11296,7 @@ footer {
 }
 
 .bg-color--overlay,
-.slider__child:after {
+.hero__child:after {
   content: " ";
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -11416,14 +11425,14 @@ footer {
 }
 
 .font-family--normal,
-.slider__content .site-title,
+.hero__content .site-title,
 .navbar .nav-item a {
   font-family: "Montserrat", sans-serif;
 }
 
 .font-family--cursive,
 #service .service__content .service-title,
-.slider__content .site-motto {
+.hero__content .site-motto {
   font-family: "Gloss and Bloom";
 }
 

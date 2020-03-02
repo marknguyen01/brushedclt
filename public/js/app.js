@@ -111,7 +111,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "GoogleMap",
   props: {
@@ -157,6 +156,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_slick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-slick */ "./node_modules/vue-slick/dist/slickCarousel.esm.js");
+//
+//
 //
 //
 //
@@ -19716,7 +19717,6 @@ var render = function() {
         "gmap-map",
         {
           ref: "mapRef",
-          staticStyle: { height: "100%", "min-height": "50vh" },
           attrs: { center: _vm.options.center, options: _vm.options },
           on: {
             click: function($event) {
@@ -19786,13 +19786,26 @@ var render = function() {
     },
     _vm._l(_vm.reviews, function(review) {
       return _c("div", { staticClass: "review mt-3" }, [
-        _c("div", { staticClass: "review-desc" }, [
-          _vm._v("\n          " + _vm._s(review.comment) + "\n      ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "review-name mt-3" }, [
-          _vm._v("\n          " + _vm._s(review.username) + "\n      ")
-        ])
+        _c(
+          "div",
+          {
+            staticClass: "d-flex align-items-start flex-column",
+            staticStyle: { height: "250px" }
+          },
+          [
+            _c("div", { staticClass: "mb-auto p-2 review-desc" }, [
+              _vm._v(
+                "\n              " + _vm._s(review.comment) + "\n          "
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "review-name p-2 mx-auto" }, [
+              _vm._v(
+                "\n              " + _vm._s(review.username) + "\n          "
+              )
+            ])
+          ]
+        )
       ])
     }),
     0
