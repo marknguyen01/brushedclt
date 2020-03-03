@@ -19866,7 +19866,7 @@ var render = function() {
                 _c("div", { staticClass: "service-price text-center mt-3" }, [
                   s.price > 0
                     ? _c("span", [_vm._v("starts at $" + _vm._s(s.price))])
-                    : _c("span", [_vm._v("Please contact our team members")])
+                    : _c("span", [_vm._v("Price is varies on each stylist")])
                 ])
               ])
             ]
