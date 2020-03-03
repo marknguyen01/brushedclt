@@ -8,7 +8,7 @@
             </div>
             <div class="service-price text-center mt-3">
              <span v-if="s.price > 0">starts at ${{ s.price }}</span>
-             <span v-else>Price is varies on each stylist</span>
+             <span v-else>Prices are subject to each stylist</span>
             </div>
           </div>
         </div>
