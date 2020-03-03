@@ -19793,7 +19793,7 @@ var render = function() {
             staticStyle: { height: "250px" }
           },
           [
-            _c("div", { staticClass: "mb-auto p-2 review-desc" }, [
+            _c("div", { staticClass: "mb-auto p-2 review-desc mx-auto" }, [
               _vm._v(
                 "\n              " + _vm._s(review.comment) + "\n          "
               )
@@ -37887,13 +37887,18 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 window.Cookies = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js");
 $(document).ready(function () {
-  $("#preloader").fadeOut('slow', function () {
-    $(this).remove();
-  }); // Check if user has not seen the popup
+  var video = document.getElementById("hero-video");
+
+  if (video.readyState === 4) {
+    $("#preloader").fadeOut('slow', function () {
+      $(this).remove();
+    });
+  } // Check if user has not seen the popup
   // if(Cookies.get('popup') === undefined) {
   //     $('#dealModal').modal();
   //     Cookies.set('popup', true, {expires: 7})
   // }
+
 
   $('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');

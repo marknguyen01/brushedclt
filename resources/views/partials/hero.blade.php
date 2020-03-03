@@ -1,3 +1,4 @@
+<div class="hero-overlay">
 <div class="hero">
     <div class="hero__child d-flex align-items-center">
         <div class="hero__content text-center w-100">

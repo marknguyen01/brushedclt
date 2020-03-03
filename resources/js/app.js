@@ -13,9 +13,12 @@ require('bootstrap');
 window.Cookies = require('js-cookie');
 
 $(document).ready(function() {
-    $("#preloader").fadeOut('slow', function(){
-      $(this).remove();
-    });
+    var video = document.getElementById("hero-video");
+    if (video.readyState === 4 ) {
+      $("#preloader").fadeOut('slow', function(){
+        $(this).remove();
+      });
+    }
     // Check if user has not seen the popup
     // if(Cookies.get('popup') === undefined) {
     //     $('#dealModal').modal();

@@ -2,7 +2,7 @@
   <Slick ref="reviews" class="review-slider" :options="slickOptions">
     <div class="review mt-3" v-for="review in reviews">
         <div class="d-flex align-items-start flex-column" style="height: 250px;">
-            <div class="mb-auto p-2 review-desc">
+            <div class="mb-auto p-2 review-desc mx-auto">
                 {{ review.comment }}
             </div>
             <div class="review-name p-2 mx-auto">

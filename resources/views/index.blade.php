@@ -9,6 +9,12 @@
 
 @section('header')
     <header class="header">
+      <div class="video-container">
+        <video autoplay="autoplay" loop="loop" id="hero-video">
+          <source src="{{ asset('videos/hero-video.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
         @include('partials.navbar')
         @include('partials.hero')
     </header>
