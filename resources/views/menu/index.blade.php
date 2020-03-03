@@ -46,7 +46,7 @@
   </div>
   <div class="menu">
     <div class="container">
-      @foreach($categories as $c)
+      @foreach($categories->sortBy('order') as $c)
           <div class="menu__item">
               <div class="category">
                   @if(count($categories) > 1)
