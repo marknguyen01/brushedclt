@@ -37886,23 +37886,23 @@ window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jqu
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
 window.Cookies = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js");
-var video = document.getElementById("hero-video");
-video.addEventListener("playing", function () {
-  console.log("[Playing] loading of video");
-  $("#preloader").fadeOut('slow', function () {
-    $(this).remove();
-  });
-
-  if (video.readyState == 4) {
-    console.log("[Finished] loading of video");
-  }
-});
 $(document).ready(function () {
-  // Check if user has not seen the popup
+  var video = document.getElementById("hero-video");
+  video.addEventListener("playing", function () {
+    console.log("[Playing] loading of video");
+    $("#preloader").fadeOut('slow', function () {
+      $(this).remove();
+    });
+
+    if (video.readyState == 4) {
+      console.log("[Finished] loading of video");
+    }
+  }); // Check if user has not seen the popup
   // if(Cookies.get('popup') === undefined) {
   //     $('#dealModal').modal();
   //     Cookies.set('popup', true, {expires: 7})
   // }
+
   $('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
   }); // $('.about-slider').slick({
