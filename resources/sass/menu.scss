@@ -5,6 +5,7 @@
 
 @import 'global';
 
+@import url('https://fonts.googleapis.com/css?family=Cardo&display=swap');
 
 
 
@@ -78,6 +79,9 @@ body {
 }
 .category {
     &__name {
+        font-family: 'Cardo', serif;
+        font-weight: bold;
+        font-size: 36px;
         text-transform: uppercase;
     }
 }

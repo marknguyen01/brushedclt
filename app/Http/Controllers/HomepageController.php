@@ -17,7 +17,7 @@ class HomepageController extends Controller
         $reviews = Review::where('rating', 5)->whereNotNull('comment')->limit(6)->get();
         $team_members = TeamMember::all();
         return view('index', [
-            'featured_services' => $featured_services,
+            'featured_services' => $featured_services->values(),
             'reviews' => $reviews,
             'team_members' => $team_members,
             'user_agent' => $this->user_agent()

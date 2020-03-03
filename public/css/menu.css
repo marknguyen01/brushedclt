@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Cardo&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -11219,6 +11219,9 @@ body {
 }
 
 .category__name {
+  font-family: "Cardo", serif;
+  font-weight: bold;
+  font-size: 36px;
   text-transform: uppercase;
 }
 

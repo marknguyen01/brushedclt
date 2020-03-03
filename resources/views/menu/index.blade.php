@@ -36,7 +36,6 @@
       <div class="container">
         <div class="input-group">
           <select class="custom-select" id="inputGroupSelect01" onchange="Menu.change(this)">
-            <option value="all">All Services</option>
             @foreach($all_categories->sortBy('order') as $c)
             <option value="{{ str_slug($c->name) }}" {{ $c->name == $active_category ? 'selected' : '' }}>{{ $c->name }}</option>
             @endforeach
@@ -51,8 +50,10 @@
           <div class="menu__item">
               <div class="category">
                   @if(count($categories) > 1)
-                  <div class="category_name">
-                    {{ $c->name }}
+                  <div class="category__name">
+                    @if($c->name != "All")
+                      {{ $c->name }}
+                    @endif
                   </div>
                   @endif
                   @if(isset($c->description))
