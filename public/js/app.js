@@ -37888,20 +37888,28 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 window.Cookies = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js");
 $(document).ready(function () {
   var video = document.getElementById("hero-video");
-  video.addEventListener("playing", function () {
-    console.log("[Playing] loading of video");
+
+  if (video != null) {
+    video.addEventListener("playing", function () {
+      console.log("[Playing] loading of video");
+      $("#preloader").fadeOut('slow', function () {
+        $(this).remove();
+      });
+
+      if (video.readyState == 4) {
+        console.log("[Finished] loading of video");
+      }
+    });
+  } else {
     $("#preloader").fadeOut('slow', function () {
       $(this).remove();
     });
-
-    if (video.readyState == 4) {
-      console.log("[Finished] loading of video");
-    }
-  }); // Check if user has not seen the popup
+  } // Check if user has not seen the popup
   // if(Cookies.get('popup') === undefined) {
   //     $('#dealModal').modal();
   //     Cookies.set('popup', true, {expires: 7})
   // }
+
 
   $('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
