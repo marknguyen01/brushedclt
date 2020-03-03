@@ -12,8 +12,6 @@ require('bootstrap');
 
 window.Cookies = require('js-cookie');
 
-
-
 $(document).ready(function() {
   var video = document.getElementById("hero-video");
   video.addEventListener("playing", function() {
