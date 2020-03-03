@@ -14,11 +14,15 @@ window.Cookies = require('js-cookie');
 
 $(document).ready(function() {
     var video = document.getElementById("hero-video");
-    if (video.readyState === 4 ) {
+    video.addEventListener("playing", function() {
+      console.log("[Playing] loading of video");
       $("#preloader").fadeOut('slow', function(){
         $(this).remove();
       });
-    }
+      if (video.readyState == 4) {
+          console.log("[Finished] loading of video");
+      }
+    });
     // Check if user has not seen the popup
     // if(Cookies.get('popup') === undefined) {
     //     $('#dealModal').modal();
