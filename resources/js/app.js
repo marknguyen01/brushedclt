@@ -146,7 +146,8 @@ import * as VueGoogleMaps from "vue2-google-maps";
 Vue.component('service-component', require('./components/ServiceComponent.vue').default);
 Vue.component('review-component', require('./components/ReviewComponent.vue').default);
 Vue.component('team-component', require('./components/TeamComponent.vue').default);
-Vue.component('contact-component', require('./components/COntactComponent.vue').default);
+Vue.component('contact-component', require('./components/ContactComponent.vue').default);
+Vue.component('alert-component', require('./components/AlertComponent.vue').default);
 
 Vue.use(Parallax);
 
